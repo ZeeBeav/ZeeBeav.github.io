@@ -9,7 +9,7 @@
   </style>
 </head>
 <body>
-  <h1>Welcome to Zeebeav.com also known as ZeeBeev.com</h1>
+  <h1>Welcome to ZeeBeav.com also known as ZeeBeev.com</h1>
   <p>Pronounced Zee-Beev...• we do Blinky Shows for Tesla vehicles</p>
   
   <img src="https://zeebeav.github.io/ZeeBeavHiResLogo_withfont.png" alt="ZeeBeav">
