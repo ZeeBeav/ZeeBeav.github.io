@@ -91,9 +91,7 @@
     <img src="https://zeebeav.github.io/ZeeBeavHiResLogoWB.png" alt="Zeebeev Helmet & License Plate">
 
     <p class="subtitle">
-      Catch the Zeebeev license plate on the streets<br>
-      with the official .com sticker
-    </p>
+      Catch the ZeeBeev license plate on the streets</p>
 
     <a href="#" class="cta">COMING SOON — JOIN THE WAITLIST</a>
 
