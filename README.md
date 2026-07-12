@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -27,73 +28,74 @@
 
     h1 {
       font-family: 'Impact', sans-serif;
-      font-size: 4.5rem;
+      font-size: 4.8rem;
       margin: 0 0 10px 0;
-      letter-spacing: 4px;
-      color: #ffcc00;
-      text-shadow: 0 0 20px rgba(255, 204, 0, 0.5);
+      letter-spacing: 6px;
+      color: #00F0FF;
+      text-shadow: 0 0 30px rgba(0, 240, 255, 0.6);
     }
 
     .tagline {
-      font-size: 1.6rem;
+      font-size: 1.7rem;
       margin-bottom: 30px;
-      opacity: 0.9;
+      opacity: 0.95;
     }
 
     img {
       max-width: 100%;
       width: 420px;
       height: auto;
-      border-radius: 12px;
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+      border-radius: 16px;
+      box-shadow: 0 25px 50px rgba(0, 240, 255, 0.25);
       margin: 30px 0;
       border: none;
     }
 
     .subtitle {
-      font-size: 1.3rem;
+      font-size: 1.35rem;
       margin: 20px 0 40px;
-      line-height: 1.5;
+      line-height: 1.6;
     }
 
     .cta {
-      background: #ffcc00;
+      background: #00F0FF;
       color: #000;
-      padding: 16px 40px;
-      font-size: 1.4rem;
+      padding: 18px 45px;
+      font-size: 1.45rem;
       font-weight: bold;
       border-radius: 50px;
       text-decoration: none;
       display: inline-block;
       margin-top: 20px;
       transition: all 0.3s;
+      box-shadow: 0 10px 30px rgba(0, 240, 255, 0.4);
     }
 
     .cta:hover {
-      transform: scale(1.05);
-      background: #ffe033;
+      transform: scale(1.08);
+      background: #00ffff;
     }
 
     footer {
-      margin-top: 60px;
-      opacity: 0.6;
-      font-size: 0.95rem;
+      margin-top: 70px;
+      opacity: 0.7;
+      font-size: 1rem;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>ZEEBEAV / ZEEBEEV</h1>
-    <p class="tagline">We do Blinky Light Shows for Tesla vehicles</p>
+    <h1>ZEEBEEV</h1>
+    <p class="tagline">Electric. Bold. Unforgettable.</p>
 
     <img src="https://ZeeBeav.github.io/ZeeBeavHiResLogoWB.png" alt="Zeebeev Helmet & License Plate">
 
     <p class="subtitle">
-      See the Zeebeev license plate on the streets<br>
+      Catch the Zeebeev license plate on the streets<br>
       with the official .com sticker
     </p>
 
-    <a href="#" class="cta">COMING SOON — STAY TUNED</a>
+    <a href="#" class="cta">COMING SOON — JOIN THE WAITLIST</a>
 
     <footer>
       zeebeav.com &amp; zeebeev.com
@@ -101,3 +103,4 @@
   </div>
 </body>
 </html>
+
