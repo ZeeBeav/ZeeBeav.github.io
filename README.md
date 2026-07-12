@@ -83,8 +83,8 @@
 </head>
 <body>
   <div class="container">
-    <h1>ZEEBEEV</h1>
-    <p class="tagline">Premium. Bold. Unmistakable.</p>
+    <h1>ZEEBEAV / ZEEBEEV</h1>
+    <p class="tagline">We do Blinky Light Shows for Tesla vehicles</p>
 
     <img src="YOUR-IMAGE-URL-HERE" alt="Zeebeev Helmet & License Plate">
 
