@@ -10,7 +10,7 @@
 <body>
   <h1>Welcome to ZeeBeav.com also known as ZeeBeev.com</h1>
   <p>Pronounced Zee-Beev...</p>
-  <p></p>• we do Blinky Shows for Tesla vehicles</p>
+  <p>• we do Blinky Shows for Tesla vehicles •</p>
   
   <img border="0" src="https://zeebeav.github.io/ZeeBeavHiResLogoWB.png" alt="ZeeBeav">
   
