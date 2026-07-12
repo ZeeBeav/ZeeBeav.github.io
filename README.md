@@ -86,7 +86,7 @@
     <h1>ZEEBEEV</h1>
     <p class="tagline">Premium. Bold. Unmistakable.</p>
 
-    <img src="https://zeebeav.github.io/ZeeBeavHiResLogoWB.png" alt="Zeebeev Helmet & License Plate">
+    <img src="YOUR-IMAGE-URL-HERE" alt="Zeebeev Helmet & License Plate">
 
     <p class="subtitle">
       See the Zeebeev license plate on the streets<br>
