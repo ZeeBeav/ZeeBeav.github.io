@@ -87,7 +87,7 @@
     <h1>ZEEBEEV</h1>
     <p class="tagline">We do Electric. Bold. Unforgettable. Tesla Light Shows.</p>
 
-    <img src="https://zeebeav.github.io/ZeeBeavHiResLogoWB.png" alt="Zeebeev Helmet & License Plate">
+    <img src="https://zeebeav.github.io/ZeeBeavLogoPatriotic.png" alt="Zeebeev Helmet & License Plate">
 
     <p class="subtitle">
       Catch the ZeeBeev license plate on the streets</p>
