@@ -7,7 +7,7 @@
 </head>
 <body>
   <video autoplay loop muted playsinline>
-    <source src="Sequence 01_2.mp4" type="video/mp4">
+    <source src="https://zeebeavgithub.io/Sequence 01_2.mp4" type="video/mp4">
   </video>
 </body>
 </html>
