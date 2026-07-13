@@ -31,7 +31,7 @@
     }
     body {
       margin: 0;
-      padding: 0;
+      padding: 0;background-color: #0a0a0a;
       background: #0a0a0a;
       color: #000000;
       font-family: 'Arial', sans-serif;
