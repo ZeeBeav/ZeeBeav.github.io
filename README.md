@@ -8,7 +8,7 @@
     
     body, html {
       height: 100%;
-      background-color: #000000;     /* Forces black background */
+      background: #000;
       overflow: hidden;
       font-family: Arial, sans-serif;
     }
@@ -30,39 +30,54 @@
       padding-top: 18%;
     }
 
-    h1 { font-size: 5rem; margin-bottom: 10px; }
-    p { font-size: 1.5rem; margin-bottom: 50px; opacity: 0.9; }
+    h1 {
+      font-size: 5.5rem;
+      margin-bottom: 10px;
+      letter-spacing: 4px;
+    }
+
+    p {
+      font-size: 1.6rem;
+      margin-bottom: 50px;
+      opacity: 0.95;
+    }
 
     .btn {
-      background: rgba(255,255,255,0.15);
+      background: rgba(255, 255, 255, 0.18);
       color: white;
-      padding: 16px 40px;
+      padding: 18px 48px;
       border-radius: 50px;
+      font-size: 1.35rem;
       text-decoration: none;
-      font-size: 1.3rem;
-      backdrop-filter: blur(10px);
+      backdrop-filter: blur(12px);
       display: inline-block;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transform: scale(1.05);
     }
 
     .logo {
       position: absolute;
       top: 40px;
       left: 50px;
-      width: 180px;           /* change size as needed */
+      width: 200px;
       z-index: 3;
-      filter: drop-shadow(0 0 15px rgba(0,0,0,0.8));
+      filter: drop-shadow(0 0 20px rgba(0,0,0,0.9));
     }
   </style>
 </head>
 <body>
 
-  <!-- VIDEO -->
+  <!-- ================== CHANGE THESE TWO LINES ================== -->
   <video class="video-bg" autoplay loop muted playsinline>
     <source src="your-video.mp4" type="video/mp4">   <!-- ← CHANGE THIS -->
   </video>
 
-  <!-- TRANSPARENT PNG -->
-  <img src="your-logo.png" class="logo" alt="ZeeBeav Logo">   <!-- ← CHANGE THIS -->
+  <img src="your-logo.png" class="logo" alt="ZeeBeav">   <!-- ← CHANGE THIS (or delete the whole line if no logo) -->
+  <!-- ============================================================ -->
 
   <div class="content">
     <h1>ZEEBEEV</h1>
