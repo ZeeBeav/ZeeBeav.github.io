@@ -1,3 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Site</title>
+  <style>
+    
+  </style>
+</head>
+<body>
+
+  <!-- Background Video -->
+  <video class="video-bg" autoplay loop muted playsinline>
+    <source src="your-video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Your actual website content on top -->
+  <div class="content">
+    <h1>Welcome</h1>
+    <p>Your text and other elements go here...</p>
+  </div>
+
+</body>
+</html>
+
+
+
+
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -5,7 +36,30 @@
   <title>:>)~</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Impact:wght@400;700&family=Arial:wght@400;700&display=swap');
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
+    .video-bg {
+      position: fixed;          /* Stays in background */
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;        /* Keeps aspect ratio, fills screen */
+      z-index: -1;              /* Behind everything */
+      filter: brightness(0.75); /* Optional: darken a bit for text readability */
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
     body {
       margin: 0;
       padding: 0;
@@ -83,6 +137,13 @@
   </style>
 </head>
 <body>
+  <!-- Background Video -->
+  <video class="video-bg" autoplay loop muted playsinline>
+    <source src="your-video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Your actual website content on top -->
   <div class="container">
     <h1>BLINKY LIGHT SHOWS</h1>
     <p class="tagline">We do Electric. Bold. Unforgettable. Tesla Light Shows.</p>
