@@ -5,13 +5,11 @@
   <title>ZeeBeav - Tesla Light Shows</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    
     body, html {
       height: 100%;
       font-family: Arial, sans-serif;
       color: black; font-weight: bold; background: url(https://zeebeav.github.io/ZeeBeavLogoPatriotic.png) center/cover no-repeat fixed;
     }
-
     .video-bg {
       position: fixed;
       top: 0; left: 0;
@@ -20,7 +18,6 @@
       object-fit: cover;
       z-index: -1;
     }
-
     .content {
       position: relative;
       z-index: 2;
@@ -29,10 +26,8 @@
       max-width: 1000px;
       margin: 0 auto;
     }
-
     h1 { font-size: 5rem; margin-bottom: 22px; font-weight: bold;}
     p { font-size: 1.5rem; margin: 22px 0; line-height: 1.5; font-weight: bold;}
-    
     .cta {
       background: #00F0FF;
       color: #000;
@@ -44,7 +39,6 @@
       display: inline-block;
       margin: 15px 8px;
     }
-
     img { max-width: 75%; border-radius: 12px; margin: 25px 0; }
   </style>
 </head>
@@ -55,11 +49,9 @@
   <div class="content">
     <h1>BLINKY LIGHT SHOWS</h1>
     <p>We do Electric. Bold. Unforgettable.<br>Tesla Light Shows</p>
-
     <a href="mailto:zeebeav@gmail.com?subject=Dude, put me on the email list pls!" target="_blank" class="cta">
       JOIN THE EMAIL LIST
     </a>
-
     <p style="margin-top:50px; font-size:1.4rem;">FREE DOWNLOADS</p>
     <a href="https://www.toybox.lol/zeebeav" target="_blank" class="cta">ToyBox</a>
     <a href="https://xlightshows.io/light-shows/" target="_blank" class="cta">Xlights</a>
