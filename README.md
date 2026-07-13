@@ -1,34 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Site</title>
-  <style>
-    
-  </style>
-</head>
-<body>
-
-  <!-- Background Video -->
-  <video class="video-bg" autoplay loop muted playsinline>
-    <source src="your-video.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-
-  <!-- Your actual website content on top -->
-  <div class="content">
-    <h1>Welcome</h1>
-    <p>Your text and other elements go here...</p>
-  </div>
-
-</body>
-</html>
-
-
-
-
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
