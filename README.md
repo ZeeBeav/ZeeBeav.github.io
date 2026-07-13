@@ -45,7 +45,7 @@
       margin: 15px 8px;
     }
 
-    img { max-width: 85%; border-radius: 12px; margin: 25px 0; }
+    img { max-width: 75%; border-radius: 12px; margin: 25px 0; }
   </style>
 </head>
 <body>
