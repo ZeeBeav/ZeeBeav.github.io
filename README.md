@@ -1,140 +1,73 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ZeeBeavs Blinky Shows</title>
+  <title>ZeeBeav - Tesla Light Shows</title>
   <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
     body, html {
-      margin: 0;
-      padding: 0;
-      background-color: #000000;     /* This is the key */
       height: 100%;
+      background-color: #000000;
       overflow: hidden;
-    }
-
- @import url('https://fonts.googleapis.com/css2?family=Impact:wght@400;700&family=Arial:wght@400;700&display=swap');
-* {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+      font-family: Arial, sans-serif;
     }
 
     .video-bg {
-      position: fixed;          /* Stays in background */
-      top: 0;
-      left: 0;
+      position: fixed;
+      top: 0; left: 0;
       width: 100%;
       height: 100%;
-      object-fit: cover;        /* Keeps aspect ratio, fills screen */
-      z-index: -1;              /* Behind everything */
-      filter: brightness(0.75); /* Optional: darken a bit for text readability */
+      object-fit: cover;
+      z-index: -1;
     }
 
     .content {
       position: relative;
-      z-index: 1;
+      z-index: 2;
       color: white;
       text-align: center;
-      padding: 100px 20px;
-    }
-        .container {
-      max-width: 820px;
-      padding: 40px 20px;
+      padding-top: 15%;
     }
 
     h1 {
-      font-family: 'Impact', sans-serif;
-      font-size: 5.2rem;
-      margin: 0 0 8px 0;
-      letter-spacing: 8px;background-color: #0a0a0a;
-      color: #00F0FF;
-      text-shadow: 0 0 30px rgba(0, 240, 255, 0.7);
+      font-size: 4.5rem;
+      margin-bottom: 10px;
     }
 
-    .tagline {
-      font-size: 1.75rem;
-      margin-bottom: 25px;
-      opacity: 0.95;
-    }
-
-    img {
-      max-width: 100%;
-      width: 440px;
-      height: auto;
-      border-radius: 16px;
-      box-shadow: 0 25px 50px rgba(0, 240, 255, 0.3);
-      margin: 35px 0 25px;
-      border: none;
-    }
-
-    .subtitle {
+    p {
       font-size: 1.4rem;
-      margin: 15px 0 40px;
-      line-height: 1.6;
+      margin-bottom: 40px;
+      opacity: 0.9;
     }
 
-    .cta {
-      background: #00F0FF;
-      color: #000;
-      padding: 18px 48px;
-      font-size: 1.5rem;
-      font-weight: bold;
+    .btn {
+      background: rgba(255,255,255,0.15);
+      color: white;
+      padding: 16px 40px;
       border-radius: 50px;
       text-decoration: none;
+      font-size: 1.2rem;
+      backdrop-filter: blur(10px);
       display: inline-block;
-      margin-top: 10px;
-      transition: all 0.3s;
-      box-shadow: 0 10px 30px rgba(0, 240, 255, 0.4);
-    }
-
-    .cta:hover {
-      transform: scale(1.08);
-      background: #00ffff;
-    }
-
-    footer {
-      margin-top: 80px;
-      opacity: 0.65;
-      font-size: 1rem;
     }
   </style>
 </head>
 <body>
-  <!-- Background Video -->
+
+  <!-- Change this to your video filename -->
   <video class="video-bg" autoplay loop muted playsinline>
-    <source src="https://zeebeav.github.io/Sequence 01_2.mp4" type="video/mp4">
-    Your browser does not support the video tag.
+    <source src="your-video.mp4" type="video/mp4">
   </video>
 
-  <!-- Your actual website content on top -->
-  <div class="container">
-    <h1><img src="https://zeebeav.github.io/ZeeBeav_BlinkyShows (1).png">
-    <br>
-    <img src="https://zeebeav.github.io/ZeeBeav_BlinkyShows.png"></h1>
-    <p class="tagline">We do Electric. Bold. Unforgettable. Tesla Light Shows.</p>
+  <div class="content">
+    <h1>ZEEBEEV</h1>
+    <p>Electric. Bold. Unforgettable.<br>Tesla Light Shows</p>
+    <a href="mailto:your@email.com?subject=ZeeBeav%20Inquiry" target="_blank" class="btn">
+      JOIN THE WAITLIST
+    </a>
+  </div>
 
-    <img src="https://zeebeav.github.io/ZeeBeavLogoPatriotic.png" alt="Zeebeev Helmet & License Plate">
-
-    <p class="subtitle">
-      Catch the ZeeBeev license plate on the streets</p><br>
-
-    <a href="mailto:Zeebeav@gmail.com?subject=Dude, put me on the email list pls!" target="_blank" class="cta">JOIN THE EMAIL LIST</a>
-
-    <p class="subtitle">
-      FREE DOWNLOAD SITES:<br>
-
-       <a href="https://www.toybox.lol/zeebeav" target="_blank" class="cta">The ToyBox</a>
-       <a href="https://xlightshows.io/light-shows/" target="_blank" class="cta">Xlights</a>
-       <a href="https://teslalightshare.io/4247/light-shows" target="_blank" class="cta">TeslaShare</a>
-       <a href="https://www.patreon.com/zeebeav" target="_blank" class="cta">Patreon</a>
-       
-       
-
-      </p>
-  <p class="tagline"><br>We even have Tshirts!<br>
-  <img src="https://zeebeav.github.io/zeebeavTshirt.png" alt="Zeebeev shirt"><br>
-  <a href="https://smokehbearsden.com/products/zeebeav-blinky-shows-tee?variant=48170385080558" target="_blank" class="cta"> $40 T's</a>
-    <footer>
-      zeebeav.com &amp; zeebeev.com
-    </footer>
-
+</body>
+</html>
