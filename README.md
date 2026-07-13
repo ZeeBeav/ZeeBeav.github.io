@@ -116,7 +116,7 @@
   <div class="container">
     <h1><img src="https://zeebeav.github.io/ZeeBeav_BlinkyShows(1).avif"></img>
     <br>
-    <img src="https://zeebeav.github.io/ZeeBeav_BlinkyShows.avif"></img></h1>
+    <img src="https://zeebeav.github.io/ZeeBeav_BlinkyShows.png"></img></h1>
     <p class="tagline">We do Electric. Bold. Unforgettable. Tesla Light Shows.</p>
 
     <img src="https://zeebeav.github.io/ZeeBeavLogoPatriotic.png" alt="Zeebeev Helmet & License Plate">
