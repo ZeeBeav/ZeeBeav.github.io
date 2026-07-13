@@ -57,7 +57,7 @@
     <a href="https://www.toybox.lol/zeebeav" target="_blank" class="cta">ToyBox</a>
     <a href="https://xlightshows.io/light-shows/" target="_blank" class="cta">Xlights</a>
     <a href="https://teslalightshare.io/4247/light-shows" target="_blank" class="cta">TeslaShare</a>
-    <a href="[https://teslalightshare.io/4247/light-shows](https://www.patreon.com/c/ZeeBeav)" target="_blank" class="cta">Patreon</a>
+    <a href="https://www.patreon.com/c/ZeeBeav" target="_blank" class="cta">Patreon</a>
 <br><p></p>
 <p> & We even have Tshirts!</p>
     <img src="https://zeebeav.github.io/zeebeavTshirt.png" alt="T-shirt" style="margin-top:60px;"><br><br>
