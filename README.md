@@ -46,7 +46,7 @@
   </video>
 
   <div class="content">
-    <h1>ZEEBEEV</h1>
+    <h1></h1>
     <p>We do Electric. Bold. Unforgettable.<br>Tesla Light Shows</p>
 <br>
     <img src="https://zeebeav.github.io/ZeeBeavLogoPatriotic.png" alt="Patriotic"><br>
