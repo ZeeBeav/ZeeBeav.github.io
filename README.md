@@ -58,34 +58,18 @@
       background: rgba(255, 255, 255, 0.3);
       transform: scale(1.05);
     }
-
-    .logo {
-      position: absolute;
-      top: 40px;
-      left: 50px;
-      width: 200px;
-      z-index: 3;
-      filter: drop-shadow(0 0 20px rgba(0,0,0,0.9));
-    }
   </style>
 </head>
 <body>
 
-  <!-- ================== CHANGE THESE TWO LINES ================== -->
   <video class="video-bg" autoplay loop muted playsinline>
-    <source src="your-video.mp4" type="video/mp4">   <!-- ← CHANGE THIS -->
+    <source src="Sequence 01_2.mp4" type="video/mp4">
   </video>
-
-  <img src="your-logo.png" class="logo" alt="ZeeBeav">   <!-- ← CHANGE THIS (or delete the whole line if no logo) -->
-  <!-- ============================================================ -->
 
   <div class="content">
     <h1>ZEEBEEV</h1>
     <p>Electric. Bold. Unforgettable.<br>Tesla Light Shows</p>
-    <a href="mailto:your@email.com?subject=ZeeBeav%20Inquiry" target="_blank" class="btn">
+    <a href="mailto:zeebeav@gmail.com?subject=ZeeBeav%20Inquiry" target="_blank" class="btn">
       JOIN THE WAITLIST
     </a>
-  </div>
-
-</body>
-</html>
+  </div
