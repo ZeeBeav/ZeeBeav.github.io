@@ -72,6 +72,6 @@
     <img src="https://zeebeav.github.io/zeebeavTshirt.png" alt="T-shirt" style="margin-top:60px;"><br><br>
     <a href="https://smokehbearsden.com/products/zeebeav-blinky-shows-tee?variant=48170385080558" target="_blank" class="cta">$40 T's</a>
   </div>
-<footer> ZeeBeav.com & ZEEBEEV.com</footer>
+<footer align="center"> ZeeBeav.com & ZEEBEEV.com</footer>
 </body>
 </html>
