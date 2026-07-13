@@ -40,11 +40,9 @@
   </style>
 </head>
 <body>
-
   <video class="video-bg" autoplay loop muted playsinline>
     <source src="https://zeebeav.github.io/Sequence 01_2.mp4" type="video/mp4">
   </video>
-
   <div class="content">
     <h1></h1>
     <p>We do Electric. Bold. Unforgettable.<br>Tesla Light Shows</p>
