@@ -9,7 +9,7 @@
     body, html {
       height: 100%;
       font-family: Arial, sans-serif;
-      color: black;
+      color: black; font-weight: bold;
     }
 
     .video-bg {
