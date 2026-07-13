@@ -122,7 +122,7 @@
     <p class="subtitle">
       Catch the ZeeBeev license plate on the streets</p><br>
 
-    <a href="mailto:Zeebeav@gmail.com" class="cta">JOIN THE EMAIL LIST</a>
+    <a href="mailto:Zeebeav@gmail.com?subject=Dude, put me on the email list pls!" class="cta">JOIN THE EMAIL LIST</a>
 
     <p class="subtitle">
       FREE DOWNLOAD SITES:<br>
