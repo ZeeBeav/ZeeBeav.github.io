@@ -9,7 +9,6 @@
     
     body, html {
       height: 100%;
-      background: #000;
       font-family: Arial, sans-serif;
       color: white;
     }
