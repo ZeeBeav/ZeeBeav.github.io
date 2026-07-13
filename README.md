@@ -52,7 +52,7 @@
       font-family: 'Impact', sans-serif;
       font-size: 5.2rem;
       margin: 0 0 8px 0;
-      letter-spacing: 8px;
+      letter-spacing: 8px;background-color: #0a0a0a;
       color: #00F0FF;
       text-shadow: 0 0 30px rgba(0, 240, 255, 0.7);
     }
