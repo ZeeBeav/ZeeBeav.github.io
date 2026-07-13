@@ -127,7 +127,7 @@
     <p class="subtitle">
       FREE DOWNLOAD SITES:<br>
 
-       <a href="http://www.toybox.lol/Zeebeav/" class="cta">The ToyBox</a>
+       <a href="https://www.toybox.lol/zeebeav" class="cta">The ToyBox</a>
        <a href="https://xlightshows.io/light-shows/" class="cta">Xlights</a>
        <a href="https://teslalightshare.io/4247/light-shows" class="cta">TeslaShare</a>
        <a href="https://www.patreon.com/zeebeav" class="cta">Patreon</a>
