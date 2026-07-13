@@ -13,8 +13,8 @@
     .video-bg {
       position: fixed;
       top: 0; left: 0;
-      width: 75%;
-      height: 75%;
+      width: 100%;
+      height: 100%;
       object-fit: cover;
       z-index: -1;
     }
