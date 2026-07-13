@@ -58,7 +58,6 @@
     <h1>BLINKY LIGHT SHOWS</h1>
     <p>We do Electric. Bold. Unforgettable.<br>Tesla Light Shows</p>
 
-    <img src="https://zeebeav.github.io/ZeeBeav_BlinkyShows.png" alt="Blinky Shows"><br><br>
     <img src="https://zeebeav.github.io/ZeeBeavLogoPatriotic.png" alt="Patriotic Logo"><br><br>
 
     <a href="mailto:zeebeav@gmail.com?subject=Dude, put me on the email list pls!" target="_blank" class="cta">
@@ -69,7 +68,8 @@
     <a href="https://www.toybox.lol/zeebeav" target="_blank" class="cta">ToyBox</a>
     <a href="https://xlightshows.io/light-shows/" target="_blank" class="cta">Xlights</a>
     <a href="https://teslalightshare.io/4247/light-shows" target="_blank" class="cta">TeslaShare</a>
-
+<br>
+<p> We have Tshirts!</p>
     <img src="https://zeebeav.github.io/zeebeavTshirt.png" alt="T-shirt" style="margin-top:60px;"><br><br>
     <a href="https://smokehbearsden.com/products/zeebeav-blinky-shows-tee?variant=48170385080558" target="_blank" class="cta">$40 T's</a>
   </div>
