@@ -47,7 +47,7 @@
     <source src="https://zeebeav.github.io/Sequence 01_2.mp4" type="video/mp4">
   </video>
   <div class="content">
-    <h1><br>FREE BLINKY LIGHT SHOWS</h1>
+    <h1><img src="https://zeebeav.github.io/ZeeBeav_Blackfont.png><br>FREE BLINKY LIGHT SHOWS</h1>
     <p>We do Electric. Bold. Unforgettable.<br>Tesla Light Shows</p>
     <img src="https://zeebeav.github.io/ZeeBeavLogoPatrioticsm.png" alt="T-shirt" style="margin-top:60px;"><br>
     <a href="mailto:zeebeav@gmail.com?subject=Dude, put me on the email list pls!" target="_blank" class="cta">
