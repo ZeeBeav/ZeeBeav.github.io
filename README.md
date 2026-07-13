@@ -48,14 +48,11 @@
   <div class="content">
     <h1>ZEEBEEV</h1>
     <p>We do Electric. Bold. Unforgettable.<br>Tesla Light Shows</p>
-
-    <img src="https://zeebeav.github.io/ZeeBeav_BlinkyShows.png" alt="Shows"><br>
+<br>
     <img src="https://zeebeav.github.io/ZeeBeavLogoPatriotic.png" alt="Patriotic"><br>
-
     <a href="mailto:zeebeav@gmail.com?subject=Dude, put me on the email list pls!" target="_blank" class="cta">
       JOIN THE EMAIL LIST
     </a>
-
     <p style="margin-top:40px;">FREE DOWNLOADS</p>
     <a href="https://www.toybox.lol/zeebeav" target="_blank" class="cta">ToyBox</a>
     <a href="https://xlightshows.io/light-shows/" target="_blank" class="cta">Xlights</a>
