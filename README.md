@@ -37,21 +37,7 @@
       text-align: center;
       padding: 100px 20px;
     }
-    body {
-      margin: 0;
-      padding: 0;background-color: #0a0a0a;
-      background: #0a0a0a;
-      color: #000000;
-      font-family: 'Arial', sans-serif;
-      text-align: center;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .container {
+        .container {
       max-width: 820px;
       padding: 40px 20px;
     }
