@@ -9,7 +9,7 @@
     body, html {
       height: 100%;
       font-family: Arial, sans-serif;
-      color: black; font-weight: bold; background: url('https://zeebeav.github.io/ZeeBeavLogoPatriotic.png') center/cover no-repeat fixed;
+      color: black; font-weight: bold; background: url(https://zeebeav.github.io/ZeeBeavLogoPatriotic.png) center/cover no-repeat fixed;
     }
 
     .video-bg {
