@@ -139,7 +139,7 @@
 <body>
   <!-- Background Video -->
   <video class="video-bg" autoplay loop muted playsinline>
-    <source src="your-video.mp4" type="video/mp4">
+    <source src="https://zeebeav.github.io/Sequence 01_2.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 
