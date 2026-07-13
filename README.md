@@ -54,6 +54,9 @@
     <p style="margin-top:40px;">FREE DOWNLOADS</p>
     <a href="https://www.toybox.lol/zeebeav" target="_blank" class="cta">ToyBox</a>
     <a href="https://xlightshows.io/light-shows/" target="_blank" class="cta">Xlights</a>
+    <br>
+     <img src="https://zeebeav.github.io/zeebeavTshirt.png" alt="Tshirt"><br>
+    <a href="https://smokehbearsden.com/products/zeebeav-blinky-shows-tee?variant=48170385080558" target="_blank" class="cta">$40</a>
   </div>
 </body>
 </html>
