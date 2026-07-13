@@ -8,7 +8,7 @@
     body, html {
       height: 100%;
       font-family: Arial, sans-serif;
-      color: black; font-weight: bold; 
+      color: black; font-weight: bold; backgroun-color: white;
     }
     .video-bg {
       position: fixed;
