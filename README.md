@@ -4,6 +4,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ZeeBeavs Blinky Shows</title>
   <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      background-color: #000000;     /* This is the key */
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .video-bg {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
     @import url('https://fonts.googleapis.com/css2?family=Impact:wght@400;700&family=Arial:wght@400;700&display=swap');
 * {
       margin: 0;
