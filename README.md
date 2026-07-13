@@ -122,22 +122,22 @@
     <p class="subtitle">
       Catch the ZeeBeev license plate on the streets</p><br>
 
-    <a href="mailto:Zeebeav@gmail.com?subject=Dude, put me on the email list pls!" class="cta">JOIN THE EMAIL LIST</a>
+    <a href="mailto:Zeebeav@gmail.com?subject=Dude, put me on the email list pls!" target="_blank" class="cta">JOIN THE EMAIL LIST</a>
 
     <p class="subtitle">
       FREE DOWNLOAD SITES:<br>
 
-       <a href="https://www.toybox.lol/zeebeav target="_blank"" class="cta">The ToyBox</a>
-       <a href="https://xlightshows.io/light-shows/" class="cta">Xlights</a>
-       <a href="https://teslalightshare.io/4247/light-shows" class="cta">TeslaShare</a>
-       <a href="https://www.patreon.com/zeebeav" class="cta">Patreon</a>
+       <a href="https://www.toybox.lol/zeebeav target="_blank" class="cta">The ToyBox</a>
+       <a href="https://xlightshows.io/light-shows/" target="_blank" class="cta">Xlights</a>
+       <a href="https://teslalightshare.io/4247/light-shows" target="_blank" class="cta">TeslaShare</a>
+       <a href="https://www.patreon.com/zeebeav" target="_blank" class="cta">Patreon</a>
        
        
 
       </p>
 <p class="tagline"><br>We even have Tshirts!<br>
   <img src="https://zeebeav.github.io/zeebeavTshirt.png" alt="Zeebeev shirt">
-  <a href="https://smokehbearsden.com/products/zeebeav-blinky-shows-tee?variant=48170385080558" class="cta"> $40 T's</a>
+  <a href="https://smokehbearsden.com/products/zeebeav-blinky-shows-tee?variant=48170385080558" target="_blank" class="cta"> $40 T's</a>
     <footer>
       zeebeav.com &amp; zeebeev.com
     </footer>
