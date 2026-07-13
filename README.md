@@ -67,7 +67,7 @@
     <a href="https://xlightshows.io/light-shows/" target="_blank" class="cta">Xlights</a>
     <a href="https://teslalightshare.io/4247/light-shows" target="_blank" class="cta">TeslaShare</a>
     <a href="[https://teslalightshare.io/4247/light-shows](https://www.patreon.com/c/ZeeBeav)" target="_blank" class="cta">Patreon</a>
-<br>
+<br><br><p></p>
 <p> We have Tshirts!</p>
     <img src="https://zeebeav.github.io/zeebeavTshirt.png" alt="T-shirt" style="margin-top:60px;"><br><br>
     <a href="https://smokehbearsden.com/products/zeebeav-blinky-shows-tee?variant=48170385080558" target="_blank" class="cta">$40 T's</a>
