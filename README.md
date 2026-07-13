@@ -10,7 +10,7 @@
     body, html {
       height: 100%;
       font-family: Arial, sans-serif;
-      color: white;
+      color: black;
     }
 
     .video-bg {
@@ -56,7 +56,7 @@
   </video>
 
   <div class="content">
-    <h1></h1>
+    <h1>BLINKY LIGHT SHOWS</h1>
     <p>We do Electric. Bold. Unforgettable.<br>Tesla Light Shows</p>
 
     <img src="https://zeebeav.github.io/ZeeBeav_BlinkyShows.png" alt="Blinky Shows"><br><br>
