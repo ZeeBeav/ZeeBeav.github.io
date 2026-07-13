@@ -122,7 +122,7 @@
     <p class="subtitle">
       Catch the ZeeBeev license plate on the streets</p>
 
-    <a href="#" class="cta">COMING SOON — JOIN THE WAITLIST</a>
+    <a href="mailto:Zeebeav@gmail.com" class="cta">JOIN THE EMAIL LIST</a>
 
     <footer>
       zeebeav.com &amp; zeebeev.com
