@@ -135,9 +135,9 @@
        
 
       </p>
-<p class="tagline">We even have Tshirts!<br>
+<p class="tagline"><br>We even have Tshirts!<br>
   <img src="https://zeebeav.github.io/zeebeavTshirt.png" alt="Zeebeev shirt">
-  <a href="https://smokehbearsden.com/products/zeebeav-blinky-shows-tee?variant=48170385080558"> $40 T's</a>
+  <a href="https://smokehbearsden.com/products/zeebeav-blinky-shows-tee?variant=48170385080558" class="cta"> $40 T's</a>
     <footer>
       zeebeav.com &amp; zeebeev.com
     </footer>
