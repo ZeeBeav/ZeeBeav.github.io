@@ -30,8 +30,8 @@
       margin: 0 auto;
     }
 
-    h1 { font-size: 5rem; margin-bottom: 20px; }
-    p { font-size: 1.5rem; margin: 15px 0; line-height: 1.5; }
+    h1 { font-size: 5rem; margin-bottom: 22px; font-weight: bold;}
+    p { font-size: 1.5rem; margin: 22px 0; line-height: 1.5; font-weight: bold;}
     
     .cta {
       background: #00F0FF;
