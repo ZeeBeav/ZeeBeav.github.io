@@ -56,7 +56,7 @@
     <h1>BLINKY LIGHT SHOWS</h1>
     <p>We do Electric. Bold. Unforgettable.<br>Tesla Light Shows</p>
 
-    <img src="https://zeebeav.github.io/ZeeBeavLogoPatriotic.png" alt="Patriotic Logo"><br><br>
+    <!--<img src="https://zeebeav.github.io/ZeeBeavLogoPatriotic.png" alt="Patriotic Logo"><br><br>-->
 
     <a href="mailto:zeebeav@gmail.com?subject=Dude, put me on the email list pls!" target="_blank" class="cta">
       JOIN THE EMAIL LIST
