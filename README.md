@@ -141,6 +141,4 @@
     <footer>
       zeebeav.com &amp; zeebeev.com
     </footer>
-  </div>
-</body>
-</html>
+
