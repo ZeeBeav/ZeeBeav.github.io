@@ -47,7 +47,7 @@
 </head>
 <body>
   <video class="video-bg" autoplay loop muted playsinline>
-    <source src="https://zeebeav.github.io/Sequence 01_2.mp4" type="video/mp4">
+    <source src="https://zeebeav.github.io/Sequence 01_3.mp4" type="video/mp4">
   </video>
   <div class="content">
     <h1><img src="https://zeebeav.github.io/ZeeBeavs_Blackfont.png"><br>FREE BLINKY LIGHT SHOWS</h1>
