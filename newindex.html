@@ -5,16 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ZEEBEAV • Tesla Light Shows</title>
   <style>
-    body {
-      margin: 0;
-      padding: 0;
+    body { 
+      margin:0; padding:0; 
+      color: white; 
+      text-align: center; 
       font-family: system-ui, sans-serif;
-      color: white;
-      text-align: center;
-      background: #000;
     }
 
-    /* Background Video - Fixed & Stable */
+    /* Video Fix */
     .video-bg-container {
       position: fixed;
       top: 0; left: 0;
@@ -34,82 +32,51 @@
       filter: brightness(0.75) contrast(1.1);
     }
 
-    /* Dark overlay for better text readability */
+    /* Light overlay so text is readable but not heavy */
     .video-bg-container::after {
       content: '';
       position: absolute;
       top: 0; left: 0;
       width: 100%; height: 100%;
-      background: rgba(0, 0, 0, 0.4);
+      background: rgba(0, 0, 0, 0.35);
       z-index: -1;
     }
 
     .content {
       position: relative;
       z-index: 1;
-      padding: 40px 20px;
+      padding: 20px;
       min-height: 100dvh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    h1 {
-      font-size: 2.8rem;
-      margin: 20px 0 10px;
-      text-shadow: 0 3px 15px rgba(0,0,0,0.8);
-    }
-
-    .links {
-      margin: 30px 0;
-      font-size: 1.2rem;
-      line-height: 2;
-    }
-
-    a {
-      color: #fff;
-      text-decoration: underline;
-    }
-
-    footer {
-      margin-top: 50px;
-      opacity: 0.85;
-      font-size: 1rem;
-    }
-
-    @media (max-width: 768px) {
-      h1 { font-size: 2.3rem; }
-      .content { padding: 25% 20px; }
     }
   </style>
 </head>
 <body>
 
+  <!-- Background Video -->
   <div class="video-bg-container">
     <video class="video-bg" autoplay loop muted playsinline preload="none" poster="https://zeebeav.github.io/ZeeBeavLogoPatriotic.png">
       <source src="http://zeebeav.github.io/Sequence 01_3.mp4" type="video/mp4">
     </video>
   </div>
 
+  <!-- YOUR ORIGINAL CONTENT GOES HERE -->
   <div class="content">
-    <h1>ZEEBEAV • Tesla Light Shows</h1>
-    
-    <p style="font-size:1.4rem; margin:20px 0;">BOLD • UNFORGETTABLE • FREE</p>
+    <!-- Paste all your original text, links, hidden easter eggs, images, etc. right here -->
+    # ZEEBEAV • Tesla Light Shows
 
-    <div class="links">
-      <a href="mailto:zeebeav@gmail.com?subject=ZeeBeav Inquiry">JOIN THE WAITLIST</a><br><br>
-      
-      <strong>FREE LIGHT SHOWS</strong><br>
-      <a href="https://www.toybox.lol/zeebeav">ToyBox</a> • 
-      <a href="https://xlightshows.io/light-shows/">Xlights</a> • 
-      <a href="https://teslalightshare.io/4247/light-shows">TeslaShare</a>
-    </div>
+    BOLD • UNFORGETTABLE • FREE
 
-    <p style="margin:40px 0 20px;">
-      <a href="https://smokehbearsden.com/products/zeebeav-blinky-shows-tee?variant=48170385080558">SHOP $40 T'S</a>
-    </p>
+    [JOIN THE WAITLIST](mailto:zeebeav@gmail.com?subject=ZeeBeav Inquiry)
 
-    <footer>FOLLOW THE MOVEMENT</footer>
+    FREE LIGHT SHOWS
+
+    [ToyBox](https://www.toybox.lol/zeebeav) [Xlights](https://xlightshows.io/light-shows/) [TeslaShare](https://teslalightshare.io/4247/light-shows)
+
+    [SHOP $40 T'S](https://smokehbearsden.com/products/zeebeav-blinky-shows-tee?variant=48170385080558)
+
+    FOLLOW THE MOVEMENT
+
+    <!-- Add your hidden easter egg links anywhere you want -->
   </div>
 
 </body>
