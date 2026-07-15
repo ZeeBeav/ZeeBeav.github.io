@@ -24,16 +24,6 @@
       font-family: 'Segoe UI', system-ui, sans-serif;
       line-height: 1.6;
     }
-
-    .video-bg {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      object-fit: cover;
-      z-index: -1;
-      filter: brightness(0.75) contrast(1.1);
-    }
-
     .content {
       position: relative;
       z-index: 2;
@@ -102,14 +92,51 @@
     @media (max-width: 768px) {
       .content { padding: 80px 15px 60px; }
       .logo { letter-spacing: 4px; }
+       .video-bg-container {
+        position: fixed;           /* Keep fixed */
+        height: 100vh;
     }
-  </style>
+      
+    .video-bg {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transform: none;           /* Reset transform on mobile */
+    }
+    }
+
+    /* CSS */
+.video-bg-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;           /* Use viewport height */
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    filter: brightness(0.75) contrast(1.1);
+}
+
+</style>
 </head>
 <body>
-
-  <video class="video-bg" autoplay loop muted playsinline preload="none" poster="https://zeebeav.github.io/ZeeBeavLogoPatriotic.png" position: fixed>
-    <source src="http://zeebeav.github.io/Sequence 01_3.mp4" type="video/mp4">
-  </video>
+<div class="video-bg-container">
+    <video class="video-bg" autoplay loop muted playsinline preload="none" poster="https://zeebeav.github.io/ZeeBeavLogoPatriotic.png">
+        <source src="http://zeebeav.github.io/Sequence 01_3.mp4" type="video/mp4">
+    </video>
+</div>
 
   <div class="content">
     <h1 class="logo"><a href="https://x.com/Zeebeav" target="_blank" style="text-decoration: none; outline: none;">ZEEBEAV</a></h1>
