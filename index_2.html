@@ -1,11 +1,11 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ZEEBEAV • Tesla Light Shows</title>
+  <title>ZEEBEEV • Tesla Light Shows</title>
   
-  <!-- Favicon -->
-  <link rel="icon" href="http://zeebeav.github.io/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -13,7 +13,8 @@
     body {
       background: #0a0a0a;
       color: #fff;
-      font-family: 'Segoe UI', system-ui, sans-serif;font-weight: bold;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      line-height: 1.6;
     }
 
     .video-bg {
@@ -28,104 +29,115 @@
     .content {
       position: relative;
       z-index: 2;
-      padding: 140px 20px 100px;
+      padding: 100px 20px 80px;
       text-align: center;
       max-width: 1100px;
       margin: 0 auto;
     }
 
-    .logo {
-      font-size: 6.2rem;
-      font-weight: 900;
-      letter-spacing: 8px;
+    .logo { 
+      font-size: clamp(3.5rem, 10vw, 6.2rem); 
+      font-weight: 900; 
+      letter-spacing: 6px; 
       background: linear-gradient(90deg, #fff, #00f0ff);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      margin-bottom: 10px;
+      margin-bottom: 10px; 
     }
 
-    .tagline {
-      font-size: 1.75rem;
-      font-weight: 400;
-      letter-spacing: 6px;
-      opacity: 0.9;
-      margin-bottom: 70px;
+    .tagline { 
+      font-size: clamp(1.2rem, 4vw, 1.75rem); 
+      font-weight: 400; 
+      letter-spacing: 4px; 
+      opacity: 0.9; 
+      margin-bottom: 50px; 
     }
 
     .elite-btn {
       background: transparent;
       color: #fff;
       border: 2px solid #00f0ff;
-      padding: 18px 52px;
-      font-size: 1.3rem;
-      letter-spacing: 3px;
+      padding: 16px 40px;
+      font-size: 1.2rem;
+      letter-spacing: 2px;
       text-decoration: none;
       border-radius: 50px;
+      margin: 10px;
+      display: inline-block;
       transition: all 0.4s ease;
-      margin: 12px;
-      text-transform: uppercase;
     }
 
     .elite-btn:hover {
       background: #00f0ff;
       color: #000;
       transform: scale(1.05);
-      box-shadow: 0 0 30px rgba(0, 240, 255, 0.6);
     }
 
-    img {
-      max-width: 88%;
-      border-radius: 12px;
-      margin: 35px 0;
-      box-shadow: 0 25px 50px rgba(0,0,0,0.8);
+    img { 
+      max-width: 92%; 
+      border-radius: 12px; 
+      margin: 25px 0; 
+      box-shadow: 0 20px 40px rgba(0,0,0,0.7);
     }
 
-    .downloads {
-      margin: 70px 0 50px;
+    .downloads, .follow-section {
+      margin: 50px 0;
+    }
+
+    .social-links a {
+      font-size: 1.8rem;
+      margin: 0 15px;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .content { padding: 80px 15px 60px; }
+      .logo { letter-spacing: 4px; }
     }
   </style>
 </head>
 <body>
 
-  <video class="video-bg" autoplay loop muted playsinline preload="none" poster="https://zeebeav.github.io/ZeeBeavLogoPatriotic.png">
+  <video class="video-bg" autoplay loop muted playsinline >
     <source src="http://zeebeav.github.io/Sequence 01_3.mp4" type="video/mp4">
   </video>
 
   <div class="content">
-    <h1 class="logo">ZEEBEAV</h1>
+    <h1 class="logo">ZEEBEEV</h1>
     <p class="tagline">ELECTRIC • BOLD • UNFORGETTABLE</p>
 
     <img src="http://zeebeav.github.io/ZeeBeav_BlinkyShows.png" alt="Blinky Shows"><br>
     <img src="http://zeebeav.github.io/ZeeBeavLogoPatriotic.png" alt="Patriotic">
 
-    <div style="margin: 60px 0 40px;">
-      <a href="mailto:zeebeav@gmail.com?subject=ZeeBeav%20Inquiry" target="_blank" class="elite-btn">
+    <div style="margin: 50px 0;">
+      <a href="mailto:zeebeav@gmail.com?subject=ZeeBeav Inquiry" target="_blank" class="elite-btn">
         JOIN THE WAITLIST
       </a>
     </div>
 
     <div class="downloads">
-      <p style="font-size:1.45rem; margin-bottom:25px; letter-spacing:2px;">FREE LIGHT SHOWS</p><br><BR>
+      <p style="font-size:1.35rem; margin-bottom:20px;">FREE LIGHT SHOWS</p><BR>
       <a href="https://www.toybox.lol/zeebeav" target="_blank" class="elite-btn">ToyBox</a>
       <a href="https://xlightshows.io/light-shows/" target="_blank" class="elite-btn">Xlights</a>
       <a href="https://teslalightshare.io/4247/light-shows" target="_blank" class="elite-btn">TeslaShare</a>
-      <a href="https://www.patreon.com/zeebeav" target="_blank" class="elite-btn">Patreon</a>
     </div>
 
-    <img src="http://zeebeav.github.io/zeebeavTshirt1.png" alt="T-shirt"><br><br>
+    <img src="zeebeavTshirt.png" alt="T-shirt"><br><br>
     <a href="https://smokehbearsden.com/products/zeebeav-blinky-shows-tee?variant=48170385080558" target="_blank" class="elite-btn">
       SHOP $40 T'S
     </a>
-    
-    <!-- Follow Us Section -->
+
+    <!-- Follow Us -->
     <div class="follow-section">
-      <p style="font-size:1.5rem; margin-bottom:25px;"><br><br>FOLLOW THE MOVEMENT</p>
+      <p style="font-size:1.4rem; margin-bottom:20px;">FOLLOW THE MOVEMENT</p>
       <div class="social-links">
         <a href="https://x.com/Zeebeav" target="_blank">𝕏</a>
-        <a href="https://youtube.com/@ZeeBeav" target="_blank">▶ YouTube</a>
-        <a href="https://instagram.com/ZeeBeav" target="_blank">📷 Instagram</a>
+        <a href="https://youtube.com/@Zeebeav" target="_blank">▶</a>
+        <a href="https://instagram.com/Zeebeav" target="_blank">📷</a>
       </div>
+    </div>
   </div>
-<footer><br>www.ZeeBeav.com & www.ZEEBEEV.com</footer>
+
 </body>
 </html>
