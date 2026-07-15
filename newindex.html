@@ -1,52 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BSCM6QDED4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BSCM6QDED4');
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ZEEBEAV • Tesla Light Shows</title>
+  
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
   <style>
-    body { 
-      margin:0; padding:0; 
-      color: white; 
-      text-align: center; 
-      font-family: system-ui, sans-serif;
-    }
-
-    /* Video Fix */
-    .video-bg-container {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%;
-      height: 100dvh;
-      overflow: hidden;
-      z-index: -2;
-    }
-
-    .video-bg {
-      position: absolute;
-      top: 50%; left: 50%;
-      min-width: 100%;
-      min-height: 100%;
-      transform: translate(-50%, -50%);
-      object-fit: cover;
-      filter: brightness(0.75) contrast(1.1);
-    }
-
-    /* Light overlay so text is readable but not heavy */
-    .video-bg-container::after {
-      content: '';
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(0, 0, 0, 0.35);
-      z-index: -1;
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      background: #0a0a0a;
+      color: #fff;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      line-height: 1.6;
     }
 
     .content {
       position: relative;
-      z-index: 1;
-      padding: 20px;
-      min-height: 100dvh;
+      z-index: 2;
+      padding: 100px 20px 80px;
+      text-align: center;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .logo { 
+      font-size: clamp(3.5rem, 10vw, 6.2rem); 
+      font-weight: 900; 
+      letter-spacing: 6px; 
+      background: linear-gradient(90deg, #fff, #00f0ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 10px; 
+    }
+
+    .tagline { 
+      font-size: clamp(1.2rem, 4vw, 1.75rem); 
+      font-weight: 400; 
+      letter-spacing: 4px; 
+      opacity: 0.9; 
+      margin-bottom: 50px; 
+    }
+
+    .elite-btn {
+      background: transparent;
+      color: #fff;
+      border: 2px solid #00f0ff;
+      padding: 16px 40px;
+      font-size: 1.2rem;
+      letter-spacing: 2px;
+      text-decoration: none;
+      border-radius: 50px;
+      margin: 10px;
+      display: inline-block;
+      transition: all 0.4s ease;
+    }
+
+    .elite-btn:hover {
+      background: #00f0ff;
+      color: #000;
+      transform: scale(1.05);
+    }
+
+    img { 
+      max-width: 92%; 
+      border-radius: 12px; 
+      margin: 25px 0; 
+      box-shadow: 0 20px 40px rgba(0,0,0,0.7);
+    }
+
+    .downloads, .follow-section {
+      margin: 50px 0;
+    }
+
+    .social-links a {
+      font-size: 1.8rem;
+      margin: 0 15px;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* === FIXED BACKGROUND VIDEO === */
+    .video-bg-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100dvh;           /* Best for mobile */
+      z-index: -1;
+      overflow: hidden;
+    }
+
+    .video-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   </style>
 </head>
@@ -59,25 +120,58 @@
     </video>
   </div>
 
-  <!-- YOUR ORIGINAL CONTENT GOES HERE -->
   <div class="content">
-    <!-- Paste all your original text, links, hidden easter eggs, images, etc. right here -->
-    # ZEEBEAV • Tesla Light Shows
+    <h1 class="logo"><a href="https://x.com/Zeebeav" target="_blank" style="text-decoration: none; outline: none;">ZEEBEAV</a></h1>
+    
+    <p class="tagline">
+      <a href="https://youtu.be/ehgGAYQVfuk?si=VjbE8aWVXCgmHp0Q" target="_blank" style="text-decoration: none; outline: none;">BOLD </a>• 
+      <a href="https://youtu.be/fCQSefmOQcQ?si=7u0Iq_X5sY-OJWdg&t=100" target="_blank" style="text-decoration: none; outline: none;">UNFORGETTABLE </a>• 
+      <a href="https://www.patreon.com/ZeeBeav" target="_blank" style="text-decoration: none; outline: none;">FREE</a>
+    </p>
 
-    BOLD • UNFORGETTABLE • FREE
+    <p align="center">
+      <a href="https://youtu.be/sOsr0uW1yII?si=y_UB-gyN03V2Tx7X&t=11" target="_blank" style="text-decoration: none; outline: none;">
+        <img src="http://zeebeav.github.io/ZeeBeav_BlinkyShows.png" alt="Blinky Shows" style="border: none; display: block;">
+      </a>
+    </p>
 
-    [JOIN THE WAITLIST](mailto:zeebeav@gmail.com?subject=ZeeBeav Inquiry)
+    <p align="center">    
+      <a href="https://youtu.be/A8kKia0mw7Y?si=486WS9yY4NqBR_jb" target="_blank" style="text-decoration: none; outline: none;">
+        <img src="http://zeebeav.github.io/ZeeBeavLogoPatriotic.png" alt="Patriotic" style="border: none; display: block;">
+      </a>
+    </p>
 
-    FREE LIGHT SHOWS
+    <div style="margin: 50px 0;">
+      <a href="mailto:zeebeav@gmail.com?subject=ZeeBeav Inquiry" target="_blank" class="elite-btn">
+        JOIN THE WAITLIST
+      </a>
+    </div>
 
-    [ToyBox](https://www.toybox.lol/zeebeav) [Xlights](https://xlightshows.io/light-shows/) [TeslaShare](https://teslalightshare.io/4247/light-shows)
+    <div class="downloads" align="center">
+      <p style="font-size:1.35rem; margin-bottom:20px;">FREE LIGHT SHOWS</p><br>
+      <a href="https://www.toybox.lol/zeebeav" target="_blank" class="elite-btn">ToyBox</a>
+      <a href="https://xlightshows.io/light-shows/" target="_blank" class="elite-btn">Xlights</a>
+      <a href="https://teslalightshare.io/4247/light-shows" target="_blank" class="elite-btn">TeslaShare</a>
+    </div>
 
-    [SHOP $40 T'S](https://smokehbearsden.com/products/zeebeav-blinky-shows-tee?variant=48170385080558)
+    <div align="center">
+      <img src="http://zeebeav.github.io/zeebeavTshirt1.png" alt="T-shirt"><br><br>
+      <a href="https://smokehbearsden.com/products/zeebeav-blinky-shows-tee?variant=48170385080558" target="_blank" class="elite-btn">
+        SHOP $40 T'S
+      </a>
+    </div>
 
-    FOLLOW THE MOVEMENT
-
-    <!-- Add your hidden easter egg links anywhere you want -->
+    <!-- Follow Us -->
+    <div class="follow-section" align="center">
+      <p style="font-size:1.4rem; margin-bottom:20px;">FOLLOW THE MOVEMENT</p><br>
+      <div class="social-links">
+        <a href="https://x.com/Zeebeav" target="_blank">𝕏</a>
+        <a href="https://youtube.com/@Zeebeav" target="_blank">▶</a>
+        <a href="https://instagram.com/Zeebeav" target="_blank">📷</a>
+      </div>
+    </div>
   </div>
 
+  <footer align="center">www.zeebeav.com & www.ZEEBEEV.com</footer>
 </body>
 </html>
