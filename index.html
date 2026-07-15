@@ -97,15 +97,6 @@
         height: 100vh;
     }
       
-    .video-bg {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        transform: none;           /* Reset transform on mobile */
-    }
-    }
-
-    /* CSS */
 .video-bg-container {
     position: fixed;
     top: 0;
@@ -113,9 +104,15 @@
     width: 100%;
     height: 100dvh;           /* Use viewport height */
     overflow: hidden;
-    z-index: -1;
+    z-index: -2;
 }
-
+.video-bg-container::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.35);
+}
 .video-bg {
     position: absolute;
     top: 50%;
