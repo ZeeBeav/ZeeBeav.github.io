@@ -5,16 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ZEEBEAV • Tesla Light Shows</title>
   <style>
-    * { margin:0; padding:0; box-sizing:border-box; }
-    
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, sans-serif;
       color: white;
       text-align: center;
-      line-height: 1.4;
+      background: #000;
     }
 
-    /* Background Video */
+    /* Background Video - Fixed & Stable */
     .video-bg-container {
       position: fixed;
       top: 0; left: 0;
@@ -29,28 +29,26 @@
       top: 50%; left: 50%;
       min-width: 100%;
       min-height: 100%;
-      width: auto;
-      height: auto;
       transform: translate(-50%, -50%);
       object-fit: cover;
       filter: brightness(0.75) contrast(1.1);
     }
 
-    /* Dark Overlay for Readability */
+    /* Dark overlay for better text readability */
     .video-bg-container::after {
       content: '';
       position: absolute;
       top: 0; left: 0;
       width: 100%; height: 100%;
-      background: rgba(0, 0, 0, 0.5);
+      background: rgba(0, 0, 0, 0.4);
       z-index: -1;
     }
 
     .content {
       position: relative;
       z-index: 1;
+      padding: 40px 20px;
       min-height: 100dvh;
-      padding: 15% 20px 80px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -58,58 +56,30 @@
 
     h1 {
       font-size: 2.8rem;
-      margin-bottom: 10px;
-      text-shadow: 0 2px 10px rgba(0,0,0,0.6);
-    }
-
-    .tagline {
-      font-size: 1.3rem;
-      margin-bottom: 40px;
-      opacity: 0.95;
-    }
-
-    a {
-      color: white;
-      text-decoration: underline;
-      font-weight: 500;
-    }
-
-    .btn {
-      display: inline-block;
-      margin: 30px 10px;
-      padding: 14px 32px;
-      background: rgba(255,255,255,0.15);
-      color: white;
-      border: 2px solid white;
-      border-radius: 50px;
-      text-decoration: none;
-      font-size: 1.1rem;
-      backdrop-filter: blur(5px);
-    }
-
-    .btn:hover {
-      background: white;
-      color: black;
+      margin: 20px 0 10px;
+      text-shadow: 0 3px 15px rgba(0,0,0,0.8);
     }
 
     .links {
-      margin: 40px 0;
-      font-size: 1.1rem;
+      margin: 30px 0;
+      font-size: 1.2rem;
+      line-height: 2;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: underline;
     }
 
     footer {
-      position: fixed;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 0.95rem;
-      opacity: 0.8;
+      margin-top: 50px;
+      opacity: 0.85;
+      font-size: 1rem;
     }
 
     @media (max-width: 768px) {
-      h1 { font-size: 2.2rem; }
-      .tagline { font-size: 1.15rem; }
-      .content { padding: 25% 20px 100px; }
+      h1 { font-size: 2.3rem; }
+      .content { padding: 25% 20px; }
     }
   </style>
 </head>
@@ -122,19 +92,22 @@
   </div>
 
   <div class="content">
-    <h1>ZEEBEAV</h1>
-    <p class="tagline">BOLD • UNFORGETTABLE • FREE</p>
-
-    <a href="mailto:zeebeav@gmail.com?subject=ZeeBeav Inquiry" class="btn">JOIN THE WAITLIST</a>
+    <h1>ZEEBEAV • Tesla Light Shows</h1>
+    
+    <p style="font-size:1.4rem; margin:20px 0;">BOLD • UNFORGETTABLE • FREE</p>
 
     <div class="links">
-      <p><strong>FREE LIGHT SHOWS</strong><br>
+      <a href="mailto:zeebeav@gmail.com?subject=ZeeBeav Inquiry">JOIN THE WAITLIST</a><br><br>
+      
+      <strong>FREE LIGHT SHOWS</strong><br>
       <a href="https://www.toybox.lol/zeebeav">ToyBox</a> • 
       <a href="https://xlightshows.io/light-shows/">Xlights</a> • 
-      <a href="https://teslalightshare.io/4247/light-shows">TeslaShare</a></p>
+      <a href="https://teslalightshare.io/4247/light-shows">TeslaShare</a>
     </div>
 
-    <a href="https://smokehbearsden.com/products/zeebeav-blinky-shows-tee?variant=48170385080558" class="btn">SHOP $40 T'S</a>
+    <p style="margin:40px 0 20px;">
+      <a href="https://smokehbearsden.com/products/zeebeav-blinky-shows-tee?variant=48170385080558">SHOP $40 T'S</a>
+    </p>
 
     <footer>FOLLOW THE MOVEMENT</footer>
   </div>
