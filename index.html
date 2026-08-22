@@ -1,134 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-  
 <head>
-  <link rel="canonical" href="https://www.zeebeav.com">
-  <!-- Open Graph / Social Media -->
-<meta property="og:title" content="ZEEBEAV • Tesla Light Shows">
-<meta property="og:description" content="Epic Tesla Light Shows. Free downloads from ToyBox, Xlights & TeslaShare. Exclusive merch and the growing Tesla modding movement.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://www.zeebeav.com">
-<meta property="og:image" content="https://www.zeebeav.com/og-image.jpg">
-<meta property="og:image:alt" content="ZEEBEAV ~ Epic Tesla Light Shows">
-<meta property="og:site_name" content="ZEEBEAV">
-
-<!-- Twitter / X Cards -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="ZEEBEAV • Tesla Light Shows">
-<meta name="twitter:description" content="Epic Tesla Light Shows. Free downloads + merch. Join the movement.">
-<meta name="twitter:image" content="https://www.zeebeav.com/og-image.jpg">
-  <meta name="description" content="ZEEBEAV - Epic Tesla Light Shows. Free downloadable shows from ToyBox, Xlights & TeslaShare. Shop exclusive merch & join the movement.">
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BSCM6QDED4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-BSCM6QDED4');
-</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ZEEBEAV • Tesla Light Shows</title>
-  
- 
-<link rel="icon" href="/favicon.ico" type="image/x-icon">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+  <link rel="canonical" href="https://www.zeebeav.com">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="ZEEBEAV • Tesla Light Shows">
+  <meta property="og:description" content="Epic Tesla Light Shows. Free downloads from ToyBox, Xlights & TeslaShare. Exclusive merch and the growing Tesla modding movement.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.zeebeav.com">
+  <meta property="og:image" content="https://www.zeebeav.com/og-image.jpg">
+  <meta property="og:image:alt" content="ZEEBEAV ~ Epic Tesla Light Shows">
+  <meta property="og:site_name" content="ZEEBEAV">
+
+  <!-- Twitter / X Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ZEEBEAV • Tesla Light Shows">
+  <meta name="twitter:description" content="Epic Tesla Light Shows. Free downloads + merch. Join the movement.">
+  <meta name="twitter:image" content="https://www.zeebeav.com/og-image.jpg">
+
+  <meta name="description" content="ZEEBEAV - Epic Tesla Light Shows. Free downloadable shows from ToyBox, Xlights & TeslaShare. Shop exclusive merch & join the movement.">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BSCM6QDED4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BSCM6QDED4');
+  </script>
+
+  <!-- Favicons -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    
+    :root {
+      --cyan: #00f0ff;
+      --bg: #0a0a0a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      background: #0a0a0a;
+      background: var(--bg);
       color: #fff;
-      font-family: 'Segoe UI', system-ui, sans-serif;
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
       line-height: 1.6;
+      overflow-x: hidden;
     }
 
-    .content {
-      position: relative;
-      z-index: 2;
-      padding: 100px 20px 80px;
-      text-align: center;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-
-    .logo { 
-      font-size: clamp(3.5rem, 10vw, 6.2rem); 
-      font-weight: 900; 
-      letter-spacing: 6px; 
-      background: linear-gradient(90deg, #fff, #00f0ff);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      margin-bottom: 10px; 
-    }
-
-    .tagline { 
-      font-size: clamp(1.2rem, 4vw, 1.75rem); 
-      font-weight: 400; 
-      letter-spacing: 4px; 
-      opacity: 0.9; 
-      margin-bottom: 50px; 
-    }
-
-    .elite-btn {
-      background: transparent;
-      color: #fff;
-      border: 2px solid #00f0ff;
-      padding: 16px 40px;
-      font-size: 1.2rem;
-      letter-spacing: 2px;
-      text-decoration: none;
-      border-radius: 50px;
-      margin: 10px;
-      display: inline-block;
-      transition: all 0.4s ease;
-    }
-
-    .elite-btn:hover {
-      background: #00f0ff;
-      color: #000;
-      transform: scale(1.05);
-    }
-
-    img { 
-      max-width: 92%; 
-      border-radius: 12px; 
-      margin: 25px 0; 
-      box-shadow: 0 20px 40px rgba(0,0,0,0.7);
-    }
-
-    .downloads, .follow-section {
-      margin: 50px 0;
-    }
-
-    .social-links a {
-      font-size: 1.8rem;
-      margin: 0 15px;
-      color: #fff;
-      text-decoration: none;
-    }
-
-    /* === FIXED BACKGROUND VIDEO === */
+    /* Background Video */
     .video-bg-container {
       position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100dvh;           /* Best for mobile */
+      inset: 0;
       z-index: -1;
       overflow: hidden;
     }
 
     .video-bg {
-      position: absolute;
-      top: 0;
-      left: 0;
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+
+    /* Main Content */
+    .content {
+      position: relative;
+      z-index: 2;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 80px 20px 60px;
+      text-align: center;
+    }
+
+    .logo {
+      font-size: clamp(3.2rem, 9vw, 6rem);
+      font-weight: 900;
+      letter-spacing: 6px;
+      background: linear-gradient(90deg, #fff, var(--cyan));
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 12px;
+    }
+
+    .logo a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .tagline {
+      font-size: clamp(1.1rem, 3.5vw, 1.6rem);
+      letter-spacing: 3px;
+      opacity: 0.92;
+      margin-bottom: 40px;
+    }
+
+    .tagline a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .tagline a:hover {
+      color: var(--cyan);
+    }
+
+    /* Buttons */
+    .elite-btn {
+      display: inline-block;
+      background: transparent;
+      color: #fff;
+      border: 2px solid var(--cyan);
+      padding: 14px 36px;
+      font-size: 1.1rem;
+      letter-spacing: 2px;
+      text-decoration: none;
+      border-radius: 50px;
+      margin: 8px;
+      transition: all 0.35s ease;
+    }
+
+    .elite-btn:hover {
+      background: var(--cyan);
+      color: #000;
+      transform: scale(1.05);
+    }
+
+    /* Images */
+    .content img {
+      max-width: 92%;
+      height: auto;
+      border-radius: 12px;
+      margin: 22px 0;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.65);
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .show-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin: 20px 0;
+    }
+
+    .show-grid a {
+      display: block;
+    }
+
+    .show-grid img {
+      margin: 8px 0;
+    }
+
+    /* Sections */
+    .section {
+      margin: 50px 0;
+    }
+
+    .section-title {
+      font-size: 1.35rem;
+      margin-bottom: 18px;
+      letter-spacing: 1px;
+    }
+
+    .social-links a {
+      font-size: 1.9rem;
+      margin: 0 14px;
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .social-links a:hover {
+      color: var(--cyan);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px 40px;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+
+    footer a {
+      color: #ccc;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+
+    footer a:hover {
+      color: var(--cyan);
+    }
+
+    /* Mobile tweaks */
+    @media (max-width: 600px) {
+      .content {
+        padding: 60px 16px 40px;
+      }
+      .elite-btn {
+        padding: 12px 28px;
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
@@ -136,97 +220,113 @@
 
   <!-- Background Video -->
   <div class="video-bg-container">
-    <video class="video-bg" autoplay loop muted playsinline preload="none" poster="https://zeebeav.github.io/ZeeBeavLogoPatriotic.png">
-      <source src="http://zeebeav.github.io/Sequence 01_3.mp4" type="video/mp4">
+    <video class="video-bg" autoplay loop muted playsinline preload="none"
+           poster="https://zeebeav.github.io/ZeeBeavLogoPatriotic.png">
+      <source src="https://zeebeav.github.io/Sequence%2001_3.mp4" type="video/mp4">
     </video>
   </div>
 
-  <div class="content">
-    <h1 class="logo"><a href="https://x.com/Zeebeav" target="_blank" style="text-decoration: none; outline: none;">ZEEBEAV</a></h1>
-    
+  <main class="content">
+    <h1 class="logo">
+      <a href="https://x.com/Zeebeav" target="_blank" rel="noopener">ZEEBEAV</a>
+    </h1>
+
     <p class="tagline">
-      <a href="https://youtu.be/ehgGAYQVfuk?si=TRPkvHPlVTmfQPPT&t=32" target="_blank" style="text-decoration: none; outline: none;">BOLD </a>• 
-      <a href="https://youtu.be/fCQSefmOQcQ?si=7u0Iq_X5sY-OJWdg&t=100" target="_blank" style="text-decoration: none; outline: none;">UNFORGETTABLE </a>• 
-      <a href="https://www.patreon.com/ZeeBeav" target="_blank" style="text-decoration: none; outline: none;">FREE</a>
+      <a href="https://youtu.be/ehgGAYQVfuk?si=TRPkvHPlVTmfQPPT&t=32" target="_blank" rel="noopener">BOLD</a> •
+      <a href="https://youtu.be/fCQSefmOQcQ?si=7u0Iq_X5sY-OJWdg&t=100" target="_blank" rel="noopener">UNFORGETTABLE</a> •
+      <a href="https://www.patreon.com/ZeeBeav" target="_blank" rel="noopener">FREE</a>
     </p>
-    <p align="center">
-      <a href="https://youtu.be/GFrWNX0zgRA?si=PauHNcbZCGLhSKhK" target="_blank" style="text-decoration: none; outline: none;"><img src="http://zeebeav.github.io/XTakeover.jpg" alt="Xtakeover" style="border: none; display: block;">
-      </a>
-    </p>
-    <p align="center">
-      <a href="https://youtube.com/shorts/AAQ9ZJTyTeI?feature=share" target="_blank" style="text-decoration: none; outline: none;">
+
+    <!-- X Takeover -->
+    <a href="https://youtu.be/GFrWNX0zgRA?si=PauHNcbZCGLhSKhK" target="_blank" rel="noopener">
+      <img src="https://zeebeav.github.io/XTakeover.jpg" alt="X Takeover" loading="lazy">
+    </a>
+
+    <p>
+      <a href="https://youtube.com/shorts/AAQ9ZJTyTeI?feature=share" target="_blank" rel="noopener"
+         style="color:#fff; text-decoration:none; letter-spacing:1px;">
         Inside ZEEBEAV!
       </a>
     </p>
 
-    <p align="center">
-      <a href="https://youtu.be/sOsr0uW1yII?si=y_UB-gyN03V2Tx7X&t=11" target="_blank" style="text-decoration: none; outline: none;">
-        <img src="http://zeebeav.github.io/ZeeBeav_BlinkyShows.png" alt="Blinky Shows" style="border: none; display: block;">
-      </a>
-    </p>
-    <p align="center">  
-       <a href="https://www.toybox.lol/_files/archives/0cd999_09ab1436fe01461e9344287534d38163.zip?dn=Cyber%20Linkin%20Park%20Numb.zip" target="_blank" style="text-decoration: none; outline: none;">
-        <img src="http://zeebeav.github.io/TOYBOXNUMB.png" alt="TOYBOXs NUMB S3XY" style="border: none; display: block;">
-      </a>
-      <a href="https://teslalightshare.io/light-show/1544" target="_blank" style="text-decoration: none; outline: none;">
-        <img src="http://zeebeav.github.io/TESLATIMNUMB.png" alt="Tesla TIMs NUMB HIGHLAND" style="border: none; display: block;">
-      </a>
-      <a href="https://www.patreon.com/ZeeBeav/posts/linkin-park-numb-166194926" target="_blank" style="text-decoration: none; outline: none;">
-        <img src="http://zeebeav.github.io/THUMBNAIL2.gif" alt="ZeeBeavs NUMB CT" style="border: none; display: block;">
-      </a>
-     
-    </p>
-    <p align="center">    
-      <a href="https://www.patreon.com/ZeeBeav/posts/calling-all-165484226" target="_blank" style="text-decoration: none; outline: none;">
-        <img src="http://zeebeav.github.io/thumbnail2.png" alt="Calling ALL HOKIES!" style="border: none; display: block;">
-      </a>
-    </p>
-    <p align="center">    
-      <a href="https://www.patreon.com/ZeeBeav/posts/stranger-things-165126627" target="_blank" style="text-decoration: none; outline: none;">
-        <img src="http://zeebeav.github.io/thumbnail222.png" alt="Stranger Things CT Edition" style="border: none; display: block;">
-      </a>
-    </p>
-<p align="center">    
-      <a href="https://www.patreon.com/ZeeBeav/posts/rufus-du-sol-164222056" target="_blank" style="text-decoration: none; outline: none;">
-        <img src="http://zeebeav.github.io/image (21).png" alt="InnerBloom" style="border: none; display: block;">
-      </a>
-    </p>
-    <p align="center">    
-      <a href="https://youtu.be/A8kKia0mw7Y?si=486WS9yY4NqBR_jb" target="_blank" style="text-decoration: none; outline: none;">
-        <img src="http://zeebeav.github.io/ZeeBeavLogoPatriotic.png" alt="Patriotic" style="border: none; display: block;">
-      </a>
-    </p>
+    <!-- Blinky Shows -->
+    <a href="https://youtu.be/sOsr0uW1yII?si=y_UB-gyN03V2Tx7X&t=11" target="_blank" rel="noopener">
+      <img src="https://zeebeav.github.io/ZeeBeav_BlinkyShows.png" alt="Blinky Shows" loading="lazy">
+    </a>
 
-    <div style="margin: 50px 0;">
-      <a href="mailto:zeebeav@gmail.com?subject=ZeeBeav Inquiry" target="_blank" class="elite-btn">
+    <!-- Numb variants -->
+    <div class="show-grid">
+      <a href="https://www.toybox.lol/_files/archives/0cd999_09ab1436fe01461e9344287534d38163.zip?dn=Cyber%20Linkin%20Park%20Numb.zip" target="_blank" rel="noopener">
+        <img src="https://zeebeav.github.io/TOYBOXNUMB.png" alt="ToyBox Numb S3XY" loading="lazy">
+      </a>
+      <a href="https://teslalightshare.io/light-show/1544" target="_blank" rel="noopener">
+        <img src="https://zeebeav.github.io/TESLATIMNUMB.png" alt="Tesla Tim Numb Highland" loading="lazy">
+      </a>
+      <a href="https://www.patreon.com/ZeeBeav/posts/linkin-park-numb-166194926" target="_blank" rel="noopener">
+        <img src="https://zeebeav.github.io/THUMBNAIL2.gif" alt="ZeeBeav Numb CT" loading="lazy">
+      </a>
+    </div>
+
+    <!-- More shows -->
+    <a href="https://www.patreon.com/ZeeBeav/posts/calling-all-165484226" target="_blank" rel="noopener">
+      <img src="https://zeebeav.github.io/thumbnail2.png" alt="Calling ALL Hokies!" loading="lazy">
+    </a>
+
+    <a href="https://www.patreon.com/ZeeBeav/posts/stranger-things-165126627" target="_blank" rel="noopener">
+      <img src="https://zeebeav.github.io/thumbnail222.png" alt="Stranger Things CT Edition" loading="lazy">
+    </a>
+
+    <a href="https://www.patreon.com/ZeeBeav/posts/rufus-du-sol-164222056" target="_blank" rel="noopener">
+      <img src="https://zeebeav.github.io/image%20(21).png" alt="Rüfüs Du Sol - Innerbloom" loading="lazy">
+    </a>
+
+    <a href="https://youtu.be/A8kKia0mw7Y?si=486WS9yY4NqBR_jb" target="_blank" rel="noopener">
+      <img src="https://zeebeav.github.io/ZeeBeavLogoPatriotic.png" alt="Patriotic Light Show" loading="lazy">
+    </a>
+
+    <!-- Waitlist -->
+    <div class="section">
+      <a href="mailto:zeebeav@gmail.com?subject=ZeeBeav%20Inquiry" class="elite-btn">
         JOIN THE WAITLIST
       </a>
     </div>
 
-    <div class="downloads" align="center">
-      <p style="font-size:1.35rem; margin-bottom:20px;">FREE LIGHT SHOWS</p><br>
-      <a href="https://www.toybox.lol/zeebeav" target="_blank" class="elite-btn">ToyBox</a>
-      <a href="https://xlightshows.io/light-shows/" target="_blank" class="elite-btn">Xlights</a>
-      <a href="https://teslalightshare.io/4247/light-shows" target="_blank" class="elite-btn">TeslaShare</a>
+    <!-- Free Downloads -->
+    <div class="section">
+      <p class="section-title">FREE LIGHT SHOWS</p>
+      <a href="https://www.toybox.lol/zeebeav" target="_blank" rel="noopener" class="elite-btn">ToyBox</a>
+      <a href="https://xlightshows.io/light-shows/" target="_blank" rel="noopener" class="elite-btn">Xlights</a>
+      <a href="https://teslalightshare.io/4247/light-shows" target="_blank" rel="noopener" class="elite-btn">TeslaShare</a>
     </div>
 
-    <div align="center"><a href="https://ZeeBeav.com" style="text-decoration: none; outline: none;">
-      <img src="http://zeebeav.github.io/zeebeavTshirt1.png" alt="T-shirt"></a><br><br>
-      <a href="https://smokehbearsden.com/products/zeebeav-blinky-shows-tee?variant=48170385080558" target="_blank" class="elite-btn">
-        SHOP $40 T'S
+    <!-- Merch -->
+    <div class="section">
+      <a href="https://www.zeebeav.com">
+        <img src="https://zeebeav.github.io/zeebeavTshirt1.png" alt="ZEEBEAV T-shirt" loading="lazy">
+      </a>
+      <br>
+      <a href="https://smokehbearsden.com/products/zeebeav-blinky-shows-tee?variant=48170385080558"
+         target="_blank" rel="noopener" class="elite-btn">
+        SHOP $40 T’S
       </a>
     </div>
 
-    <!-- Follow Us -->
-    <div class="follow-section" align="center">
-      <p style="font-size:1.4rem; margin-bottom:20px;">FOLLOW THE MOVEMENT</p><br>
+    <!-- Socials -->
+    <div class="section follow-section">
+      <p class="section-title">FOLLOW THE MOVEMENT</p>
       <div class="social-links">
-        <a href="https://x.com/Zeebeav" target="_blank">𝕏</a>
-        <a href="https://youtube.com/@Zeebeav" target="_blank">▶</a>
-        <a href="https://instagram.com/Zeebeav" target="_blank">📷</a>
+        <a href="https://x.com/Zeebeav" target="_blank" rel="noopener" aria-label="X / Twitter">𝕏</a>
+        <a href="https://youtube.com/@Zeebeav" target="_blank" rel="noopener" aria-label="YouTube">▶</a>
+        <a href="https://instagram.com/Zeebeav" target="_blank" rel="noopener" aria-label="Instagram">📷</a>
       </div>
     </div>
-  </div>
-  <footer align="center"><a href="http://zeebeav.github.io/term.html" target="_blank" style="text-decoration: none; outline: none;">Terms & Conditions</a><br><a href="http://zeebeav.github.io/privacy.html" target="_blank" style="text-decoration: none; outline: none;">Privacy</a><br><a href="http://zeebeav.github.io/index.html" style="text-decoration: none; outline: none;">www.ZeeBeav.com</a><br>www.zeebeav.com & www.ZEEBEEV.com</footer>
+  </main>
+
+  <footer>
+    <a href="https://zeebeav.github.io/term.html" target="_blank" rel="noopener">Terms & Conditions</a> ·
+    <a href="https://zeebeav.github.io/privacy.html" target="_blank" rel="noopener">Privacy</a><br>
+    <a href="https://www.zeebeav.com">www.zeebeav.com</a> & www.ZEEBEEV.com
+  </footer>
+
 </body>
 </html>
