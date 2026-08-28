@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ZEEBEAV • Tesla Light Shows</title>
+  <meta name="description" content="Free Tesla light show sequences for S3XY and Cybertruck. Filmed in the driveway. Built for meetups, takeovers, and TANK." />
+  <link rel="canonical" href="https://zeebeav.com/" />
+  <meta property="og:title" content="ZEEBEAV • Tesla Light Shows" />
+  <meta property="og:description" content="Free sequences for S3XY + Cybertruck. Watch, download, shop, follow." />
+  <meta property="og:url" content="https://zeebeav.com/" />
+  <meta property="og:type" content="website" />
+  <style>
+    :root {
+      --bg: #0b0d10;
+      --bg-2: #14181e;
+      --card: #1a2028;
+      --ink: #f4f1ea;
+      --muted: #b7b3a9;
+      --line: #2a313b;
+      --accent: #e8c547;
+      --accent-2: #7ad1ff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.55;
+    }
+    a { color: var(--accent-2); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { width: min(980px, calc(100% - 32px)); margin: 0 auto; }
+    header {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(11,13,16,.92);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(8px);
+    }
+    nav {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 14px 0; gap: 16px;
+    }
+    .brand { color: var(--ink); font-weight: 700; letter-spacing: .08em; }
+    .nav-links { display: flex; gap: 16px; flex-wrap: wrap; font-size: .92rem; }
+    .nav-links a { color: var(--muted); }
+    .hero { padding: 72px 0 48px; }
+    .kicker { color: var(--accent); letter-spacing: .16em; font-size: .78rem; text-transform: uppercase; }
+    h1 { font-size: clamp(2.1rem, 5vw, 3.6rem); line-height: 1.05; margin: 10px 0 16px; }
+    .lede { color: var(--muted); max-width: 640px; font-size: 1.08rem; }
+    .meta { margin-top: 14px; color: var(--muted); font-size: .92rem; }
+    .btns { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
+    .btn {
+      display: inline-block; padding: 12px 18px; border-radius: 999px;
+      font-weight: 650; text-decoration: none; border: 1px solid transparent;
+    }
+    .btn:hover { text-decoration: none; filter: brightness(1.08); }
+    .btn-gold { background: var(--accent); color: #111; }
+    .btn-ghost { background: transparent; color: var(--ink); border-color: var(--line); }
+    .btn-blue { background: #1c3a4d; color: var(--ink); border-color: #2d5a73; }
+    section { padding: 28px 0 12px; }
+    h2 { font-size: 1.45rem; margin-bottom: 10px; }
+    p { color: var(--muted); }
+    .grid { display: grid; gap: 14px; margin-top: 18px; }
+    .cards-3 { grid-template-columns: repeat(3, 1fr); }
+    .cards-2 { grid-template-columns: repeat(2, 1fr); }
+    .card {
+      background: var(--card); border: 1px solid var(--line);
+      border-radius: 16px; padding: 18px;
+    }
+    .card h3 { margin-bottom: 8px; font-size: 1.05rem; }
+    .card p { font-size: .95rem; }
+    .steps { counter-reset: step; }
+    .steps li {
+      list-style: none; background: var(--card); border: 1px solid var(--line);
+      border-radius: 16px; padding: 16px 16px 16px 58px; position: relative;
+    }
+    .steps li::before {
+      counter-increment: step; content: counter(step);
+      position: absolute; left: 16px; top: 16px;
+      width: 28px; height: 28px; border-radius: 50%;
+      background: var(--accent); color: #111; font-weight: 700;
+      display: grid; place-items: center;
+    }
+    .video {
+      margin-top: 18px; border-radius: 16px; overflow: hidden;
+      border: 1px solid var(--line); aspect-ratio: 16/9; background: #000;
+    }
+    .video iframe { width: 100%; height: 100%; border: 0; }
+    .warn {
+      margin-top: 14px; font-size: .88rem; color: #d9c27a;
+      border-left: 3px solid var(--accent); padding-left: 12px;
+    }
+    footer {
+      margin-top: 48px; padding: 28px 0 40px;
+      border-top: 1px solid var(--line); color: var(--muted); font-size: .88rem;
+    }
+    footer .socials { display: flex; flex-wrap: wrap; gap: 14px; margin: 10px 0; }
+    @media (max-width: 720px) {
+      .cards-3, .cards-2 { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+      .hero { padding-top: 40px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav>
+        <a class="brand" href="#top">ZEEBEAV</a>
+        <div class="nav-links">
+          <a href="#watch">Watch</a>
+          <a href="#download">Download</a>
+          <a href="#howto">How to</a>
+          <a href="#shop">Shop</a>
+          <a href="#lab">The lab</a>
+          <a href="#follow">Follow</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap">
+        <p class="kicker">Tesla light shows from the lab</p>
+        <h1>Free sequences for S3XY + Cybertruck.</h1>
+        <p class="lede">Filmed for real. Built to share at meetups, takeovers, and the driveway.</p>
+        <p class="meta">Marietta, GA · Husband, dad of 2, financial advisor by day · TANK is our CT</p>
+        <div class="btns">
+          <a class="btn btn-gold" href="#watch">Watch a show</a>
+          <a class="btn btn-blue" href="#download">Download free</a>
+          <a class="btn btn-ghost" href="#shop">Shop merch</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="watch">
+      <div class="wrap">
+        <h2>Inside the lab</h2>
+        <p>New drops, multi-take driveway films, and the occasional multi-car stack. We shoot what we’ve got. That’s the point.</p>
+        <div class="video">
+          <iframe
+            src="https://www.youtube.com/embed/AAQ9ZJTyTeI"
+            title="Inside ZEEBEAV"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+        <p style="margin-top:12px"><a href="https://www.youtube.com/@zeebeav">Watch more on YouTube</a></p>
+      </div>
+    </section>
+
+    <section id="download">
+      <div class="wrap">
+        <h2>Free light shows</h2>
+        <p>Grab the sequence. Play it on your Tesla. Film it. Tag @ZeeBeav and we will reshare the good ones.</p>
+        <div class="grid cards-3">
+          <article class="card">
+            <h3>ToyBox</h3>
+            <p>Our home shelf. Start here.</p>
+            <p style="margin-top:12px"><a href="https://www.toybox.lol/zeebeav">Open ZeeBeav on ToyBox</a></p>
+          </article>
+          <article class="card">
+            <h3>Tesla Light Share</h3>
+            <p>The full ZeeBeav catalog, S3XY + CT titles included.</p>
+            <p style="margin-top:12px"><a href="https://teslalightshare.io/4247/light-shows">Open our shows</a></p>
+          </article>
+          <article class="card">
+            <h3>XLights</h3>
+            <p>Also listed in the broader catalog if you already live there.</p>
+            <p style="margin-top:12px"><a href="https://xlightshows.io/light-shows/">Browse XLights</a></p>
+          </article>
+        </div>
+        <p class="warn">Shows are S3XY + CT compatible unless a title says otherwise. Some tracks use intense flashing lights and can be a problem for people with photosensitivity.</p>
+      </div>
+    </section>
+
+    <section id="howto">
+      <div class="wrap">
+        <h2>First time? Three steps.</h2>
+        <ol class="grid steps" style="margin-top:18px">
+          <li class="card">Download a ZeeBeav sequence from ToyBox or Tesla Light Share.</li>
+          <li class="card">Load it in your Tesla with a USB drive using the in-car light show flow.</li>
+          <li class="card">Park, play, film. Tag @ZeeBeav so we can boost the best clips.</li>
+        </ol>
+        <p style="margin-top:16px">Need help? Email <a href="mailto:zeebeav@gmail.com?subject=Help%20running%20a%20show">zeebeav@gmail.com</a> with your model (3 / Y / S / X / CT) and we will point you to the right file.</p>
+      </div>
+    </section>
+
+    <section id="shop">
+      <div class="wrap">
+        <h2>Stickers, magnets, and the Blinky Shows tee</h2>
+        <p>We geek out on the little stuff. Slap a sticker on the frunk, toss a magnet on the fridge, wear the tee to the next takeover.</p>
+        <div class="grid cards-2">
+          <article class="card">
+            <h3>Blinky Shows tee — $40</h3>
+            <p>Soft crew with the lab artwork and a QR on the back.</p>
+            <p style="margin-top:12px"><a href="https://smokehbearsden.com/products/zeebeav-blinky-shows-tee?variant=48170385080558">Shop the tee</a></p>
+          </article>
+          <article class="card">
+            <h3>Stickers & magnets</h3>
+            <p>Fresh drops go out when we print them. Message us or grab them in the wild.</p>
+            <p style="margin-top:12px"><a href="mailto:zeebeav@gmail.com?subject=Stickers">Email with subject STICKERS</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="lab">
+      <div class="wrap">
+        <h2>Who’s in the lab</h2>
+        <p>I’m a husband, friend, and father of two in Marietta. Financial advisor by day. Tesla light-show geek when we are not at a ballgame.</p>
+        <p style="margin-top:12px">I do not have a four-person film crew on call. I reshoot in the driveway until the sync hits. If it makes you grin at a takeover, it did its job.</p>
+        <p style="margin-top:12px">TANK is our Cybertruck. Will we see you at the next X Takeover?</p>
+      </div>
+    </section>
+
+    <section id="follow">
+      <div class="wrap">
+        <h2>Stay in the loop</h2>
+        <p>New sequences, merch drops, and event plans. No spam. We have kids and a day job.</p>
+        <div class="btns">
+          <a class="btn btn-gold" href="mailto:zeebeav@gmail.com?subject=WAITLIST">Email WAITLIST to join</a>
+          <a class="btn btn-ghost" href="https://x.com/ZeeBeav">X @ZeeBeav</a>
+          <a class="btn btn-ghost" href="https://www.youtube.com/@zeebeav">YouTube</a>
+          <a class="btn btn-ghost" href="https://www.instagram.com/zeebeav/">Instagram @zeebeav</a>
+        </div>
+        <p style="margin-top:12px">Until the form is live, email <a href="mailto:zeebeav@gmail.com?subject=WAITLIST">zeebeav@gmail.com</a> with subject WAITLIST and your Tesla model.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>© ZeeBeav · Marietta, GA</p>
+      <div class="socials">
+        <a href="https://x.com/ZeeBeav">X</a>
+        <a href="https://www.youtube.com/@zeebeav">YouTube</a>
+        <a href="https://www.instagram.com/zeebeav/">Instagram</a>
+        <a href="https://www.zeebeav.com/">zeebeav.com</a>
+      </div>
+      <p>Shows are fan sequences. Flashing lights can be an issue for some people.</p>
+      <p><a href="mailto:zeebeav@gmail.com">zeebeav@gmail.com</a></p>
+    </div>
+  </footer>
+</body>
+</html>
