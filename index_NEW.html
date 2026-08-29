@@ -16,20 +16,16 @@
     body { font-family: "Segoe UI", system-ui, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.55; }
     a { color: var(--accent-2); text-decoration: none; }
     a:hover { text-decoration: underline; }
-    .bg { position: fixed; inset: 0; z-index: -2; overflow: hidden; background: #000; }
-    .bg video, .bg iframe {
+    .bg {
+      position: fixed; inset: 0; z-index: -2; overflow: hidden;
+      background: #000 url("video/poster.jpg") center / cover no-repeat;
+    }
+    .bg video {
       position: absolute; top: 50%; left: 50%;
       min-width: 100%; min-height: 100%;
       transform: translate(-50%, -50%);
       object-fit: cover;
       pointer-events: none;
-    }
-    .bg iframe {
-      width: 177.77vh;
-      height: 56.25vw;
-      min-width: 100vw;
-      min-height: 100vh;
-      border: 0;
     }
     .bg-dim {
       position: fixed; inset: 0; z-index: -1;
@@ -98,20 +94,21 @@
       .cards-3, .clocks { grid-template-columns: 1fr; }
       .nav-links { display: none; }
     }
-    @media (prefers-reduced-motion: reduce) { .bg video, .bg iframe { display: none; } }
+    @media (prefers-reduced-motion: reduce) { .bg video { display: none; } }
   </style>
 </head>
 <body>
   <div class="bg" aria-hidden="true">
-    <video id="bgVideo" autoplay muted loop playsinline preload="auto">
+    <video
+      id="bgVideo"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="metadata"
+      poster="video/poster.jpg">
       <source src="video/bg.mp4" type="video/mp4" />
     </video>
-    <iframe
-      id="bgYT"
-      src="https://www.youtube.com/embed/AAQ9ZJTyTeI?autoplay=1&mute=1&controls=0&loop=1&playlist=AAQ9ZJTyTeI&playsinline=1&modestbranding=1&rel=0"
-      title="ZeeBeav background"
-      allow="autoplay; encrypted-media"
-      tabindex="-1"></iframe>
   </div>
   <div class="bg-dim"></div>
 
@@ -183,7 +180,7 @@
     <section id="watch">
       <div class="wrap panel">
         <h2>Top 10 on YouTube</h2>
-        <p>Most-watched videos on ZeeBeav's Tesla light shows. Click one to play. Background stays the original lab clip.</p>
+        <p>Most-watched videos on ZeeBeav's Tesla light shows. Click one to play. Wallpaper stays the server clip.</p>
         <div class="video">
           <iframe id="featureYT" title="ZeeBeav featured show" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
@@ -267,11 +264,6 @@
   </footer>
 
   <script>
-    const local = document.getElementById("bgVideo");
-    const bgYT = document.getElementById("bgYT");
-    local.addEventListener("loadeddata", () => { bgYT.style.display = "none"; });
-    local.addEventListener("error", () => { local.style.display = "none"; });
-
     const videos = [
       { id: "RNrYCaHakfg", title: "Porter Robinson — Language", views: "6.1K" },
       { id: "sOsr0uW1yII", title: "Stranger Things", views: "5.1K" },
