@@ -178,6 +178,8 @@
     .cards-3 { grid-template-columns: repeat(3, 1fr); }
     .cards-2 { grid-template-columns: repeat(2, 1fr); }
     .top10 { grid-template-columns: repeat(5, 1fr); }
+    .shorts6 { grid-template-columns: repeat(3, 1fr); }
+    #watch h3 { font-size:1.15rem; margin: 28px 0 4px; }
     .card, .pick { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 14px; }
     .card img { width: 100%; display: block; }
     .pick { cursor: pointer; text-align: left; color: inherit; width: 100%; }
@@ -207,9 +209,9 @@
     footer .socials, footer .legal, footer .jump { display: flex; flex-wrap: wrap; gap: 10px 14px; margin: 10px 0; }
     footer .jump { display: none; }
     footer .cookie { color: var(--muted); font-size: .8rem; }
-    @media (max-width: 900px) { .top10, .tank-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 900px) { .top10, .tank-grid, .shorts6 { grid-template-columns: 1fr 1fr; } }
     @media (max-width: 720px) {
-      .cards-3, .clocks, .tank-grid { grid-template-columns: 1fr; }
+      .cards-3, .clocks, .tank-grid, .shorts6 { grid-template-columns: 1fr; }
       header .wrap { position: relative; }
       .nav-toggle { display: inline-block; }
       .nav-links {
@@ -366,6 +368,9 @@
         </div>
         <p id="nowPlaying" style="margin-top:10px;color:var(--ink)"></p>
         <div class="grid top10" id="top10"></div>
+        <h3>Top 6 Shorts</h3>
+        <p>Most-watched Shorts on the channel. Click one to play.</p>
+        <div class="grid shorts6" id="top6shorts"></div>
         <div class="btns">
           <a class="btn btn-gold" href="https://www.youtube.com/@zeebeav">Full YouTube channel</a>
           <a class="btn btn-ghost" href="/shows.html">All Patreon shows</a>
@@ -375,7 +380,7 @@
 
     <section id="download">
       <div class="wrap panel">
-        <h2>Free light shows from our distributions Partners</h2>
+        <h2>Free light shows</h2>
         <div class="grid cards-3">
           <article class="card">
             <h3>ToyBox</h3>
@@ -530,14 +535,35 @@
       { id: "XTRa6GTNZv4", title: "Avicii — The Days", views: "1.7K" },
       { id: "GFrWNX0zgRA", title: "Nicki Minaj — Starships", views: "1.5K" }
     ];
+    const shorts = [
+      { id: "AAQ9ZJTyTeI", title: "Inside ZeeBeav — 2026 Cybertruck", views: "1.9K" },
+      { id: "BP2M2oYofvE", title: "Dame Un Grrr", views: "1.8K" },
+      { id: "XxejSUbJuZM", title: "Eminem — Without Me", views: "1.3K" },
+      { id: "a_W6q24-_vQ", title: "Dua Lipa — Levitating", views: "1.2K" },
+      { id: "neUOAfTIelc", title: "Fred Again — Turn On the Lights Again", views: "1.2K" },
+      { id: "rzdBsU-gXRQ", title: "Sandstorm Remix", views: "1.2K" }
+    ];
     const feature = document.getElementById("featureYT");
     const now = document.getElementById("nowPlaying");
     const grid = document.getElementById("top10");
+    const shortsGrid = document.getElementById("top6shorts");
+    function clearActive() {
+      [...grid.querySelectorAll(".pick")].forEach(el => el.classList.remove("active"));
+      [...shortsGrid.querySelectorAll(".pick")].forEach(el => el.classList.remove("active"));
+    }
     function play(i) {
       const v = videos[i];
       feature.src = "https://www.youtube.com/embed/" + v.id + "?rel=0";
       now.textContent = "#" + (i + 1) + " · " + v.title + " · " + v.views + " views";
-      [...grid.querySelectorAll(".pick")].forEach((el, n) => el.classList.toggle("active", n === i));
+      clearActive();
+      [...grid.querySelectorAll(".pick")][i].classList.add("active");
+    }
+    function playShort(i) {
+      const v = shorts[i];
+      feature.src = "https://www.youtube.com/embed/" + v.id + "?rel=0";
+      now.textContent = "Short #" + (i + 1) + " · " + v.title + " · " + v.views + " views";
+      clearActive();
+      [...shortsGrid.querySelectorAll(".pick")][i].classList.add("active");
     }
     videos.forEach((v, i) => {
       const b = document.createElement("button");
@@ -546,6 +572,14 @@
       b.innerHTML = "<span class=\"zoom\"><img alt=\"\" src=\"https://i.ytimg.com/vi/" + v.id + "/hqdefault.jpg\" /></span><strong>#" + (i + 1) + " " + v.title + "</strong><br><small>" + v.views + " views</small>";
       b.onclick = () => play(i);
       grid.appendChild(b);
+    });
+    shorts.forEach((v, i) => {
+      const b = document.createElement("button");
+      b.type = "button";
+      b.className = "pick";
+      b.innerHTML = "<span class=\"zoom\"><img alt=\"\" src=\"https://i.ytimg.com/vi/" + v.id + "/hqdefault.jpg\" /></span><strong>#" + (i + 1) + " " + v.title + "</strong><br><small>" + v.views + " views</small>";
+      b.onclick = () => playShort(i);
+      shortsGrid.appendChild(b);
     });
     play(0);
     const t9 = new Date("2026-10-09T10:00:00-05:00").getTime();
