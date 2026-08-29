@@ -17,6 +17,9 @@
   <meta name="twitter:title" content="ZEEBEAV • Tesla Light Shows" />
   <meta name="twitter:description" content="Filmed on TANK, our Cybertruck. Free downloads + merch. Join the movement." />
   <meta name="twitter:image" content="https://www.zeebeav.com/og-image.jpg" />
+  <meta name="theme-color" content="#0b0d10" />
+  <meta name="twitter:site" content="@ZeeBeav" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -40,7 +43,7 @@
     a:hover { text-decoration: underline; }
     .video-bg-container {
       position: fixed; inset: 0; z-index: -2; overflow: hidden;
-      background: #000 url("https://zeebeav.github.io/ZeeBeavLogoPatriotic.png") center / cover no-repeat;
+      background: #000 url("https://www.zeebeav.com/ZeeBeavLogoPatriotic.png") center / cover no-repeat;
     }
     .video-bg {
       position: absolute; top: 50%; left: 50%;
@@ -85,7 +88,7 @@
     .tank-hero {
       position: relative; display: block; border-radius: 20px; overflow: hidden;
       border: 1px solid var(--line); min-height: 280px;
-      background: #111 url("https://zeebeav.github.io/Birthday.png") center / cover no-repeat;
+      background: #111 url("https://www.zeebeav.com/Birthday.png") center / cover no-repeat;
       text-decoration: none; color: inherit;
     }
     .tank-hero:hover { text-decoration: none; filter: brightness(1.05); }
@@ -176,11 +179,14 @@
     .video iframe { width: 100%; height: 100%; border: 0; }
     .warn { margin-top: 14px; font-size: .88rem; color: #d9c27a; border-left: 3px solid var(--accent); padding-left: 12px; }
     footer { margin-top: 36px; padding: 28px 0 40px; border-top: 1px solid var(--line); font-size: .88rem; }
-    footer .socials { display: flex; gap: 14px; margin: 10px 0; }
+    footer .socials, footer .legal, footer .jump { display: flex; flex-wrap: wrap; gap: 10px 14px; margin: 10px 0; }
+    footer .jump { display: none; }
+    footer .cookie { color: var(--muted); font-size: .8rem; }
     @media (max-width: 900px) { .top10, .tank-grid { grid-template-columns: 1fr 1fr; } }
     @media (max-width: 720px) {
       .cards-3, .clocks, .tank-grid { grid-template-columns: 1fr; }
       .nav-links { display: none; }
+      footer .jump { display: flex; }
     }
     .lab-stage {
       position: relative; border-radius: 20px; overflow: hidden;
@@ -204,8 +210,8 @@
 <body>
   <div class="video-bg-container">
     <video class="video-bg" autoplay loop muted playsinline preload="none"
-           poster="https://zeebeav.github.io/ZeeBeavLogoPatriotic.png">
-      <source src="https://zeebeav.github.io/Sequence%2001_3.mp4" type="video/mp4">
+           poster="https://www.zeebeav.com/ZeeBeavLogoPatriotic.png">
+      <source src="https://www.zeebeav.com/Sequence%2001_3.mp4" type="video/mp4">
     </video>
   </div>
   <div class="bg-dim"></div>
@@ -256,13 +262,13 @@
         </a>
         <div class="tank-grid">
           <a href="https://www.patreon.com/ZeeBeav/posts/birthday-by-167878576" target="_blank" rel="noopener">
-            <img src="https://zeebeav.github.io/Birthday.png" alt="TANK running Beatles Birthday" />
+            <img src="https://www.zeebeav.com/Birthday.png" alt="TANK running Beatles Birthday" />
           </a>
           <a href="https://www.patreon.com/ZeeBeav/posts/stranger-things-165126627" target="_blank" rel="noopener">
-            <img src="https://zeebeav.github.io/thumbnail222.png" alt="TANK Stranger Things CT edition" />
+            <img src="https://www.zeebeav.com/thumbnail222.png" alt="TANK Stranger Things CT edition" />
           </a>
           <a href="https://www.patreon.com/ZeeBeav/posts/linkin-park-numb-166194926" target="_blank" rel="noopener">
-            <img src="https://zeebeav.github.io/THUMBNAIL2.gif" alt="TANK Numb CT sequence" />
+            <img src="https://www.zeebeav.com/THUMBNAIL2.gif" alt="TANK Numb CT sequence" />
           </a>
         </div>
         <p class="meta" style="margin-top:14px">CT files live on ToyBox and Tesla Light Share. Titles that say CT were built and filmed on TANK.</p>
@@ -272,7 +278,7 @@
     <section id="takeover">
       <div class="wrap takeover-card">
         <a class="takeover-hero" href="https://www.xtakeover.com/" target="_blank" rel="noopener">
-          <img src="https://zeebeav.github.io/XTakeover.jpg" alt="TANK headed to X Takeover, Austin TX 10/10/26" />
+          <img src="https://www.zeebeav.com/XTakeover.jpg" alt="TANK headed to X Takeover, Austin TX 10/10/26" />
         </a>
         <div class="takeover-body">
           <p class="kicker">Giga Texas</p>
@@ -331,17 +337,17 @@
         <div class="grid cards-3">
           <article class="card">
             <h3>ToyBox</h3>
-            <img src="https://zeebeav.github.io/toybox.png" alt="ToyBox" />
+            <img src="https://www.zeebeav.com/toybox.png" alt="ToyBox" />
             <p><a href="https://www.toybox.lol/zeebeav">Open ZeeBeav on ToyBox</a></p>
           </article>
           <article class="card">
             <h3>Tesla Light Share</h3>
-            <img src="https://zeebeav.github.io/teslashare.png" alt="Tesla Light Share" />
+            <img src="https://www.zeebeav.com/teslashare.png" alt="Tesla Light Share" />
             <p><a href="https://teslalightshare.io/4247/light-shows">Open our shows</a></p>
           </article>
           <article class="card">
             <h3>XLights</h3>
-            <img src="https://zeebeav.github.io/xlights.png" alt="XLights" />
+            <img src="https://www.zeebeav.com/xlights.png" alt="XLights" />
             <p><a href="https://xlightshows.io/light-shows/">Browse XLights</a></p>
           </article>
         </div>
@@ -400,12 +406,12 @@
         <div class="grid cards-2">
           <article class="card">
             <h3>Blinky Shows tee — $40</h3>
-            <img src="https://zeebeav.github.io/zeebeavTshirt1.png" alt="Blinky Shows tee" />
+            <img src="https://www.zeebeav.com/zeebeavTshirt1.png" alt="Blinky Shows tee" />
             <p><a href="https://smokehbearsden.com/products/zeebeav-blinky-shows-tee?variant=48170385080558">Shop the tee</a></p>
           </article>
           <article class="card">
             <h3>Stickers & magnets</h3>
-            <img src="https://zeebeav.github.io/ZeeBeav_stickers.jpg" alt="ZeeBeav sticker pack" />
+            <img src="https://www.zeebeav.com/ZeeBeav_stickers.jpg" alt="ZeeBeav sticker pack" />
             <p><a href="mailto:zeebeav@gmail.com?subject=Stickers">Email with subject STICKERS</a></p>
           </article>
         </div>
@@ -415,8 +421,8 @@
     <section id="lab">
       <div class="wrap">
         <div class="lab-stage">
-          <video class="lab-bg" autoplay loop muted playsinline preload="metadata" poster="Tank-poster.jpg">
-            <source src="Tank.mp4" type="video/mp4">
+          <video class="lab-bg" autoplay loop muted playsinline preload="metadata" poster="https://www.zeebeav.com/Tank-poster.jpg">
+            <source src="https://www.zeebeav.com/Tank.mp4" type="video/mp4">
           </video>
           <div class="lab-dim"></div>
           <div class="lab-copy">
@@ -449,7 +455,22 @@
         <a href="https://www.youtube.com/@zeebeav">YouTube</a>
         <a href="https://www.instagram.com/zeebeav/">Instagram</a>
       </div>
-      <p>Shows are fan sequences. Flashing lights can be an issue for some people.</p>
+      <nav class="jump" aria-label="On this page">
+        <a href="#tank">TANK</a>
+        <a href="#takeover">X Takeover</a>
+        <a href="#watch">Shows</a>
+        <a href="#download">Download</a>
+        <a href="#learn">Learn</a>
+        <a href="#shop">Shop</a>
+        <a href="#lab">Lab</a>
+        <a href="#follow">Follow</a>
+      </nav>
+      <div class="legal">
+        <a href="https://www.zeebeav.com/term.html">Terms</a>
+        <a href="https://www.zeebeav.com/privacy.html">Privacy</a>
+      </div>
+      <p>Fan-made sequences. Not affiliated with Tesla, Inc., X Takeover, or the artists. Flashing lights can be an issue for some people.</p>
+      <p class="cookie">This site uses cookies for basic analytics (Google Analytics).</p>
     </div>
   </footer>
 
