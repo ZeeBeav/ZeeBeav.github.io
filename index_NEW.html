@@ -4,8 +4,33 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ZEEBEAV • Tesla Light Shows</title>
-  <meta name="description" content="Free Tesla light show sequences for S3XY and Cybertruck. Countdown to X Takeover at Giga Texas." />
-  <link rel="canonical" href="https://zeebeav.com/" />
+  <link rel="canonical" href="https://www.zeebeav.com/" />
+  <meta name="description" content="ZEEBEAV - Epic Tesla Light Shows. Free downloadable shows from ToyBox, Xlights & TeslaShare. Shop exclusive merch & join the movement." />
+  <meta property="og:title" content="ZEEBEAV • Tesla Light Shows" />
+  <meta property="og:description" content="Epic Tesla Light Shows. Free downloads from ToyBox, Xlights & TeslaShare. Exclusive merch and the growing Tesla modding movement." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.zeebeav.com" />
+  <meta property="og:image" content="https://www.zeebeav.com/og-image.jpg" />
+  <meta property="og:image:alt" content="ZEEBEAV ~ Epic Tesla Light Shows" />
+  <meta property="og:site_name" content="ZEEBEAV" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ZEEBEAV • Tesla Light Shows" />
+  <meta name="twitter:description" content="Epic Tesla Light Shows. Free downloads + merch. Join the movement." />
+  <meta name="twitter:image" content="https://www.zeebeav.com/og-image.jpg" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BSCM6QDED4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BSCM6QDED4');
+  </script>
+
   <style>
     :root {
       --bg: #0b0d10; --card: #1a2028; --ink: #f4f1ea; --muted: #b7b3a9;
@@ -16,13 +41,14 @@
     body { font-family: "Segoe UI", system-ui, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.55; }
     a { color: var(--accent-2); text-decoration: none; }
     a:hover { text-decoration: underline; }
-    .bg {
+    .video-bg-container {
       position: fixed; inset: 0; z-index: -2; overflow: hidden;
-      background: #000 url("video/poster.jpg") center / cover no-repeat;
+      background: #000 url("https://zeebeav.github.io/ZeeBeavLogoPatriotic.png") center / cover no-repeat;
     }
-    .bg video {
+    .video-bg {
       position: absolute; top: 50%; left: 50%;
       min-width: 100%; min-height: 100%;
+      width: auto; height: auto;
       transform: translate(-50%, -50%);
       object-fit: cover;
       pointer-events: none;
@@ -39,7 +65,13 @@
       backdrop-filter: blur(8px);
     }
     nav { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; }
-    .brand { color: var(--ink); font-weight: 700; letter-spacing: .08em; }
+    .brand { display: flex; align-items: center; text-decoration: none; }
+    .brand img {
+      height: 28px;
+      width: auto;
+      display: block;
+      filter: invert(1);
+    }
     .nav-links { display: flex; gap: 16px; font-size: .92rem; }
     .nav-links a { color: var(--muted); }
     .hero { padding: 72px 0 36px; }
@@ -94,20 +126,15 @@
       .cards-3, .clocks { grid-template-columns: 1fr; }
       .nav-links { display: none; }
     }
-    @media (prefers-reduced-motion: reduce) { .bg video { display: none; } }
+    @media (prefers-reduced-motion: reduce) { .video-bg { display: none; } }
   </style>
 </head>
 <body>
-  <div class="bg" aria-hidden="true">
-    <video
-      id="bgVideo"
-      autoplay
-      muted
-      loop
-      playsinline
-      preload="metadata"
-      poster="video/poster.jpg">
-      <source src="video/bg.mp4" type="video/mp4" />
+  <!-- Background Video -->
+  <div class="video-bg-container">
+    <video class="video-bg" autoplay loop muted playsinline preload="none"
+           poster="https://zeebeav.github.io/ZeeBeavLogoPatriotic.png">
+      <source src="https://zeebeav.github.io/Sequence%2001_3.mp4" type="video/mp4">
     </video>
   </div>
   <div class="bg-dim"></div>
@@ -115,7 +142,9 @@
   <header>
     <div class="wrap">
       <nav>
-        <a class="brand" href="#top">ZEEBEAV</a>
+        <a class="brand" href="#top">
+          <img src="https://www.zeebeav.com/ZeeBeavs_Blackfont.png" alt="ZEEBEAV" />
+        </a>
         <div class="nav-links">
           <a href="#takeover">X Takeover</a>
           <a href="#watch">Top 10</a>
@@ -180,7 +209,7 @@
     <section id="watch">
       <div class="wrap panel">
         <h2>Top 10 on YouTube</h2>
-        <p>Most-watched videos on ZeeBeav's Tesla light shows. Click one to play. Wallpaper stays the server clip.</p>
+        <p>Most-watched videos on ZeeBeav's Tesla light shows. Click one to play. Wallpaper stays Sequence 01_3.</p>
         <div class="video">
           <iframe id="featureYT" title="ZeeBeav featured show" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
