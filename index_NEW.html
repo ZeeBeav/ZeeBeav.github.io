@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ZEEBEAV • Tesla Light Shows</title>
   <link rel="canonical" href="https://www.zeebeav.com/" />
-  <meta name="description" content="ZEEBEAV - Epic Tesla Light Shows. Free downloadable shows from ToyBox, Xlights & TeslaShare. Shop exclusive merch & join the movement." />
+  <meta name="description" content="ZEEBEAV - Epic Tesla Light Shows filmed on TANK, our Cybertruck. Free downloadable shows from ToyBox, Xlights & TeslaShare." />
   <meta property="og:title" content="ZEEBEAV • Tesla Light Shows" />
-  <meta property="og:description" content="Epic Tesla Light Shows. Free downloads from ToyBox, Xlights & TeslaShare. Exclusive merch and the growing Tesla modding movement." />
+  <meta property="og:description" content="Filmed on TANK, our Cybertruck. Free downloads from ToyBox, Xlights & TeslaShare. Exclusive merch and the growing Tesla modding movement." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.zeebeav.com" />
   <meta property="og:image" content="https://www.zeebeav.com/og-image.jpg" />
@@ -15,7 +15,7 @@
   <meta property="og:site_name" content="ZEEBEAV" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="ZEEBEAV • Tesla Light Shows" />
-  <meta name="twitter:description" content="Epic Tesla Light Shows. Free downloads + merch. Join the movement." />
+  <meta name="twitter:description" content="Filmed on TANK, our Cybertruck. Free downloads + merch. Join the movement." />
   <meta name="twitter:image" content="https://www.zeebeav.com/og-image.jpg" />
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -69,7 +69,7 @@
     .brand img { height: 28px; width: auto; display: block; filter: invert(1); }
     .nav-links { display: flex; gap: 16px; font-size: .92rem; }
     .nav-links a { color: var(--muted); }
-    .hero { padding: 72px 0 36px; }
+    .hero { padding: 72px 0 28px; }
     .kicker { color: var(--accent); letter-spacing: .16em; font-size: .78rem; text-transform: uppercase; }
     h1 { font-size: clamp(2.1rem, 5vw, 3.4rem); line-height: 1.05; margin: 10px 0 16px; }
     p, .lede, .meta { color: var(--muted); }
@@ -87,6 +87,19 @@
     .panel { background: rgba(26,32,40,.88); border: 1px solid var(--line); border-radius: 20px; padding: 24px; }
     h2 { font-size: 1.35rem; margin-bottom: 10px; }
     h3 { margin-bottom: 8px; }
+    .tank-hero {
+      position: relative; border-radius: 20px; overflow: hidden;
+      border: 1px solid var(--line); min-height: 280px;
+      background: #111 url("https://zeebeav.github.io/Hendrix1.png") center / cover no-repeat;
+    }
+    .tank-hero::after {
+      content: ""; position: absolute; inset: 0;
+      background: linear-gradient(90deg, rgba(11,13,16,.88) 0%, rgba(11,13,16,.25) 70%, rgba(11,13,16,.55) 100%);
+    }
+    .tank-copy { position: relative; z-index: 1; padding: 36px 28px; max-width: 420px; }
+    .tank-copy h2 { font-size: clamp(2rem, 5vw, 3rem); letter-spacing: .12em; margin-bottom: 8px; }
+    .tank-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 16px; }
+    .tank-grid img { width: 100%; aspect-ratio: 16/10; object-fit: cover; border-radius: 14px; border: 1px solid var(--line); display: block; }
     .clocks { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 16px; }
     .clock { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 16px; }
     .count { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 12px; }
@@ -97,9 +110,7 @@
     .cards-3 { grid-template-columns: repeat(3, 1fr); }
     .cards-2 { grid-template-columns: repeat(2, 1fr); }
     .top10 { grid-template-columns: repeat(5, 1fr); }
-    .card, .pick {
-      background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 14px;
-    }
+    .card, .pick { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 14px; }
     .pick { cursor: pointer; text-align: left; color: inherit; width: 100%; }
     .pick.active { border-color: var(--accent); }
     .pick img { width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 10px; margin-bottom: 8px; display: block; }
@@ -116,9 +127,9 @@
     .warn { margin-top: 14px; font-size: .88rem; color: #d9c27a; border-left: 3px solid var(--accent); padding-left: 12px; }
     footer { margin-top: 36px; padding: 28px 0 40px; border-top: 1px solid var(--line); font-size: .88rem; }
     footer .socials { display: flex; gap: 14px; margin: 10px 0; }
-    @media (max-width: 900px) { .top10 { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 900px) { .top10, .tank-grid { grid-template-columns: 1fr 1fr; } }
     @media (max-width: 720px) {
-      .cards-3, .clocks { grid-template-columns: 1fr; }
+      .cards-3, .clocks, .tank-grid { grid-template-columns: 1fr; }
       .nav-links { display: none; }
     }
     @media (prefers-reduced-motion: reduce) { .video-bg { display: none; } }
@@ -140,6 +151,7 @@
           <img src="https://www.zeebeav.com/ZeeBeavs_Blackfont.png" alt="ZEEBEAV" />
         </a>
         <div class="nav-links">
+          <a href="#tank">TANK</a>
           <a href="#takeover">X Takeover</a>
           <a href="#watch">Top 10</a>
           <a href="#download">Download</a>
@@ -153,22 +165,40 @@
   <main id="top">
     <section class="hero">
       <div class="wrap">
-        <p class="kicker">Tesla light shows from the lab</p>
+        <p class="kicker">Filmed on TANK · our Cybertruck</p>
         <h1>Free sequences for S3XY + Cybertruck.</h1>
-        <p class="lede">Filmed for real. Built to share at meetups, takeovers, and the driveway.</p>
-        <p class="meta">Marietta, GA · Husband, dad of 2 · TANK is our CT · Will we cu @theXtakeover?</p>
+        <p class="lede">TANK is the rolling lab. Shows get cut on stainless steel first, then shared for S3XY and CT.</p>
+        <p class="meta">Marietta, GA · Husband, dad of 2 · Will we cu @theXtakeover?</p>
         <div class="btns">
-          <a class="btn btn-gold" href="#watch">Watch top 10</a>
+          <a class="btn btn-gold" href="#tank">Meet TANK</a>
           <a class="btn btn-blue" href="#download">Download free</a>
           <a class="btn btn-ghost" href="#takeover">X Takeover countdown</a>
         </div>
       </div>
     </section>
 
+    <section id="tank">
+      <div class="wrap panel">
+        <div class="tank-hero">
+          <div class="tank-copy">
+            <p class="kicker">The lab on wheels</p>
+            <h2>TANK</h2>
+            <p>Our Cybertruck. Light bar, RGB accents, and every ZeeBeav sequence that says CT. If you saw stainless steel blink, that was TANK.</p>
+          </div>
+        </div>
+        <div class="tank-grid">
+          <img src="https://zeebeav.github.io/Hendrix1.png" alt="TANK running Hendrix" />
+          <img src="https://zeebeav.github.io/thumbnail222.png" alt="TANK Stranger Things CT edition" />
+          <img src="https://zeebeav.github.io/THUMBNAIL2.gif" alt="TANK Numb CT sequence" />
+        </div>
+        <p class="meta" style="margin-top:14px">CT files live on ToyBox and Tesla Light Share. Titles that say CT were built and filmed on TANK.</p>
+      </div>
+    </section>
+
     <section id="takeover">
       <div class="wrap panel">
         <h2>Countdown to X Takeover</h2>
-        <p>Giga Texas · October 9–10, 2026. Both clocks use Austin time.</p>
+        <p>Giga Texas · October 9–10, 2026. Both clocks use Austin time. TANK rolls if we can get her there.</p>
         <div class="clocks">
           <div class="clock">
             <h3>Friday, Oct 9</h3>
@@ -223,7 +253,7 @@
           <article class="card"><h3>Tesla Light Share</h3><p><a href="https://teslalightshare.io/4247/light-shows">Open our shows</a></p></article>
           <article class="card"><h3>XLights</h3><p><a href="https://xlightshows.io/light-shows/">Browse XLights</a></p></article>
         </div>
-        <p class="warn">S3XY + CT compatible unless a title says otherwise. Some tracks flash hard.</p>
+        <p class="warn">S3XY + CT compatible unless a title says otherwise. CT cuts were built on TANK. Some tracks flash hard.</p>
       </div>
     </section>
 
@@ -276,7 +306,7 @@
 
   <footer>
     <div class="wrap">
-      <p>© ZeeBeav · Marietta, GA</p>
+      <p>© ZeeBeav · Marietta, GA · TANK</p>
       <div class="socials">
         <a href="https://x.com/ZeeBeav">X</a>
         <a href="https://www.youtube.com/@zeebeav">YouTube</a>
