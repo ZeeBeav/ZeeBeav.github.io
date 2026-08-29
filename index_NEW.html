@@ -4,117 +4,101 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ZEEBEAV • Tesla Light Shows</title>
-  <meta name="description" content="Free Tesla light show sequences for S3XY and Cybertruck. Filmed in the driveway. Built for meetups, takeovers, and TANK." />
+  <meta name="description" content="Free Tesla light show sequences for S3XY and Cybertruck. Countdown to X Takeover at Giga Texas." />
   <link rel="canonical" href="https://zeebeav.com/" />
-  <meta property="og:title" content="ZEEBEAV • Tesla Light Shows" />
-  <meta property="og:description" content="Free sequences for S3XY + Cybertruck. Watch, download, shop, follow." />
-  <meta property="og:url" content="https://zeebeav.com/" />
-  <meta property="og:type" content="website" />
   <style>
     :root {
-      --bg: #0b0d10;
-      --bg-2: #14181e;
-      --card: #1a2028;
-      --ink: #f4f1ea;
-      --muted: #b7b3a9;
-      --line: #2a313b;
-      --accent: #e8c547;
-      --accent-2: #7ad1ff;
+      --bg: #0b0d10; --card: #1a2028; --ink: #f4f1ea; --muted: #b7b3a9;
+      --line: #2a313b; --accent: #e8c547; --accent-2: #7ad1ff;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
-    body {
-      font-family: "Segoe UI", system-ui, sans-serif;
-      background: var(--bg);
-      color: var(--ink);
-      line-height: 1.55;
-    }
+    body { font-family: "Segoe UI", system-ui, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.55; }
     a { color: var(--accent-2); text-decoration: none; }
     a:hover { text-decoration: underline; }
+    .bg { position: fixed; inset: 0; z-index: -2; overflow: hidden; background: #000; }
+    .bg video, .bg iframe {
+      position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%;
+      transform: translate(-50%, -50%); object-fit: cover; pointer-events: none;
+    }
+    .bg iframe { width: 177.77vh; height: 100vh; min-width: 100vw; min-height: 56.25vw; }
+    .bg-dim {
+      position: fixed; inset: 0; z-index: -1;
+      background: linear-gradient(180deg, rgba(11,13,16,.55), rgba(11,13,16,.94));
+    }
     .wrap { width: min(980px, calc(100% - 32px)); margin: 0 auto; }
     header {
-      position: sticky; top: 0; z-index: 10;
-      background: rgba(11,13,16,.92);
-      border-bottom: 1px solid var(--line);
-      backdrop-filter: blur(8px);
+      position: sticky; top: 0; z-index: 10; background: rgba(11,13,16,.72);
+      border-bottom: 1px solid var(--line); backdrop-filter: blur(8px);
     }
-    nav {
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 14px 0; gap: 16px;
-    }
+    nav { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; }
     .brand { color: var(--ink); font-weight: 700; letter-spacing: .08em; }
-    .nav-links { display: flex; gap: 16px; flex-wrap: wrap; font-size: .92rem; }
+    .nav-links { display: flex; gap: 16px; font-size: .92rem; }
     .nav-links a { color: var(--muted); }
-    .hero { padding: 72px 0 48px; }
+    .hero { padding: 72px 0 36px; }
     .kicker { color: var(--accent); letter-spacing: .16em; font-size: .78rem; text-transform: uppercase; }
-    h1 { font-size: clamp(2.1rem, 5vw, 3.6rem); line-height: 1.05; margin: 10px 0 16px; }
-    .lede { color: var(--muted); max-width: 640px; font-size: 1.08rem; }
-    .meta { margin-top: 14px; color: var(--muted); font-size: .92rem; }
-    .btns { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
-    .btn {
-      display: inline-block; padding: 12px 18px; border-radius: 999px;
-      font-weight: 650; text-decoration: none; border: 1px solid transparent;
+    h1 { font-size: clamp(2.1rem, 5vw, 3.4rem); line-height: 1.05; margin: 10px 0 16px; }
+    p, .lede, .meta { color: var(--muted); }
+    .btns { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+    .btn, button.btn {
+      display: inline-block; padding: 12px 18px; border-radius: 999px; font-weight: 650;
+      text-decoration: none; border: 1px solid transparent; color: var(--ink); cursor: pointer; font: inherit;
     }
     .btn:hover { text-decoration: none; filter: brightness(1.08); }
     .btn-gold { background: var(--accent); color: #111; }
-    .btn-ghost { background: transparent; color: var(--ink); border-color: var(--line); }
-    .btn-blue { background: #1c3a4d; color: var(--ink); border-color: #2d5a73; }
-    section { padding: 28px 0 12px; }
-    h2 { font-size: 1.45rem; margin-bottom: 10px; }
-    p { color: var(--muted); }
+    .btn-ghost { border-color: var(--line); background: rgba(0,0,0,.35); }
+    .btn-blue { background: #1c3a4d; border-color: #2d5a73; }
+    section { padding: 20px 0; }
+    .panel { background: rgba(26,32,40,.88); border: 1px solid var(--line); border-radius: 20px; padding: 24px; }
+    h2 { font-size: 1.35rem; margin-bottom: 10px; }
+    h3 { margin-bottom: 8px; }
+    .clocks { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 16px; }
+    .clock { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 16px; }
+    .count { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 12px; }
+    .count div { text-align: center; background: #12161c; border-radius: 12px; padding: 10px 4px; }
+    .count b { display: block; font-size: 1.5rem; color: var(--accent); }
+    .count span { font-size: .7rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
     .grid { display: grid; gap: 14px; margin-top: 18px; }
     .cards-3 { grid-template-columns: repeat(3, 1fr); }
     .cards-2 { grid-template-columns: repeat(2, 1fr); }
-    .card {
-      background: var(--card); border: 1px solid var(--line);
-      border-radius: 16px; padding: 18px;
-    }
-    .card h3 { margin-bottom: 8px; font-size: 1.05rem; }
-    .card p { font-size: .95rem; }
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px; }
     .steps { counter-reset: step; }
-    .steps li {
-      list-style: none; background: var(--card); border: 1px solid var(--line);
-      border-radius: 16px; padding: 16px 16px 16px 58px; position: relative;
-    }
+    .steps li { list-style: none; padding: 16px 16px 16px 58px; position: relative; }
     .steps li::before {
-      counter-increment: step; content: counter(step);
-      position: absolute; left: 16px; top: 16px;
-      width: 28px; height: 28px; border-radius: 50%;
-      background: var(--accent); color: #111; font-weight: 700;
-      display: grid; place-items: center;
+      counter-increment: step; content: counter(step); position: absolute; left: 16px; top: 16px;
+      width: 28px; height: 28px; border-radius: 50%; background: var(--accent); color: #111;
+      font-weight: 700; display: grid; place-items: center;
     }
-    .video {
-      margin-top: 18px; border-radius: 16px; overflow: hidden;
-      border: 1px solid var(--line); aspect-ratio: 16/9; background: #000;
-    }
+    .video { margin-top: 14px; border-radius: 16px; overflow: hidden; border: 1px solid var(--line); aspect-ratio: 16/9; background: #000; }
     .video iframe { width: 100%; height: 100%; border: 0; }
-    .warn {
-      margin-top: 14px; font-size: .88rem; color: #d9c27a;
-      border-left: 3px solid var(--accent); padding-left: 12px;
-    }
-    footer {
-      margin-top: 48px; padding: 28px 0 40px;
-      border-top: 1px solid var(--line); color: var(--muted); font-size: .88rem;
-    }
-    footer .socials { display: flex; flex-wrap: wrap; gap: 14px; margin: 10px 0; }
+    .warn { margin-top: 14px; font-size: .88rem; color: #d9c27a; border-left: 3px solid var(--accent); padding-left: 12px; }
+    footer { margin-top: 36px; padding: 28px 0 40px; border-top: 1px solid var(--line); font-size: .88rem; }
+    footer .socials { display: flex; gap: 14px; margin: 10px 0; }
     @media (max-width: 720px) {
-      .cards-3, .cards-2 { grid-template-columns: 1fr; }
+      .cards-3, .clocks { grid-template-columns: 1fr; }
       .nav-links { display: none; }
-      .hero { padding-top: 40px; }
     }
+    @media (prefers-reduced-motion: reduce) { .bg video, .bg iframe { display: none; } }
   </style>
 </head>
 <body>
+  <div class="bg" aria-hidden="true">
+    <video id="bgVideo" autoplay muted loop playsinline>
+      <source src="video/bg.mp4" type="video/mp4" />
+    </video>
+    <iframe id="bgYT" title="ZeeBeav background" allow="autoplay; encrypted-media" tabindex="-1"></iframe>
+  </div>
+  <div class="bg-dim"></div>
+
   <header>
     <div class="wrap">
       <nav>
         <a class="brand" href="#top">ZEEBEAV</a>
         <div class="nav-links">
+          <a href="#takeover">X Takeover</a>
           <a href="#watch">Watch</a>
           <a href="#download">Download</a>
-          <a href="#howto">How to</a>
           <a href="#shop">Shop</a>
-          <a href="#lab">The lab</a>
           <a href="#follow">Follow</a>
         </div>
       </nav>
@@ -127,106 +111,121 @@
         <p class="kicker">Tesla light shows from the lab</p>
         <h1>Free sequences for S3XY + Cybertruck.</h1>
         <p class="lede">Filmed for real. Built to share at meetups, takeovers, and the driveway.</p>
-        <p class="meta">Marietta, GA · Husband, dad of 2, financial advisor by day · TANK is our CT</p>
+        <p class="meta">Marietta, GA · Husband, dad of 2 · TANK is our CT · Will we cu @theXtakeover?</p>
         <div class="btns">
           <a class="btn btn-gold" href="#watch">Watch a show</a>
           <a class="btn btn-blue" href="#download">Download free</a>
-          <a class="btn btn-ghost" href="#shop">Shop merch</a>
+          <a class="btn btn-ghost" href="#takeover">X Takeover countdown</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="takeover">
+      <div class="wrap panel">
+        <h2>Countdown to X Takeover</h2>
+        <p>Giga Texas · October 9–10, 2026. Both clocks use Austin time.</p>
+        <div class="clocks">
+          <div class="clock">
+            <h3>Friday, Oct 9</h3>
+            <p>Weekend kickoff · tours · Nicki Night</p>
+            <div class="count">
+              <div><b id="d9">0</b><span>Days</span></div>
+              <div><b id="h9">0</b><span>Hours</span></div>
+              <div><b id="m9">0</b><span>Minutes</span></div>
+              <div><b id="s9">0</b><span>Seconds</span></div>
+            </div>
+            <p id="note9" style="margin-top:10px"></p>
+          </div>
+          <div class="clock">
+            <h3>Saturday, Oct 10</h3>
+            <p>Main day at Giga Texas</p>
+            <div class="count">
+              <div><b id="d10">0</b><span>Days</span></div>
+              <div><b id="h10">0</b><span>Hours</span></div>
+              <div><b id="m10">0</b><span>Minutes</span></div>
+              <div><b id="s10">0</b><span>Seconds</span></div>
+            </div>
+            <p id="note10" style="margin-top:10px"></p>
+          </div>
+        </div>
+        <div class="btns">
+          <a class="btn btn-gold" href="https://www.xtakeover.com/" target="_blank" rel="noopener">xtakeover.com</a>
+          <a class="btn btn-ghost" href="https://x.com/theXtakeover" target="_blank" rel="noopener">@theXtakeover</a>
         </div>
       </div>
     </section>
 
     <section id="watch">
-      <div class="wrap">
-        <h2>Inside the lab</h2>
-        <p>New drops, multi-take driveway films, and the occasional multi-car stack. We shoot what we’ve got. That’s the point.</p>
+      <div class="wrap panel">
+        <h2>Avicii in the lab</h2>
+        <p>Rotation leans Avicii, plus a couple of the most-watched drops.</p>
         <div class="video">
-          <iframe
-            src="https://www.youtube.com/embed/AAQ9ZJTyTeI"
-            title="Inside ZEEBEAV"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
+          <iframe id="featureYT" title="ZeeBeav featured show" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
-        <p style="margin-top:12px"><a href="https://www.youtube.com/@zeebeav">Watch more on YouTube</a></p>
+        <p id="nowPlaying" style="margin-top:10px;color:var(--ink)"></p>
+        <div class="btns">
+          <button class="btn btn-ghost" type="button" id="prevBtn">Previous</button>
+          <button class="btn btn-ghost" type="button" id="nextBtn">Next</button>
+          <a class="btn btn-gold" href="https://www.youtube.com/@zeebeav">YouTube channel</a>
+        </div>
       </div>
     </section>
 
     <section id="download">
-      <div class="wrap">
+      <div class="wrap panel">
         <h2>Free light shows</h2>
-        <p>Grab the sequence. Play it on your Tesla. Film it. Tag @ZeeBeav and we will reshare the good ones.</p>
         <div class="grid cards-3">
-          <article class="card">
-            <h3>ToyBox</h3>
-            <p>Our home shelf. Start here.</p>
-            <p style="margin-top:12px"><a href="https://www.toybox.lol/zeebeav">Open ZeeBeav on ToyBox</a></p>
-          </article>
-          <article class="card">
-            <h3>Tesla Light Share</h3>
-            <p>The full ZeeBeav catalog, S3XY + CT titles included.</p>
-            <p style="margin-top:12px"><a href="https://teslalightshare.io/4247/light-shows">Open our shows</a></p>
-          </article>
-          <article class="card">
-            <h3>XLights</h3>
-            <p>Also listed in the broader catalog if you already live there.</p>
-            <p style="margin-top:12px"><a href="https://xlightshows.io/light-shows/">Browse XLights</a></p>
-          </article>
+          <article class="card"><h3>ToyBox</h3><p><a href="https://www.toybox.lol/zeebeav">Open ZeeBeav on ToyBox</a></p></article>
+          <article class="card"><h3>Tesla Light Share</h3><p><a href="https://teslalightshare.io/4247/light-shows">Open our shows</a></p></article>
+          <article class="card"><h3>XLights</h3><p><a href="https://xlightshows.io/light-shows/">Browse XLights</a></p></article>
         </div>
-        <p class="warn">Shows are S3XY + CT compatible unless a title says otherwise. Some tracks use intense flashing lights and can be a problem for people with photosensitivity.</p>
+        <p class="warn">S3XY + CT compatible unless a title says otherwise. Some tracks flash hard.</p>
       </div>
     </section>
 
     <section id="howto">
-      <div class="wrap">
+      <div class="wrap panel">
         <h2>First time? Three steps.</h2>
-        <ol class="grid steps" style="margin-top:18px">
+        <ol class="grid steps">
           <li class="card">Download a ZeeBeav sequence from ToyBox or Tesla Light Share.</li>
-          <li class="card">Load it in your Tesla with a USB drive using the in-car light show flow.</li>
-          <li class="card">Park, play, film. Tag @ZeeBeav so we can boost the best clips.</li>
+          <li class="card">Load it in your Tesla with a USB drive.</li>
+          <li class="card">Park, play, film. Tag @ZeeBeav.</li>
         </ol>
-        <p style="margin-top:16px">Need help? Email <a href="mailto:zeebeav@gmail.com?subject=Help%20running%20a%20show">zeebeav@gmail.com</a> with your model (3 / Y / S / X / CT) and we will point you to the right file.</p>
       </div>
     </section>
 
     <section id="shop">
-      <div class="wrap">
+      <div class="wrap panel">
         <h2>Stickers, magnets, and the Blinky Shows tee</h2>
-        <p>We geek out on the little stuff. Slap a sticker on the frunk, toss a magnet on the fridge, wear the tee to the next takeover.</p>
         <div class="grid cards-2">
           <article class="card">
             <h3>Blinky Shows tee — $40</h3>
-            <p>Soft crew with the lab artwork and a QR on the back.</p>
-            <p style="margin-top:12px"><a href="https://smokehbearsden.com/products/zeebeav-blinky-shows-tee?variant=48170385080558">Shop the tee</a></p>
+            <p><a href="https://smokehbearsden.com/products/zeebeav-blinky-shows-tee?variant=48170385080558">Shop the tee</a></p>
           </article>
           <article class="card">
             <h3>Stickers & magnets</h3>
-            <p>Fresh drops go out when we print them. Message us or grab them in the wild.</p>
-            <p style="margin-top:12px"><a href="mailto:zeebeav@gmail.com?subject=Stickers">Email with subject STICKERS</a></p>
+            <p><a href="mailto:zeebeav@gmail.com?subject=Stickers">Email with subject STICKERS</a></p>
           </article>
         </div>
       </div>
     </section>
 
     <section id="lab">
-      <div class="wrap">
+      <div class="wrap panel">
         <h2>Who’s in the lab</h2>
-        <p>I’m a husband, friend, and father of two in Marietta. Financial advisor by day. Tesla light-show geek when we are not at a ballgame.</p>
-        <p style="margin-top:12px">I do not have a four-person film crew on call. I reshoot in the driveway until the sync hits. If it makes you grin at a takeover, it did its job.</p>
-        <p style="margin-top:12px">TANK is our Cybertruck. Will we see you at the next X Takeover?</p>
+        <p>Husband, friend, father of two in Marietta. Financial advisor by day. Light-show geek when we are not at a ballgame. TANK is our Cybertruck.</p>
       </div>
     </section>
 
     <section id="follow">
-      <div class="wrap">
+      <div class="wrap panel">
         <h2>Stay in the loop</h2>
-        <p>New sequences, merch drops, and event plans. No spam. We have kids and a day job.</p>
         <div class="btns">
-          <a class="btn btn-gold" href="mailto:zeebeav@gmail.com?subject=WAITLIST">Email WAITLIST to join</a>
+          <a class="btn btn-gold" href="mailto:zeebeav@gmail.com?subject=WAITLIST">Email WAITLIST</a>
           <a class="btn btn-ghost" href="https://x.com/ZeeBeav">X @ZeeBeav</a>
           <a class="btn btn-ghost" href="https://www.youtube.com/@zeebeav">YouTube</a>
           <a class="btn btn-ghost" href="https://www.instagram.com/zeebeav/">Instagram @zeebeav</a>
         </div>
-        <p style="margin-top:12px">Until the form is live, email <a href="mailto:zeebeav@gmail.com?subject=WAITLIST">zeebeav@gmail.com</a> with subject WAITLIST and your Tesla model.</p>
       </div>
     </section>
   </main>
@@ -238,11 +237,67 @@
         <a href="https://x.com/ZeeBeav">X</a>
         <a href="https://www.youtube.com/@zeebeav">YouTube</a>
         <a href="https://www.instagram.com/zeebeav/">Instagram</a>
-        <a href="https://www.zeebeav.com/">zeebeav.com</a>
       </div>
       <p>Shows are fan sequences. Flashing lights can be an issue for some people.</p>
-      <p><a href="mailto:zeebeav@gmail.com">zeebeav@gmail.com</a></p>
     </div>
   </footer>
+
+  <script>
+    const videos = [
+      { id: "XTRa6GTNZv4", title: "Avicii — The Days" },
+      { id: "FjX7E-CobSk", title: "Avicii Tribute Megamashup" },
+      { id: "YjI1ivtzbAY", title: "Avicii — My Feelings For You (Don Diablo Remix)" },
+      { id: "xPFP1bT1xL0", title: "Avicii drop short" },
+      { id: "RNrYCaHakfg", title: "Porter Robinson — Language" },
+      { id: "sOsr0uW1yII", title: "Stranger Things" }
+    ];
+
+    let i = 0, auto = true, useLocalBg = false;
+    const feature = document.getElementById("featureYT");
+    const bgYT = document.getElementById("bgYT");
+    const now = document.getElementById("nowPlaying");
+    const local = document.getElementById("bgVideo");
+
+    function ytFeature(id) { return "https://www.youtube.com/embed/" + id + "?rel=0"; }
+    function ytBg(id) {
+      return "https://www.youtube.com/embed/" + id + "?autoplay=1&mute=1&controls=0&loop=1&playlist=" + id + "&playsinline=1&modestbranding=1&rel=0";
+    }
+    function render() {
+      const v = videos[i];
+      feature.src = ytFeature(v.id);
+      now.textContent = "Now showing: " + v.title;
+      if (!useLocalBg) bgYT.src = ytBg(v.id);
+    }
+    document.getElementById("nextBtn").onclick = () => { auto = false; i = (i + 1) % videos.length; render(); };
+    document.getElementById("prevBtn").onclick = () => { auto = false; i = (i - 1 + videos.length) % videos.length; render(); };
+    setInterval(() => { if (auto) { i = (i + 1) % videos.length; render(); } }, 20000);
+    local.addEventListener("loadeddata", () => { useLocalBg = true; bgYT.style.display = "none"; });
+    local.addEventListener("error", () => { local.style.display = "none"; });
+    render();
+
+    const t9 = new Date("2026-10-09T10:00:00-05:00").getTime();
+    const t10 = new Date("2026-10-10T09:00:00-05:00").getTime();
+
+    function fill(prefix, target, liveMsg) {
+      const left = target - Date.now();
+      const note = document.getElementById("note" + prefix);
+      if (left <= 0) {
+        ["d","h","m","s"].forEach(k => document.getElementById(k + prefix).textContent = 0);
+        note.textContent = liveMsg;
+        return;
+      }
+      document.getElementById("d" + prefix).textContent = Math.floor(left / 86400000);
+      document.getElementById("h" + prefix).textContent = Math.floor((left % 86400000) / 3600000);
+      document.getElementById("m" + prefix).textContent = Math.floor((left % 3600000) / 60000);
+      document.getElementById("s" + prefix).textContent = Math.floor((left % 60000) / 1000);
+      note.textContent = "";
+    }
+    function tick() {
+      fill("9", t9, "Weekend is live. See you at Giga Texas.");
+      fill("10", t10, "Main day is live. See you at Giga Texas.");
+    }
+    tick();
+    setInterval(tick, 1000);
+  </script>
 </body>
 </html>
