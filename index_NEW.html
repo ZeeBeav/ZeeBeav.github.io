@@ -21,8 +21,6 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
-
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-BSCM6QDED4"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -30,7 +28,6 @@
     gtag('js', new Date());
     gtag('config', 'G-BSCM6QDED4');
   </script>
-
   <style>
     :root {
       --bg: #0b0d10; --card: #1a2028; --ink: #f4f1ea; --muted: #b7b3a9;
@@ -48,10 +45,8 @@
     .video-bg {
       position: absolute; top: 50%; left: 50%;
       min-width: 100%; min-height: 100%;
-      width: auto; height: auto;
       transform: translate(-50%, -50%);
-      object-fit: cover;
-      pointer-events: none;
+      object-fit: cover; pointer-events: none;
     }
     .bg-dim {
       position: fixed; inset: 0; z-index: -1;
@@ -88,10 +83,12 @@
     h2 { font-size: 1.35rem; margin-bottom: 10px; }
     h3 { margin-bottom: 8px; }
     .tank-hero {
-      position: relative; border-radius: 20px; overflow: hidden;
+      position: relative; display: block; border-radius: 20px; overflow: hidden;
       border: 1px solid var(--line); min-height: 280px;
       background: #111 url("https://zeebeav.github.io/Hendrix1.png") center / cover no-repeat;
+      text-decoration: none; color: inherit;
     }
+    .tank-hero:hover { text-decoration: none; filter: brightness(1.05); }
     .tank-hero::after {
       content: ""; position: absolute; inset: 0;
       background: linear-gradient(90deg, rgba(11,13,16,.88) 0%, rgba(11,13,16,.25) 70%, rgba(11,13,16,.55) 100%);
@@ -99,6 +96,7 @@
     .tank-copy { position: relative; z-index: 1; padding: 36px 28px; max-width: 420px; }
     .tank-copy h2 { font-size: clamp(2rem, 5vw, 3rem); letter-spacing: .12em; margin-bottom: 8px; }
     .tank-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 16px; }
+    .tank-grid a { display: block; }
     .tank-grid img { width: 100%; aspect-ratio: 16/10; object-fit: cover; border-radius: 14px; border: 1px solid var(--line); display: block; }
     .clocks { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 16px; }
     .clock { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 16px; }
@@ -179,17 +177,23 @@
 
     <section id="tank">
       <div class="wrap panel">
-        <div class="tank-hero">
+        <a class="tank-hero" href="https://www.patreon.com/ZeeBeav/posts/jimi-hendrix-ct-128040557" target="_blank" rel="noopener">
           <div class="tank-copy">
             <p class="kicker">The lab on wheels</p>
             <h2>TANK</h2>
             <p>Our Cybertruck. Light bar, RGB accents, and every ZeeBeav sequence that says CT. If you saw stainless steel blink, that was TANK.</p>
           </div>
-        </div>
+        </a>
         <div class="tank-grid">
-          <img src="https://zeebeav.github.io/Hendrix1.png" alt="TANK running Hendrix" />
-          <img src="https://zeebeav.github.io/thumbnail222.png" alt="TANK Stranger Things CT edition" />
-          <img src="https://zeebeav.github.io/THUMBNAIL2.gif" alt="TANK Numb CT sequence" />
+          <a href="https://www.patreon.com/ZeeBeav/posts/jimi-hendrix-ct-128040557" target="_blank" rel="noopener">
+            <img src="https://zeebeav.github.io/Hendrix1.png" alt="TANK running Hendrix" />
+          </a>
+          <a href="https://www.patreon.com/ZeeBeav/posts/stranger-things-165126627" target="_blank" rel="noopener">
+            <img src="https://zeebeav.github.io/thumbnail222.png" alt="TANK Stranger Things CT edition" />
+          </a>
+          <a href="https://www.patreon.com/ZeeBeav/posts/linkin-park-numb-166194926" target="_blank" rel="noopener">
+            <img src="https://zeebeav.github.io/THUMBNAIL2.gif" alt="TANK Numb CT sequence" />
+          </a>
         </div>
         <p class="meta" style="margin-top:14px">CT files live on ToyBox and Tesla Light Share. Titles that say CT were built and filmed on TANK.</p>
       </div>
@@ -329,18 +333,15 @@
       { id: "XTRa6GTNZv4", title: "Avicii — The Days", views: "1.7K" },
       { id: "GFrWNX0zgRA", title: "Nicki Minaj — Starships", views: "1.5K" }
     ];
-
     const feature = document.getElementById("featureYT");
     const now = document.getElementById("nowPlaying");
     const grid = document.getElementById("top10");
-
     function play(i) {
       const v = videos[i];
       feature.src = "https://www.youtube.com/embed/" + v.id + "?rel=0";
       now.textContent = "#" + (i + 1) + " · " + v.title + " · " + v.views + " views";
       [...grid.querySelectorAll(".pick")].forEach((el, n) => el.classList.toggle("active", n === i));
     }
-
     videos.forEach((v, i) => {
       const b = document.createElement("button");
       b.type = "button";
@@ -350,7 +351,6 @@
       grid.appendChild(b);
     });
     play(0);
-
     const t9 = new Date("2026-10-09T10:00:00-05:00").getTime();
     const t10 = new Date("2026-10-10T09:00:00-05:00").getTime();
     function fill(prefix, target, liveMsg) {
