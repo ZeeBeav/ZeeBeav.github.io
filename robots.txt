@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.zeebeav.com/sitemap.xml
+Sitemap: https://zeebeav.com/sitemap.xml
