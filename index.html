@@ -63,7 +63,14 @@
       border-bottom: 1px solid var(--line);
       backdrop-filter: blur(8px);
     }
-    nav { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; }
+    nav { position: relative; display: flex; align-items: center; justify-content: space-between; padding: 14px 0; }
+    .tesla-referral {
+      position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+      color: #e82127; font-weight: 700; font-size: .95rem; white-space: nowrap;
+      z-index: 3; text-decoration: none; letter-spacing: .01em;
+    }
+    .tesla-referral:hover { color: #ff3b3b; text-decoration: none; }
+
     .brand { display: flex; align-items: center; text-decoration: none; }
     .brand img { height: 28px; width: auto; display: block; filter: invert(1); }
     .nav-links { display: flex; gap: 16px; font-size: .92rem; }
@@ -211,6 +218,8 @@
     footer .cookie { color: var(--muted); font-size: .8rem; }
     @media (max-width: 900px) { .top10, .tank-grid, .shorts6 { grid-template-columns: 1fr 1fr; } }
     @media (max-width: 720px) {
+      .tesla-referral { font-size: .78rem; }
+
       .cards-3, .clocks, .tank-grid, .shorts6 { grid-template-columns: 1fr; }
       header .wrap { position: relative; }
       .nav-toggle { display: inline-block; }
@@ -263,6 +272,7 @@
         <a class="brand" href="#top">
           <img src="https://zeebeav.com/ZeeBeavs_Blackfont.png" alt="ZEEBEAV" />
         </a>
+        <a class="tesla-referral" href="https://ts.la/pete95940" target="_blank" rel="noopener">Tesla Referral Link</a>
         <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">Menu</button>
         <div class="nav-links">
           <a href="/origin.html">Blinky Shows</a>
@@ -275,7 +285,6 @@
           <a href="#shop">Shop</a>
           <a href="#lab">Lab</a>
           <a href="#follow">Follow</a>
-          <a href="https://ts.la/pete95940" target="_blank" rel="noopener">Tesla Referral Link</a>
         </div>
       </nav>
     </div>
