@@ -74,10 +74,12 @@
     footer .socials, footer .legal, footer .jump { display:flex; flex-wrap:wrap; gap:10px 14px; margin:10px 0; }
     footer .jump { display:none; }
     footer .cookie { color:var(--muted); font-size:.8rem; }
-    .hero-art { display:block; width:min(420px, 100%); height:auto; border-radius:16px; border:1px solid var(--line); margin:8px 0 18px; }
-    .story { max-width:46rem; }
-    .story p { margin:0 0 1.15em; }
+    .hero .wrap { width:min(46rem, calc(100% - 32px)); text-align:center; }
+    .hero-art { display:block; width:min(420px, 100%); height:auto; border-radius:16px; border:1px solid var(--line); margin:8px auto 18px; }
+    .wrap.story { width:min(46rem, calc(100% - 32px)); }
+    .story p { margin:0 0 1.15em; text-align:left; }
     .story p:last-child { margin-bottom:0; }
+    .story .btns { justify-content:center; }
     @media (max-width:980px) {
       .show-list { grid-template-columns:1fr 1fr; }
     }
