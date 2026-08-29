@@ -105,6 +105,57 @@
     .count div { text-align: center; background: #12161c; border-radius: 12px; padding: 10px 4px; }
     .count b { display: block; font-size: 1.5rem; color: var(--accent); }
     .count span { font-size: .7rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+    .takeover-card {
+      background: #0c1016;
+      border: 1px solid rgba(255, 90, 190, .45);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow:
+        0 0 0 1px rgba(122, 209, 255, .18),
+        0 0 28px rgba(255, 90, 190, .22),
+        0 0 64px rgba(80, 140, 255, .16);
+    }
+    .takeover-hero {
+      display: block; position: relative; overflow: hidden;
+      aspect-ratio: 16 / 7; min-height: 220px;
+      text-decoration: none; color: inherit;
+    }
+    .takeover-hero img {
+      width: 100%; height: 100%; object-fit: cover; object-position: center 68%;
+      display: block; transform: scale(1.04);
+      transition: transform 1.1s ease;
+      filter: saturate(1.15) contrast(1.08);
+    }
+    .takeover-hero:hover { text-decoration: none; }
+    .takeover-hero:hover img { transform: scale(1.1); }
+    .takeover-hero::after {
+      content: ""; position: absolute; inset: 0;
+      background:
+        linear-gradient(180deg, rgba(8,10,16,.06) 0%, rgba(8,10,16,.02) 62%, rgba(8,10,16,.28) 100%),
+        radial-gradient(80% 70% at 70% 40%, rgba(90, 40, 180, .14), transparent 60%);
+      pointer-events: none;
+    }
+    .takeover-body { padding: 6px 24px 24px; }
+    .takeover-body > p { color: #c9d6e8; }
+    .takeover-card .clock {
+      background: rgba(12, 16, 24, .72);
+      border: 1px solid rgba(122, 209, 255, .28);
+      box-shadow: inset 0 0 24px rgba(90, 160, 255, .08);
+      backdrop-filter: blur(8px);
+    }
+    .takeover-card .count div {
+      background: rgba(6, 8, 14, .85);
+      border: 1px solid rgba(255, 90, 190, .22);
+    }
+    .takeover-card .count b {
+      color: #ff7ad8;
+      text-shadow: 0 0 14px rgba(255, 90, 190, .65);
+    }
+    .takeover-card .btn-gold {
+      background: #ff5abe;
+      color: #14010d;
+      box-shadow: 0 0 18px rgba(255, 90, 190, .45);
+    }
     .grid { display: grid; gap: 14px; margin-top: 18px; }
     .cards-3 { grid-template-columns: repeat(3, 1fr); }
     .cards-2 { grid-template-columns: repeat(2, 1fr); }
@@ -148,7 +199,7 @@
     }
     .lab-copy { position: relative; z-index: 1; padding: 40px 28px 28px; max-width: 560px; }
     .lab-copy p { color: #f4f1ea; text-shadow: 0 1px 14px rgba(0,0,0,.7); }
-    @media (prefers-reduced-motion: reduce) { .video-bg, .lab-bg { display: none; } }
+    @media (prefers-reduced-motion: reduce) { .video-bg, .lab-bg { display: none; } .takeover-hero img { transition: none; transform: none; } }
   </style>
 </head>
 <body>
@@ -219,36 +270,42 @@
     </section>
 
     <section id="takeover">
-      <div class="wrap panel">
-        <h2>Countdown to X Takeover</h2>
-        <p>Giga Texas · October 9–10, 2026. Both clocks use Austin time. TANK rolls if we can get her there.</p>
-        <div class="clocks">
-          <div class="clock">
-            <h3>Friday, Oct 9</h3>
-            <p>Weekend kickoff · tours · Nicki Night</p>
-            <div class="count">
-              <div><b id="d9">0</b><span>Days</span></div>
-              <div><b id="h9">0</b><span>Hours</span></div>
-              <div><b id="m9">0</b><span>Minutes</span></div>
-              <div><b id="s9">0</b><span>Seconds</span></div>
+      <div class="wrap takeover-card">
+        <a class="takeover-hero" href="https://www.xtakeover.com/" target="_blank" rel="noopener">
+          <img src="https://zeebeav.github.io/XTakeover.jpg" alt="TANK headed to X Takeover, Austin TX 10/10/26" />
+        </a>
+        <div class="takeover-body">
+          <p class="kicker">Giga Texas</p>
+          <h2>Countdown to X Takeover</h2>
+          <p>October 9–10, 2026. Both clocks use Austin time. TANK rolls if we can get her there.</p>
+          <div class="clocks">
+            <div class="clock">
+              <h3>Friday, Oct 9</h3>
+              <p>Weekend kickoff · tours · Nicki Night</p>
+              <div class="count">
+                <div><b id="d9">0</b><span>Days</span></div>
+                <div><b id="h9">0</b><span>Hours</span></div>
+                <div><b id="m9">0</b><span>Minutes</span></div>
+                <div><b id="s9">0</b><span>Seconds</span></div>
+              </div>
+              <p id="note9" style="margin-top:10px"></p>
             </div>
-            <p id="note9" style="margin-top:10px"></p>
-          </div>
-          <div class="clock">
-            <h3>Saturday, Oct 10</h3>
-            <p>Main day at Giga Texas</p>
-            <div class="count">
-              <div><b id="d10">0</b><span>Days</span></div>
-              <div><b id="h10">0</b><span>Hours</span></div>
-              <div><b id="m10">0</b><span>Minutes</span></div>
-              <div><b id="s10">0</b><span>Seconds</span></div>
+            <div class="clock">
+              <h3>Saturday, Oct 10</h3>
+              <p>Main day at Giga Texas</p>
+              <div class="count">
+                <div><b id="d10">0</b><span>Days</span></div>
+                <div><b id="h10">0</b><span>Hours</span></div>
+                <div><b id="m10">0</b><span>Minutes</span></div>
+                <div><b id="s10">0</b><span>Seconds</span></div>
+              </div>
+              <p id="note10" style="margin-top:10px"></p>
             </div>
-            <p id="note10" style="margin-top:10px"></p>
           </div>
-        </div>
-        <div class="btns">
-          <a class="btn btn-gold" href="https://www.xtakeover.com/" target="_blank" rel="noopener">xtakeover.com</a>
-          <a class="btn btn-ghost" href="https://x.com/theXtakeover" target="_blank" rel="noopener">@theXtakeover</a>
+          <div class="btns">
+            <a class="btn btn-gold" href="https://www.xtakeover.com/" target="_blank" rel="noopener">xtakeover.com</a>
+            <a class="btn btn-ghost" href="https://x.com/theXtakeover" target="_blank" rel="noopener">@theXtakeover</a>
+          </div>
         </div>
       </div>
     </section>
