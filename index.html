@@ -114,14 +114,11 @@
       text-decoration: none; color: inherit;
     }
     .tank-hero:hover { text-decoration: none; }
-    .tank-hero::before {
-      content: ""; position: absolute; inset: 0;
-      background: #111 url("https://zeebeav.com/Birthday.png") center / cover no-repeat;
-      transform: scale(1.04);
-      transform-origin: center;
-      transition: transform 1.1s ease;
+    .tank-hero::before { content: none; }
+    .tank-bg {
+      position: absolute; inset: 0; width: 100%; height: 100%;
+      object-fit: cover; pointer-events: none; z-index: 0;
     }
-    .tank-hero:hover::before { transform: scale(1.1); }
     .tank-hero::after {
       content: ""; position: absolute; inset: 0;
       background: linear-gradient(90deg, rgba(11,13,16,.88) 0%, rgba(11,13,16,.25) 70%, rgba(11,13,16,.55) 100%);
@@ -249,7 +246,7 @@
     .lab-copy { position: relative; z-index: 1; padding: 40px 28px 28px; max-width: 560px; }
     .lab-copy p { color: #f4f1ea; text-shadow: 0 1px 14px rgba(0,0,0,.7); }
     @media (prefers-reduced-motion: reduce) {
-      .video-bg, .lab-bg { display: none; }
+      .video-bg, .lab-bg, .tank-bg { display: none; }
       .takeover-hero img, .zoom img, .tank-grid img, .pick img, .tank-hero::before {
         transition: none; transform: none;
       }
@@ -275,7 +272,7 @@
         <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">Menu</button>
         <div class="nav-links">
           <a href="/origin.html">Origin</a>
-          <a href="#tank">TANK</a>
+          <a href="#lab">TANK</a>
           <a href="#takeover">X Takeover</a>
           <a href="#watch">Top 10</a>
           <a href="/shows.html">Shows</a>
@@ -297,7 +294,7 @@
         <p class="lede">TANK is the rolling lab. Shows get cut on stainless steel first, then shared for S3XY and CT.</p>
         <p class="meta">Marietta, GA · Husband, dad of 2 · Will we cu @theXtakeover?</p>
         <div class="btns">
-          <a class="btn btn-gold" href="#tank">Meet TANK</a>
+          <a class="btn btn-gold" href="#lab">Meet TANK</a>
           <a class="btn btn-blue" href="#download">Download free</a>
           <a class="btn btn-ghost" href="#takeover">X Takeover countdown</a>
         </div>
@@ -306,11 +303,14 @@
 
     <section id="tank">
       <div class="wrap panel">
-        <a class="tank-hero" href="https://www.patreon.com/ZeeBeav/posts/birthday-by-167878576" target="_blank" rel="noopener">
+        <a class="tank-hero" href="https://zeebeav.com/ZeeBeav_Top10_Sizzle_33s_preview3.mp4" target="_blank" rel="noopener">
+          <video class="tank-bg" autoplay loop muted playsinline preload="metadata">
+            <source src="https://zeebeav.com/ZeeBeav_Top10_Sizzle_33s_preview3.mp4" type="video/mp4">
+          </video>
           <div class="tank-copy">
-            <p class="kicker">The lab on wheels</p>
-            <h2>TANK</h2>
-            <p>Our Cybertruck. Light bar, RGB accents, and every ZeeBeav sequence that says CT. If you saw stainless steel blink, that was TANK.</p>
+            <p class="kicker">From the channel</p>
+            <h2>Latest/Hottest Sequences</h2>
+            <p>The Top 10 sizzle. Click for the full reel with sound.</p>
           </div>
         </a>
         <div class="tank-grid">
@@ -486,9 +486,9 @@
           </video>
           <div class="lab-dim"></div>
           <div class="lab-copy">
-            <p class="kicker">The rolling lab</p>
-            <h2>Who’s in the lab</h2>
-            <p>Husband, friend, father of two in Marietta. Financial advisor by day. Light-show geek when we are not at a ballgame. TANK is our Cybertruck.</p>
+            <p class="kicker">The lab on wheels</p>
+            <h2>TANK</h2>
+            <p>Our Cybertruck. Light bar, RGB accents, and every ZeeBeav sequence that says CT. If you saw stainless steel blink, that was TANK.</p>
             <p>The <a href="/origin.html">Blinky Shows origin</a> is here.</p>
           </div>
         </div>
@@ -518,7 +518,7 @@
       </div>
       <nav class="jump" aria-label="On this page">
         <a href="/origin.html">Origin</a>
-        <a href="#tank">TANK</a>
+        <a href="#lab">TANK</a>
         <a href="#takeover">X Takeover</a>
         <a href="#watch">Top 10</a>
         <a href="/shows.html">Shows</a>
