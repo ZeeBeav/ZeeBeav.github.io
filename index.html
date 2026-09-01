@@ -129,7 +129,7 @@
     }
     .tank-copy { position: relative; z-index: 1; padding: 36px 28px; max-width: 420px; }
     .tank-copy h2 { font-size: clamp(2rem, 5vw, 3rem); letter-spacing: .12em; margin-bottom: 8px; }
-    .tank-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 16px; }
+    .tank-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 16px; }
     .tank-grid a { display: block; overflow: hidden; border-radius: 14px; border: 1px solid var(--line); }
     .tank-grid img { width: 100%; aspect-ratio: 16/10; object-fit: cover; display: block; }
     .clocks { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 16px; }
@@ -228,7 +228,8 @@
     @media (max-width: 720px) {
       .tesla-referral { font-size: .78rem; }
 
-      .cards-3, .clocks, .tank-grid, .shorts6 { grid-template-columns: 1fr; }
+      .cards-3, .clocks, .shorts6 { grid-template-columns: 1fr; }
+      .tank-grid { grid-template-columns: 1fr 1fr; }
       footer .jump { display: flex; }
     }
     .lab-stage {
@@ -313,6 +314,9 @@
           </div>
         </a>
         <div class="tank-grid">
+          <a href="https://youtu.be/UlPjULocxiQ" target="_blank" rel="noopener">
+            <img src="https://zeebeav.com/RhymeDust.jpg" alt="TANK running Dom Dolla Rhyme Dust" />
+          </a>
           <a href="https://www.patreon.com/ZeeBeav/posts/birthday-by-167878576" target="_blank" rel="noopener">
             <img src="https://zeebeav.com/Birthday.png" alt="TANK running Beatles Birthday" />
           </a>
