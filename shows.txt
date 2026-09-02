@@ -1,93 +1,94 @@
 ZEEBEAV show inventory
-89 Patreon sequences, newest first
+90 Patreon sequences, newest first
 https://zeebeav.com/shows.html
 
-01  Aug 27, 2026  Birthday by The Beatles
-02  Aug 9, 2026   Linkin Park ~ NUMB (Cyberpunk) Tesla Light Show ~ CT Edition
-03  Aug 1, 2026   Calling ALL Hokies!
-04  Jul 30, 2026  KITT Scanner OG ~ 2:22
-05  Jul 29, 2026  Stranger Things Light Show ~ Cybertruck Edition
-06  Jul 19, 2026  RUFUS DU SOL ~ InnerBloom2
-07  Jul 6, 2026   Welcome to the Land of the Free
-08  Jun 12, 2026  Cyndi Lauper ~ Girls Just Wanna Have FUN!  Tesla CT w ORLB Light Show
-09  Jun 12, 2026  BassJackers & MAKJ ~ DERP Tesla CT w ORLB Light Show
-10  Apr 24, 2026  Tesla Cybertruck's 'Dancing in the Moonlight' Lightshow
-11  Apr 23, 2026  Fred Again x Swedish House Mafia ~ Turn On the Lights Again.... CTs & S3XY Tesla 5x5 Cars Light Show
-12  Dec 26, 2025  Juicce ~ Connected Multi S3XY Tesla Light Show
-13  Dec 23, 2025  Kelly Clarkson ~ Sleigh Ride S3XY
-14  Dec 21, 2025  Up & Down ~ S3XY 5 Car
-15  Dec 19, 2025  Fred Again x Swedish House Mafia ~ Turn On the Lights Again.... S3XY Tesla 5 Car Light Show
-16  Dec 16, 2025  Fred Again x Swedish House Mafia ~ Turn On The Lights Again S3XY 1 Car Tesla Light Show
-17  Dec 13, 2025  Laufey's ~ Santa Baby S3XY Tesla Light Show
-18  Nov 30, 2025  Metallica ~ Master of Puppets Multi Car Tesla Light Show
-19  Oct 31, 2025  Thriller Remix by Steve Aoki Tesla Light Show ~ Cyber Truck Version
-20  Oct 30, 2025  Stranger Things Tesla Light Show S3XY Compatible
-21  Oct 29, 2025  Lady Gaga - The Dead Dance
-22  Oct 9, 2025   Ludacris Rollout (My Business) Remix (Wiley Kat (Pay as you go))
-23  Sep 28, 2025  2025 Sandstorm Remix ~ S3XY Version
-24  Sep 12, 2025  Dame Un Grr ~ All Shows
-25  Sep 6, 2025   DJ Bountyhunter - Woops (Dimitri Vegas & Junkie Kid Remix) Tesla Light Show ALL Versions
-26  Aug 30, 2025  2025 Labor Day Playlist Teaser ~ ALL ver.
-27  Aug 30, 2025  DJ Fotizo ~ Bday Clip1 ALL Versions
-28  Aug 29, 2025  "Shroomie" ~ Bionic & The Wires a mushroom playing keyboard
-29  Aug 23, 2025  Bassjackers & MAKJ - DERP Tesla Light Show
-30  Aug 17, 2025  Blasterjaxx & Timmy Trumpet - Narco Tesla Light Show S3XY+CT & Juniper Compatible
-31  Aug 13, 2025  StephaniB's #shorts Remix Insomnia Tesla Light Show S3XY+CT & Juniper Compatible
-32  Aug 9, 2025   Armin van Buuren X Mike Candys, Jack Holiday - Learn To Dance Again Insomnia (HALFSTEP Intro Edit)
-33  Aug 7, 2025   Ummet Ozcan Remix ~ Blood is Pumping Tesla Light Show S3XY+CT & Juniper Compatible
-34  Aug 3, 2025   Tiësto~The Business (Vintage Culture & Dubdogz Remix) Tesla Light Show S3XY+CT & Juniper Compatible
-35  Aug 2, 2025   Dimitri Vegas & Like Mike & W&W & Marnik – Yeah Tesla Light Show S3XY+CT & Juniper Compatible
-36  Jul 23, 2025  Swedish House Mafia ~ One (Your Name) Tesla Light Show S3XY+CT Compatible
-37  Jul 9, 2025   Naughty by Nature ~ Feel Me Flow Tesla Light Show S3XY+CT Compatible
-38  Jun 30, 2025  Metallica ~ Damage Inc INTRO Tesla Light Show S3XY +CT Compatible
-39  Jun 26, 2025  Hardwell & Blasterjaxx - Beat Of The Drum Tesla Light Show S3XY+CT Compatible
-40  Jun 21, 2025  Avicii & Sebastien Drums-My Feelings For You (Don Diablo Remix) Tesla Light Show S3XY+CT Compatible
-41  Jun 9, 2025   https://youtu.be/0Kqpr9ycyuY
-42  Jun 7, 2025   P.U.S.H. ~ Stupid, Naive, Conformist Tesla Light Show S3XY+CT Compatible
-43  Jun 7, 2025   The Crystal Method ~ Busy Child
-44  May 31, 2025  The Stickmen Project ~ Federico Franchi 'Cream'   VOLAC 'Energy' Tesla Light Show S3XY+CT Compatible
-45  May 27, 2025  Avicii ~ The Days Tesla Light Show S3XY+CT Compatible
-46  May 27, 2025  Avicii Tribute Megamashup Tesla Light Show S3XY+CT Compatible
-47  May 26, 2025  Dua Lipa   Levitating Featuring DaBaby Official Tesla S3XY+CT Light Show
-48  May 26, 2025  Porter Robinson's ~ Language Tesla Light Show S3XY+CT Compatible
-49  May 26, 2025  King Harvest ~ Dancing In The Moonlight
-50  May 26, 2025  The Champs ~ Tequila
-51  May 26, 2025  Armin van Buuren & Seth Hills feat. Alessia Labate ~ Gimme The Love ~ OUT NOW!
-52  May 23, 2025  Nicki Minaj ~ Starships Tesla Light Show S3XY Compatible
-53  May 16, 2025  Yamboo ~  "Kalinka"** Калинка** Tesla Light Show S3XY Compatible
-54  May 10, 2025  Timmy Trumpet & Savage ~ Freaks Tesla light show S3XY Compatible
-55  May 4, 2025   Star Wars Duel of the Fates Tesla light show project
-56  May 3, 2025   Outkast's ~ Hey Ya Tesla light show S3XY+CT compatable
-57  May 3, 2025   Jimi Hendrix ~ Voodoo Child Tesla light show S3XY+CT compatible
-58  Apr 6, 2025   A State of Trance 2025 (Mixed by Armin van Buuren) [OUT NOW] ~ S3XY Compatible Tesla light show
-59  Apr 3, 2025   Prince ~ Let's go Crazy Tesla light show
-60  Mar 23, 2025  Iggy Pop ~ Lust for Life Tesla light show (S3XY+CT)
-61  Jan 5, 2025   Zac Brown Band ~ The Devil Went Down to Ga Tesla Light Show
-62  Oct 29, 2024  (4 min) Mickey's "Boo To You" Halloween Parade S3XY Compatible light show
-63  Oct 29, 2024  (1:40 version) Mickey's "Boo To You" Halloween Parade S3XY+CT compatible light show
-64  Oct 25, 2024  Rihanna's  Disturbia Tesla S3XY+CT compatible light show
-65  Oct 18, 2024  Porter Robinson's ~ language Tesla S3XY+CT light show    finale
-66  Oct 18, 2024  Porter Robinson's ~ language Tesla S3XY+CT light show...intro
-67  Oct 13, 2024  Avicii Tribute Megamashup ~ Encore Tesla M3 light show
-68  Oct 13, 2024  Avicii Tribute Megamashup ~ Part II Tesla M3 light show
-69  Oct 13, 2024  Avicii Tribute Megamashup ~ Part I Tesla M3 light show
-70  Oct 13, 2024  Avicii The Days ~ Part II Tesla M3 light show
-71  Oct 13, 2024  Avicii The Days ~ Part I Tesla M3 light show
-72  Oct 13, 2024  Steve Aoki, Laidback Luke, Lil Jon ~ Turbulence Tesla light show
-73  Oct 13, 2024  Grump - Recorded & Produced by PDL Tesla M3 light show
-74  Oct 13, 2024  Shaboozey - Tipsy/A bar song Mashup Remix Tesla M3 lightshow
-75  Oct 13, 2024  McyD’s I’m Luv’N it!  Tesla M3 light show #1
-76  Oct 13, 2024  Warren G's Regulate ~ "Mount Up" Tesla M3 light show
-77  Oct 13, 2024  Black Sabbath War Pigs - Tesla M3 light show
-78  Oct 13, 2024  Pearl Jam ~ The Fixer Tesla M3 light show
-79  Oct 13, 2024  Ministry ~ Jesus Built My Hot Rod Tesla M3 light show
-80  Oct 13, 2024  Post Malone ~ I Had Some Help Tesla M3 lightshow
-81  Oct 13, 2024  Eminem ~ Without Me Hardwell Bootleg LIVE @ Tomorrowland
-82  Oct 13, 2024  War ~ Low Rider Tesla M3 light show
-83  Oct 13, 2024  Marshmello ~ Alone Tesla M3 lightshow
-84  Oct 13, 2024  Missy "Misdemeanor" Elliott Get Ur Freak On Remix Tesla M3 light show
-85  Oct 13, 2024  Martin Garrix ~ Animals Tesla M3 lightshow
-86  Oct 13, 2024  Tiësto & Ava Max~The Motto Remix Mashup Tesla light show
-87  Oct 13, 2024  Egg Dude Tesla M3 light show
-88  Oct 13, 2024  Pedro ~ Tesla light show
-89  Oct 13, 2024  Automotivo Amar - Ma Ma Ma Tesla S3XY+CT light show
+01  Aug 31, 2026  Rhyme Dust ~ Dom Dolla
+02  Aug 27, 2026  Birthday by The Beatles
+03  Aug 9, 2026   Linkin Park ~ NUMB (Cyberpunk) Tesla Light Show ~ CT Edition
+04  Aug 1, 2026   Calling ALL Hokies!
+05  Jul 30, 2026  KITT Scanner OG ~ 2:22
+06  Jul 29, 2026  Stranger Things Light Show ~ Cybertruck Edition
+07  Jul 19, 2026  RUFUS DU SOL ~ InnerBloom2
+08  Jul 6, 2026   Welcome to the Land of the Free
+09  Jun 12, 2026  Cyndi Lauper ~ Girls Just Wanna Have FUN!  Tesla CT w ORLB Light Show
+10  Jun 12, 2026  BassJackers & MAKJ ~ DERP Tesla CT w ORLB Light Show
+11  Apr 24, 2026  Tesla Cybertruck's 'Dancing in the Moonlight' Lightshow
+12  Apr 23, 2026  Fred Again x Swedish House Mafia ~ Turn On the Lights Again.... CTs & S3XY Tesla 5x5 Cars Light Show
+13  Dec 26, 2025  Juicce ~ Connected Multi S3XY Tesla Light Show
+14  Dec 23, 2025  Kelly Clarkson ~ Sleigh Ride S3XY
+15  Dec 21, 2025  Up & Down ~ S3XY 5 Car
+16  Dec 19, 2025  Fred Again x Swedish House Mafia ~ Turn On the Lights Again.... S3XY Tesla 5 Car Light Show
+17  Dec 16, 2025  Fred Again x Swedish House Mafia ~ Turn On The Lights Again S3XY 1 Car Tesla Light Show
+18  Dec 13, 2025  Laufey's ~ Santa Baby S3XY Tesla Light Show
+19  Nov 30, 2025  Metallica ~ Master of Puppets Multi Car Tesla Light Show
+20  Oct 31, 2025  Thriller Remix by Steve Aoki Tesla Light Show ~ Cyber Truck Version
+21  Oct 30, 2025  Stranger Things Tesla Light Show S3XY Compatible
+22  Oct 29, 2025  Lady Gaga - The Dead Dance
+23  Oct 9, 2025   Ludacris Rollout (My Business) Remix (Wiley Kat (Pay as you go))
+24  Sep 28, 2025  2025 Sandstorm Remix ~ S3XY Version
+25  Sep 12, 2025  Dame Un Grr ~ All Shows
+26  Sep 6, 2025   DJ Bountyhunter - Woops (Dimitri Vegas & Junkie Kid Remix) Tesla Light Show ALL Versions
+27  Aug 30, 2025  2025 Labor Day Playlist Teaser ~ ALL ver.
+28  Aug 30, 2025  DJ Fotizo ~ Bday Clip1 ALL Versions
+29  Aug 29, 2025  "Shroomie" ~ Bionic & The Wires a mushroom playing keyboard
+30  Aug 23, 2025  Bassjackers & MAKJ - DERP Tesla Light Show
+31  Aug 17, 2025  Blasterjaxx & Timmy Trumpet - Narco Tesla Light Show S3XY+CT & Juniper Compatible
+32  Aug 13, 2025  StephaniB's #shorts Remix Insomnia Tesla Light Show S3XY+CT & Juniper Compatible
+33  Aug 9, 2025   Armin van Buuren X Mike Candys, Jack Holiday - Learn To Dance Again Insomnia (HALFSTEP Intro Edit)
+34  Aug 7, 2025   Ummet Ozcan Remix ~ Blood is Pumping Tesla Light Show S3XY+CT & Juniper Compatible
+35  Aug 3, 2025   Tiësto~The Business (Vintage Culture & Dubdogz Remix) Tesla Light Show S3XY+CT & Juniper Compatible
+36  Aug 2, 2025   Dimitri Vegas & Like Mike & W&W & Marnik – Yeah Tesla Light Show S3XY+CT & Juniper Compatible
+37  Jul 23, 2025  Swedish House Mafia ~ One (Your Name) Tesla Light Show S3XY+CT Compatible
+38  Jul 9, 2025   Naughty by Nature ~ Feel Me Flow Tesla Light Show S3XY+CT Compatible
+39  Jun 30, 2025  Metallica ~ Damage Inc INTRO Tesla Light Show S3XY +CT Compatible
+40  Jun 26, 2025  Hardwell & Blasterjaxx - Beat Of The Drum Tesla Light Show S3XY+CT Compatible
+41  Jun 21, 2025  Avicii & Sebastien Drums-My Feelings For You (Don Diablo Remix) Tesla Light Show S3XY+CT Compatible
+42  Jun 9, 2025   https://youtu.be/0Kqpr9ycyuY
+43  Jun 7, 2025   P.U.S.H. ~ Stupid, Naive, Conformist Tesla Light Show S3XY+CT Compatible
+44  Jun 7, 2025   The Crystal Method ~ Busy Child
+45  May 31, 2025  The Stickmen Project ~ Federico Franchi 'Cream'   VOLAC 'Energy' Tesla Light Show S3XY+CT Compatible
+46  May 27, 2025  Avicii ~ The Days Tesla Light Show S3XY+CT Compatible
+47  May 27, 2025  Avicii Tribute Megamashup Tesla Light Show S3XY+CT Compatible
+48  May 26, 2025  Dua Lipa   Levitating Featuring DaBaby Official Tesla S3XY+CT Light Show
+49  May 26, 2025  Porter Robinson's ~ Language Tesla Light Show S3XY+CT Compatible
+50  May 26, 2025  King Harvest ~ Dancing In The Moonlight
+51  May 26, 2025  The Champs ~ Tequila
+52  May 26, 2025  Armin van Buuren & Seth Hills feat. Alessia Labate ~ Gimme The Love ~ OUT NOW!
+53  May 23, 2025  Nicki Minaj ~ Starships Tesla Light Show S3XY Compatible
+54  May 16, 2025  Yamboo ~  "Kalinka"** Калинка** Tesla Light Show S3XY Compatible
+55  May 10, 2025  Timmy Trumpet & Savage ~ Freaks Tesla light show S3XY Compatible
+56  May 4, 2025   Star Wars Duel of the Fates Tesla light show project
+57  May 3, 2025   Outkast's ~ Hey Ya Tesla light show S3XY+CT compatable
+58  May 3, 2025   Jimi Hendrix ~ Voodoo Child Tesla light show S3XY+CT compatible
+59  Apr 6, 2025   A State of Trance 2025 (Mixed by Armin van Buuren) [OUT NOW] ~ S3XY Compatible Tesla light show
+60  Apr 3, 2025   Prince ~ Let's go Crazy Tesla light show
+61  Mar 23, 2025  Iggy Pop ~ Lust for Life Tesla light show (S3XY+CT)
+62  Jan 5, 2025   Zac Brown Band ~ The Devil Went Down to Ga Tesla Light Show
+63  Oct 29, 2024  (4 min) Mickey's "Boo To You" Halloween Parade S3XY Compatible light show
+64  Oct 29, 2024  (1:40 version) Mickey's "Boo To You" Halloween Parade S3XY+CT compatible light show
+65  Oct 25, 2024  Rihanna's  Disturbia Tesla S3XY+CT compatible light show
+66  Oct 18, 2024  Porter Robinson's ~ language Tesla S3XY+CT light show    finale
+67  Oct 18, 2024  Porter Robinson's ~ language Tesla S3XY+CT light show...intro
+68  Oct 13, 2024  Avicii Tribute Megamashup ~ Encore Tesla M3 light show
+69  Oct 13, 2024  Avicii Tribute Megamashup ~ Part II Tesla M3 light show
+70  Oct 13, 2024  Avicii Tribute Megamashup ~ Part I Tesla M3 light show
+71  Oct 13, 2024  Avicii The Days ~ Part II Tesla M3 light show
+72  Oct 13, 2024  Avicii The Days ~ Part I Tesla M3 light show
+73  Oct 13, 2024  Steve Aoki, Laidback Luke, Lil Jon ~ Turbulence Tesla light show
+74  Oct 13, 2024  Grump - Recorded & Produced by PDL Tesla M3 light show
+75  Oct 13, 2024  Shaboozey - Tipsy/A bar song Mashup Remix Tesla M3 lightshow
+76  Oct 13, 2024  McyD’s I’m Luv’N it!  Tesla M3 light show #1
+77  Oct 13, 2024  Warren G's Regulate ~ "Mount Up" Tesla M3 light show
+78  Oct 13, 2024  Black Sabbath War Pigs - Tesla M3 light show
+79  Oct 13, 2024  Pearl Jam ~ The Fixer Tesla M3 light show
+80  Oct 13, 2024  Ministry ~ Jesus Built My Hot Rod Tesla M3 light show
+81  Oct 13, 2024  Post Malone ~ I Had Some Help Tesla M3 lightshow
+82  Oct 13, 2024  Eminem ~ Without Me Hardwell Bootleg LIVE @ Tomorrowland
+83  Oct 13, 2024  War ~ Low Rider Tesla M3 light show
+84  Oct 13, 2024  Marshmello ~ Alone Tesla M3 lightshow
+85  Oct 13, 2024  Missy "Misdemeanor" Elliott Get Ur Freak On Remix Tesla M3 light show
+86  Oct 13, 2024  Martin Garrix ~ Animals Tesla M3 lightshow
+87  Oct 13, 2024  Tiësto & Ava Max~The Motto Remix Mashup Tesla light show
+88  Oct 13, 2024  Egg Dude Tesla M3 light show
+89  Oct 13, 2024  Pedro ~ Tesla light show
+90  Oct 13, 2024  Automotivo Amar - Ma Ma Ma Tesla S3XY+CT light show
