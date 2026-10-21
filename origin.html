@@ -132,6 +132,8 @@
       .hero .btns { flex-direction: column; align-items: stretch; }
       .hero .btns .btn { text-align: center; justify-content: center; }
     }
+    header .header-ref { margin: 0 10px 0 auto; padding: 5px 12px; font-size: .8rem; }
+    @media (max-width: 560px) { header .header-ref .ref-label { display: none; } header .header-ref { padding: 5px 10px; font-size: .76rem; } }
   </style>
 </head>
 <body>
@@ -145,6 +147,7 @@
     <div class="wrap">
       <nav>
         <a class="brand" href="https://zeebeav.com/"><img src="https://zeebeav.com/ZeeBeavs_Blackfont.png" alt="ZEEBEAV" /></a>
+        <a class="tesla-referral ref-pill header-ref" href="https://ts.la/pete95940" target="_blank" rel="noopener"><span class="ref-label">Buying a Tesla?</span> Use my referral →</a>
         <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">Menu</button>
         <div class="nav-links">
           <a class="here" href="/origin.html">Origin</a>
