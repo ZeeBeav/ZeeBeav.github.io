@@ -135,6 +135,7 @@
     </div>
   </header>
   <main id="top">
+    <p class="meta promise" style="text-align:center;margin:10px auto 0;font-size:.85rem">Every show is free. No paywall, no account required.</p>
     <section class="hero">
       <div class="wrap">
         <p class="kicker">the origin</p>
@@ -213,6 +214,22 @@
         toggle.setAttribute("aria-expanded", "false");
       }));
     }
+  </script>
+  <script>
+  /* GA4 outbound click tracking */
+  (function(){
+    document.addEventListener('click',function(e){
+      var a=e.target&&e.target.closest?e.target.closest('a[href]'):null;
+      if(!a||typeof gtag!=='function')return;
+      var h=a.href||'',u;try{u=new URL(h,location.href);}catch(x){return;}
+      var host=u.hostname.replace(/^www\./,''),ev=null;
+      if(/(^|\.)patreon\.com$/.test(host))ev='patreon_click';
+      else if(/(^|\.)(youtube\.com|youtu\.be)$/.test(host))ev='youtube_click';
+      else if(/toybox|teslalightshare|xlights/.test(host)||a.hasAttribute('download')||/\.(zip|fseq|xsq)$/i.test(u.pathname))ev='download_click';
+      if(!ev)return;
+      gtag('event',ev,{link_url:h,link_text:(a.textContent||a.getAttribute('aria-label')||'').trim().slice(0,100),destination:host,transport_type:'beacon'});
+    },true);
+  })();
   </script>
 </body>
 </html>
