@@ -194,6 +194,33 @@
         transition: none; transform: none;
       }
     }
+
+    /* v2 layout fixes */
+    footer .tesla-referral, .tesla-referral.ref-pill {
+      position: static; transform: none; left: auto; top: auto;
+      display: inline-flex; align-items: center; gap: 6px;
+      margin: 6px 0 12px; padding: 6px 14px; border: 1px solid var(--line);
+      border-radius: 999px; color: var(--ink); font-weight: 600; font-size: .85rem;
+      white-space: normal; background: rgba(0,0,0,.25); text-decoration: none;
+    }
+    footer .tesla-referral:hover { border-color: var(--accent); color: var(--accent); }
+    footer .tesla-referral .ref-label { color: var(--muted); font-weight: 500; }
+    .promise-pill {
+      display: inline-block; margin: 0 0 6px; padding: 5px 12px; border-radius: 999px;
+      border: 1px solid rgba(232,197,71,.45); background: rgba(232,197,71,.08);
+      color: #F5E6A3; font-size: .82rem; font-weight: 600; line-height: 1.35; border-radius: 16px; max-width: 100%;
+    }
+    .promise-bar { text-align: center; padding-top: 14px; margin: 0; }
+    .hero h1 { font-size: clamp(1.9rem, 4.6vw, 3.2rem); overflow-wrap: anywhere; }
+    .hero .lede { font-size: clamp(1rem, 1.6vw, 1.15rem); max-width: 60ch; margin: 0 0 14px; }
+    .hero-proof { margin: 16px 0 4px; font-size: .88rem; }
+    .hero-proof a { color: var(--accent-2, #7AD1FF); }
+    .hero .btns { margin-top: 16px; }
+    @media (max-width: 560px) {
+      .hero { padding-top: 40px; }
+      .hero .btns { flex-direction: column; align-items: stretch; }
+      .hero .btns .btn { text-align: center; justify-content: center; }
+    }
   </style>
 </head>
 <body>
@@ -233,12 +260,12 @@
         <p class="kicker">Tesla Light Shows</p>
         <h1>Free Tesla Light Shows. Download, Plug In, Play.</h1>
         <p class="lede">Award-winning shows for Model 3, Y, S, X and Cybertruck. No paywall, no sign-up.</p>
-        <p class="meta promise" style="color:var(--ink)"><strong>Every show is free. No paywall, no account required.</strong></p>
+        <p><span class="promise-pill">Every show is free · No paywall · No account required</span></p>
         <div class="btns">
           <a class="btn btn-gold" href="https://www.toybox.lol/zeebeav" target="_blank" rel="noopener">Download Free Shows</a>
           <a class="btn btn-blue" href="/shows.html">Watch the Shows</a>
         </div>
-        <p class="meta" style="margin-top:14px"><a href="/origin.html">🏆 XLightShows Creator Games: S3XY winner 2024 · Cybertruck Division GOAT 2025</a></p>
+        <p class="meta hero-proof"><a href="/origin.html">🏆 XLightShows Creator Games: S3XY winner 2024 · Cybertruck Division GOAT 2025</a></p>
         <p class="meta">Marietta, GA · Husband, dad of 2 · <a href="#lab">Meet TANK</a></p>
       </div>
     </section>
@@ -278,7 +305,8 @@
           </a>
           <a href="https://www.patreon.com/ZeeBeav/posts/birthday-by-167878576" target="_blank" rel="noopener">
             <img src="https://zeebeav.com/Birthday.png" alt="TANK running Beatles Birthday" />
-          </div>
+          </a>
+        </div>
         <p class="meta" style="margin-top:14px">CT files live on ToyBox and Tesla Light Share. Titles that say CT were built and filmed on TANK.</p>
       </div>
     </section>
@@ -412,12 +440,12 @@
   <footer>
     <div class="wrap">
       <p>© ZeeBeav · Marietta, GA · TANK</p>
-      <p><a class="tesla-referral" href="https://ts.la/pete95940" target="_blank" rel="noopener">Tesla Referral Link</a></p>
       <div class="socials">
         <a href="https://x.com/ZeeBeav">X</a>
         <a href="https://www.youtube.com/@zeebeav">YouTube</a>
         <a href="https://www.instagram.com/zeebeav/">Instagram</a>
       </div>
+      <a class="tesla-referral ref-pill" href="https://ts.la/pete95940" target="_blank" rel="noopener"><span class="ref-label">Buying a Tesla?</span> Use my referral →</a>
       <nav class="jump" aria-label="On this page">
         <a href="/origin.html">Origin</a>
         <a href="#lab">TANK</a>
