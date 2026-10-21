@@ -111,6 +111,33 @@
     }
     @media (prefers-reduced-motion: reduce) { .video-bg { display: none; } }
 
+
+    /* v2 layout fixes */
+    footer .tesla-referral, .tesla-referral.ref-pill {
+      position: static; transform: none; left: auto; top: auto;
+      display: inline-flex; align-items: center; gap: 6px;
+      margin: 6px 0 12px; padding: 6px 14px; border: 1px solid var(--line);
+      border-radius: 999px; color: var(--ink); font-weight: 600; font-size: .85rem;
+      white-space: normal; background: rgba(0,0,0,.25); text-decoration: none;
+    }
+    footer .tesla-referral:hover { border-color: var(--accent); color: var(--accent); }
+    footer .tesla-referral .ref-label { color: var(--muted); font-weight: 500; }
+    .promise-pill {
+      display: inline-block; margin: 0 0 6px; padding: 5px 12px; border-radius: 999px;
+      border: 1px solid rgba(232,197,71,.45); background: rgba(232,197,71,.08);
+      color: #F5E6A3; font-size: .82rem; font-weight: 600; line-height: 1.35; border-radius: 16px; max-width: 100%;
+    }
+    .promise-bar { text-align: center; padding-top: 14px; margin: 0; }
+    .hero h1 { font-size: clamp(1.9rem, 4.6vw, 3.2rem); overflow-wrap: anywhere; }
+    .hero .lede { font-size: clamp(1rem, 1.6vw, 1.15rem); max-width: 60ch; margin: 0 0 14px; }
+    .hero-proof { margin: 16px 0 4px; font-size: .88rem; }
+    .hero-proof a { color: var(--accent-2, #7AD1FF); }
+    .hero .btns { margin-top: 16px; }
+    @media (max-width: 560px) {
+      .hero { padding-top: 40px; }
+      .hero .btns { flex-direction: column; align-items: stretch; }
+      .hero .btns .btn { text-align: center; justify-content: center; }
+    }
   </style>
 </head>
 <body>
@@ -128,7 +155,6 @@
         <a class="brand" href="https://zeebeav.com/">
           <img src="https://zeebeav.com/ZeeBeavs_Blackfont.png" alt="ZEEBEAV" />
         </a>
-        <a class="tesla-referral" href="https://ts.la/pete95940" target="_blank" rel="noopener">Tesla Referral Link</a>
         <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">Menu</button>
         <div class="nav-links">
           <a href="https://zeebeav.com/origin.html">Origin</a>
@@ -146,7 +172,7 @@
   </header>
 
   <main>
-    <p class="meta promise" style="text-align:center;margin:10px auto 0;font-size:.85rem">Every show is free. No paywall, no account required.</p>
+    <p class="promise-bar"><span class="promise-pill">Every show is free · No paywall · No account required</span></p>
     <section class="hero">
       <div class="wrap">
         <p class="kicker">Legal</p>
@@ -222,6 +248,7 @@
         <a href="https://www.youtube.com/@zeebeav">YouTube</a>
         <a href="https://www.instagram.com/zeebeav/">Instagram</a>
       </div>
+      <a class="tesla-referral ref-pill" href="https://ts.la/pete95940" target="_blank" rel="noopener"><span class="ref-label">Buying a Tesla?</span> Use my referral →</a>
       <nav class="jump" aria-label="Homepage sections">
         <a href="https://zeebeav.com/origin.html">Origin</a>
         <a href="https://zeebeav.com/#tank">TANK</a>
