@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ZEEBEAV • All shows</title>
+  <title>All ZeeBeav Light Shows – Free Tesla &amp; Cybertruck Downloads</title>
   <link rel="canonical" href="https://zeebeav.com/shows.html" />
-  <meta name="description" content="Every ZeeBeav Tesla light show posted on Patreon. Play the YouTube clip on the page, then open the post." />
-  <meta property="og:title" content="ZEEBEAV • All shows" />
-  <meta property="og:description" content="Every ZeeBeav sequence on Patreon. Play the clip on the page." />
+  <meta name="description" content="Every ZeeBeav show, free to download. Watch the clip, then grab the files on ToyBox, Tesla Light Share or Patreon." />
+  <meta property="og:title" content="All ZeeBeav Light Shows – Free Tesla &amp; Cybertruck Downloads" />
+  <meta property="og:description" content="Every ZeeBeav show, free to download. Watch the clip, then grab the files on ToyBox, Tesla Light Share or Patreon." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://zeebeav.com/shows.html" />
   <meta property="og:image" content="https://zeebeav.com/og-image.jpg" />
   <meta property="og:image:alt" content="ZEEBEAV ~ Epic Tesla Light Shows" />
   <meta property="og:site_name" content="ZEEBEAV" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="ZEEBEAV • All shows" />
-  <meta name="twitter:description" content="Every ZeeBeav sequence on Patreon. Play the clip on the page." />
+  <meta name="twitter:title" content="All ZeeBeav Light Shows – Free Tesla &amp; Cybertruck Downloads" />
+  <meta name="twitter:description" content="Every ZeeBeav show, free to download. Watch the clip, then grab the files on ToyBox, Tesla Light Share or Patreon." />
   <meta name="twitter:image" content="https://zeebeav.com/og-image.jpg" />
   <meta name="theme-color" content="#0b0d10" />
   <meta name="twitter:site" content="@ZeeBeav" />
@@ -138,6 +138,7 @@
         <p class="kicker">Patreon catalog</p>
         <h1>Every show on the ZeeBeav account.</h1>
         <p class="lede">90 sequences, newest first. Tap a thumb to play the YouTube clip on this page. The title opens the Patreon post.</p>
+        <p class="meta promise" style="color:var(--ink)"><strong>Every show is free. No paywall, no account required.</strong> All shows are free. Patreon is an optional way to say thanks.</p>
         <div class="btns">
           <a class="btn btn-gold" href="https://www.patreon.com/ZeeBeav/posts" target="_blank" rel="noopener">Open Patreon</a>
           <a class="btn btn-ghost" href="https://zeebeav.com/#download">Free downloads</a>
@@ -1301,6 +1302,22 @@
         }
       });
     });
+  </script>
+  <script>
+  /* GA4 outbound click tracking */
+  (function(){
+    document.addEventListener('click',function(e){
+      var a=e.target&&e.target.closest?e.target.closest('a[href]'):null;
+      if(!a||typeof gtag!=='function')return;
+      var h=a.href||'',u;try{u=new URL(h,location.href);}catch(x){return;}
+      var host=u.hostname.replace(/^www\./,''),ev=null;
+      if(/(^|\.)patreon\.com$/.test(host))ev='patreon_click';
+      else if(/(^|\.)(youtube\.com|youtu\.be)$/.test(host))ev='youtube_click';
+      else if(/toybox|teslalightshare|xlights/.test(host)||a.hasAttribute('download')||/\.(zip|fseq|xsq)$/i.test(u.pathname))ev='download_click';
+      if(!ev)return;
+      gtag('event',ev,{link_url:h,link_text:(a.textContent||a.getAttribute('aria-label')||'').trim().slice(0,100),destination:host,transport_type:'beacon'});
+    },true);
+  })();
   </script>
 </body>
 </html>
