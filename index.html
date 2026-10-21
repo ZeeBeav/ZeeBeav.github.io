@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ZEEBEAV • Tesla Light Shows</title>
+  <title>Free Tesla Light Shows &amp; Cybertruck Light Shows | ZeeBeav</title>
   <link rel="canonical" href="https://zeebeav.com/" />
-  <meta name="description" content="ZEEBEAV - Epic Tesla Light Shows filmed on TANK, our Cybertruck. Free downloadable shows from ToyBox, Xlights & TeslaShare." />
-  <meta property="og:title" content="ZEEBEAV • Tesla Light Shows" />
-  <meta property="og:description" content="Filmed on TANK, our Cybertruck. Free downloads from ToyBox, Xlights & TeslaShare. Exclusive merch and the growing Tesla modding movement." />
+  <meta name="description" content="Download free, award-winning Tesla light shows for Model 3, Y, S, X and Cybertruck. No paywall. Plug in a USB and play. Made in Marietta, GA." />
+  <meta property="og:title" content="Free Tesla Light Shows &amp; Cybertruck Light Shows | ZeeBeav" />
+  <meta property="og:description" content="Download free, award-winning Tesla light shows for Model 3, Y, S, X and Cybertruck. No paywall. Plug in a USB and play. Made in Marietta, GA." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://zeebeav.com/" />
   <meta property="og:image" content="https://zeebeav.com/og-image.jpg" />
   <meta property="og:image:alt" content="ZEEBEAV ~ Epic Tesla Light Shows" />
   <meta property="og:site_name" content="ZEEBEAV" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="ZEEBEAV • Tesla Light Shows" />
-  <meta name="twitter:description" content="Filmed on TANK, our Cybertruck. Free downloads + merch. Join the movement." />
+  <meta name="twitter:title" content="Free Tesla Light Shows &amp; Cybertruck Light Shows | ZeeBeav" />
+  <meta name="twitter:description" content="Download free, award-winning Tesla light shows for Model 3, Y, S, X and Cybertruck. No paywall. Plug in a USB and play. Made in Marietta, GA." />
   <meta name="twitter:image" content="https://zeebeav.com/og-image.jpg" />
   <meta name="theme-color" content="#0b0d10" />
   <meta name="twitter:site" content="@ZeeBeav" />
@@ -211,7 +211,6 @@
         <a class="brand" href="#top">
           <img src="https://zeebeav.com/ZeeBeavs_Blackfont.png" alt="ZEEBEAV" />
         </a>
-        <a class="tesla-referral" href="https://ts.la/pete95940" target="_blank" rel="noopener">Tesla Referral Link</a>
         <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">Menu</button>
         <div class="nav-links">
           <a href="/origin.html">Origin</a>
@@ -232,13 +231,26 @@
     <section class="hero">
       <div class="wrap">
         <p class="kicker">Tesla Light Shows</p>
-        <h1>Free sequences for S3XY + Cybertruck.</h1>
-        <p class="lede">TANK is the rolling lab. Shows get cut on stainless steel first, then shared for S3XY and CT.</p>
-        <p class="meta">Marietta, GA · Husband, dad of 2</p>
+        <h1>Free Tesla Light Shows. Download, Plug In, Play.</h1>
+        <p class="lede">Award-winning shows for Model 3, Y, S, X and Cybertruck. No paywall, no sign-up.</p>
+        <p class="meta promise" style="color:var(--ink)"><strong>Every show is free. No paywall, no account required.</strong></p>
         <div class="btns">
-          <a class="btn btn-gold" href="#lab">Meet TANK</a>
-          <a class="btn btn-blue" href="#download">Download free</a>
+          <a class="btn btn-gold" href="https://www.toybox.lol/zeebeav" target="_blank" rel="noopener">Download Free Shows</a>
+          <a class="btn btn-blue" href="/shows.html">Watch the Shows</a>
         </div>
+        <p class="meta" style="margin-top:14px"><a href="/origin.html">🏆 XLightShows Creator Games: S3XY winner 2024 · Cybertruck Division GOAT 2025</a></p>
+        <p class="meta">Marietta, GA · Husband, dad of 2 · <a href="#lab">Meet TANK</a></p>
+      </div>
+    </section>
+
+    <section id="howto">
+      <div class="wrap panel">
+        <h2>First time? Three steps.</h2>
+        <ol class="grid steps">
+          <li class="card">Download a ZeeBeav sequence from ToyBox or Tesla Light Share.</li>
+          <li class="card">Load it in your Tesla with a USB drive.</li>
+          <li class="card">Park, play, film. Tag @ZeeBeav.</li>
+        </ol>
       </div>
     </section>
 
@@ -312,17 +324,6 @@
           </article>
         </div>
         <p class="warn">S3XY + CT compatible unless a title says otherwise. CT cuts were built on TANK. Some tracks flash hard.</p>
-      </div>
-    </section>
-
-    <section id="howto">
-      <div class="wrap panel">
-        <h2>First time? Three steps.</h2>
-        <ol class="grid steps">
-          <li class="card">Download a ZeeBeav sequence from ToyBox or Tesla Light Share.</li>
-          <li class="card">Load it in your Tesla with a USB drive.</li>
-          <li class="card">Park, play, film. Tag @ZeeBeav.</li>
-        </ol>
       </div>
     </section>
 
@@ -411,6 +412,7 @@
   <footer>
     <div class="wrap">
       <p>© ZeeBeav · Marietta, GA · TANK</p>
+      <p><a class="tesla-referral" href="https://ts.la/pete95940" target="_blank" rel="noopener">Tesla Referral Link</a></p>
       <div class="socials">
         <a href="https://x.com/ZeeBeav">X</a>
         <a href="https://www.youtube.com/@zeebeav">YouTube</a>
@@ -508,6 +510,22 @@
         toggle.setAttribute("aria-expanded", "false");
       }));
     }
+  </script>
+  <script>
+  /* GA4 outbound click tracking */
+  (function(){
+    document.addEventListener('click',function(e){
+      var a=e.target&&e.target.closest?e.target.closest('a[href]'):null;
+      if(!a||typeof gtag!=='function')return;
+      var h=a.href||'',u;try{u=new URL(h,location.href);}catch(x){return;}
+      var host=u.hostname.replace(/^www\./,''),ev=null;
+      if(/(^|\.)patreon\.com$/.test(host))ev='patreon_click';
+      else if(/(^|\.)(youtube\.com|youtu\.be)$/.test(host))ev='youtube_click';
+      else if(/toybox|teslalightshare|xlights/.test(host)||a.hasAttribute('download')||/\.(zip|fseq|xsq)$/i.test(u.pathname))ev='download_click';
+      if(!ev)return;
+      gtag('event',ev,{link_url:h,link_text:(a.textContent||a.getAttribute('aria-label')||'').trim().slice(0,100),destination:host,transport_type:'beacon'});
+    },true);
+  })();
   </script>
 </body>
 </html>
