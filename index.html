@@ -269,7 +269,7 @@
         <p class="lede">Award-winning shows for Model 3, Y, S, X and Cybertruck. No paywall, no sign-up.</p>
         <p><span class="promise-pill">Every show is free · No paywall · No account required</span></p>
         <div class="btns">
-          <a class="btn btn-gold" href="https://www.toybox.lol/zeebeav" target="_blank" rel="noopener">Download Free Shows</a>
+          <a class="btn btn-gold" href="https://www.patreon.com/ZeeBeav" target="_blank" rel="noopener" data-download="patreon">Download Free Shows</a>
           <a class="btn btn-blue" href="/shows.html">Watch the Shows</a>
         </div>
         <p class="meta hero-proof"><a href="/origin.html">🏆 XLightShows Creator Games: S3XY winner 2024 · Cybertruck Division GOAT 2025</a></p>
@@ -281,7 +281,7 @@
       <div class="wrap panel">
         <h2>First time? Three steps.</h2>
         <ol class="grid steps">
-          <li class="card">Download a ZeeBeav sequence from ToyBox or Tesla Light Share.</li>
+          <li class="card"><strong>Pick a show.</strong> Download a free ZeeBeav show from <a href="https://www.patreon.com/ZeeBeav" target="_blank" rel="noopener">Patreon</a>, <a href="https://www.toybox.lol/zeebeav" target="_blank" rel="noopener">ToyBox</a> or <a href="https://teslalightshare.io/4247/light-shows" target="_blank" rel="noopener">Tesla Light Share</a>.</li>
           <li class="card">Load it in your Tesla with a USB drive.</li>
           <li class="card">Park, play, film. Tag @ZeeBeav.</li>
         </ol>
@@ -554,7 +554,8 @@
       if(!a||typeof gtag!=='function')return;
       var h=a.href||'',u;try{u=new URL(h,location.href);}catch(x){return;}
       var host=u.hostname.replace(/^www\./,''),ev=null;
-      if(/(^|\.)patreon\.com$/.test(host))ev='patreon_click';
+      if(a.hasAttribute('data-download')){ev='download_click';host=a.getAttribute('data-download')||host;}
+      else if(/(^|\.)patreon\.com$/.test(host))ev='patreon_click';
       else if(/(^|\.)(youtube\.com|youtu\.be)$/.test(host))ev='youtube_click';
       else if(/toybox|teslalightshare|xlights/.test(host)||a.hasAttribute('download')||/\.(zip|fseq|xsq)$/i.test(u.pathname))ev='download_click';
       if(!ev)return;
