@@ -168,6 +168,25 @@
     .human-stamp svg { flex: none; width: 22px; height: 22px; }
     .human-stamp small { display: block; color: #F5E6A3; font-weight: 600; font-size: .62rem; letter-spacing: .12em; }
     .hero-stamp { margin: 14px 0 0; }
+
+    /* popular + halloween sections */
+    .feat-head { display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:4px 12px; }
+    .feat-head h2.sec { font-size:1.35rem; margin:0; color:#F5E6A3; }
+    .feat-head .meta { font-size:.88rem; }
+    .halloween { border-color:rgba(232,197,71,.6); background:linear-gradient(160deg, rgba(60,30,8,.9), rgba(26,32,40,.92)); box-shadow:0 0 22px rgba(232,197,71,.18); }
+    .halloween .show-list { grid-template-columns:1fr 1fr; }
+    .halloween .num, .popular .num { background:#e8c547; }
+    .popular .num { background:#7AD1FF; }
+    .popular .show-list { grid-template-columns:repeat(4,1fr); }
+    .popular h2 a, .halloween h2 a { overflow-wrap:anywhere; }
+    .catalog-head { font-size:1.35rem; margin-bottom:4px; color:#F5E6A3; }
+    @media (max-width:980px) { .popular .show-list { grid-template-columns:1fr 1fr; } }
+    @media (max-width:720px) {
+      .halloween .show-list { grid-template-columns:1fr; }
+      .popular .show-list { display:flex; grid-template-columns:none; overflow-x:auto; scroll-snap-type:x mandatory; gap:12px; padding-bottom:8px; -webkit-overflow-scrolling:touch; }
+      .popular .show-list > li { flex:0 0 78%; scroll-snap-align:start; }
+      .panel { padding:16px; }
+    }
   </style>
 </head>
 <body>
@@ -210,9 +229,145 @@
         </div>
       </div>
     </section>
-    <section>
+    <!-- HALLOWEEN SPECIAL 2026: remove this section after Oct 31 -->
+    <section id="halloween">
+      <div class="wrap panel halloween">
+        <div class="feat-head"><h2 class="sec">🎃 Halloween Special</h2><p class="meta">Spooky season picks · free like everything else</p></div>
+        <ul class="show-list">
+<li>
+<article class="card show-card">
+              <span class="num">🎃</span>
+              <div class="zoom play-thumb" role="button" tabindex="0" data-yt="DYi2glLxmXM" aria-label="Play (4 min) Mickey&#x27;s &quot;Boo To You&quot; Halloween Parade S3XY Compatible light show">
+                <img loading="lazy" src="https://i.ytimg.com/vi/DYi2glLxmXM/hqdefault.jpg" alt="(4 min) Mickey&#x27;s &quot;Boo To You&quot; Halloween Parade S3XY Compatible light show" />
+                <span class="play-icon" aria-hidden="true"></span>
+              </div>
+              <h2><a href="https://www.patreon.com/ZeeBeav/posts/4-min-mickeys-to-114906464" target="_blank" rel="noopener">(4 min) Mickey&#x27;s &quot;Boo To You&quot; Halloween Parade S3XY Compatible light show</a></h2>
+              <p class="meta">Oct 29, 2024</p>
+              <p><a href="https://www.patreon.com/ZeeBeav/posts/4-min-mickeys-to-114906464" target="_blank" rel="noopener">Patreon</a></p>
+            </article>
+</li>
+<li>
+<article class="card show-card">
+              <span class="num">🎃</span>
+              <div class="zoom play-thumb" role="button" tabindex="0" data-yt="f6cXnCztKuc" aria-label="Play Thriller Remix by Steve Aoki Tesla Light Show ~ Cyber Truck Version">
+                <img loading="lazy" src="https://i.ytimg.com/vi/f6cXnCztKuc/hqdefault.jpg" alt="Thriller Remix by Steve Aoki Tesla Light Show ~ Cyber Truck Version" />
+                <span class="play-icon" aria-hidden="true"></span>
+              </div>
+              <h2><a href="https://www.patreon.com/ZeeBeav/posts/thriller-remix-142458211" target="_blank" rel="noopener">Thriller Remix by Steve Aoki Tesla Light Show ~ Cyber Truck Version</a></h2>
+              <p class="meta">Oct 31, 2025</p>
+              <p><a href="https://www.patreon.com/ZeeBeav/posts/thriller-remix-142458211" target="_blank" rel="noopener">Patreon</a></p>
+            </article>
+</li>
+        </ul>
+      </div>
+    </section>
+    <!-- /HALLOWEEN SPECIAL 2026 -->
+    <section id="popular">
+      <div class="wrap panel popular">
+        <div class="feat-head"><h2 class="sec">🔥 Popular</h2><p class="meta">Most-watched on YouTube · all free</p></div>
+        <ul class="show-list">
+<li>
+<article class="card show-card">
+              <span class="num">#1</span>
+              <div class="zoom play-thumb" role="button" tabindex="0" data-yt="RNrYCaHakfg" aria-label="Play Porter Robinson&#x27;s ~ language Tesla S3XY+CT light show    finale">
+                <img loading="lazy" src="https://i.ytimg.com/vi/RNrYCaHakfg/hqdefault.jpg" alt="Porter Robinson&#x27;s ~ language Tesla S3XY+CT light show    finale" />
+                <span class="play-icon" aria-hidden="true"></span>
+              </div>
+              <h2><a href="https://www.patreon.com/ZeeBeav/posts/porter-robinsons-114271890" target="_blank" rel="noopener">Porter Robinson&#x27;s ~ language Tesla S3XY+CT light show    finale</a></h2>
+              <p class="meta">Oct 18, 2024</p>
+              <p><a href="https://www.patreon.com/ZeeBeav/posts/porter-robinsons-114271890" target="_blank" rel="noopener">Patreon</a></p>
+            </article>
+</li>
+<li>
+<article class="card show-card">
+              <span class="num">#2</span>
+              <div class="zoom play-thumb" role="button" tabindex="0" data-yt="sOsr0uW1yII" aria-label="Play Stranger Things Tesla Light Show S3XY Compatible">
+                <img loading="lazy" src="https://i.ytimg.com/vi/sOsr0uW1yII/hqdefault.jpg" alt="Stranger Things Tesla Light Show S3XY Compatible" />
+                <span class="play-icon" aria-hidden="true"></span>
+              </div>
+              <h2><a href="https://www.patreon.com/ZeeBeav/posts/stranger-things-142375473" target="_blank" rel="noopener">Stranger Things Tesla Light Show S3XY Compatible</a></h2>
+              <p class="meta">Oct 30, 2025</p>
+              <p><a href="https://www.patreon.com/ZeeBeav/posts/stranger-things-142375473" target="_blank" rel="noopener">Patreon</a></p>
+            </article>
+</li>
+<li>
+<article class="card show-card">
+              <span class="num">#3</span>
+              <div class="zoom play-thumb" role="button" tabindex="0" data-yt="zymmy7fN9i0" aria-label="Play Star Wars Duel of the Fates Tesla light show project">
+                <img loading="lazy" src="https://i.ytimg.com/vi/zymmy7fN9i0/hqdefault.jpg" alt="Star Wars Duel of the Fates Tesla light show project" />
+                <span class="play-icon" aria-hidden="true"></span>
+              </div>
+              <h2><a href="https://www.patreon.com/ZeeBeav/posts/star-wars-duel-128101016" target="_blank" rel="noopener">Star Wars Duel of the Fates Tesla light show project</a></h2>
+              <p class="meta">May 4, 2025</p>
+              <p><a href="https://www.patreon.com/ZeeBeav/posts/star-wars-duel-128101016" target="_blank" rel="noopener">Patreon</a></p>
+            </article>
+</li>
+<li>
+<article class="card show-card">
+              <span class="num">#4</span>
+              <div class="zoom play-thumb" role="button" tabindex="0" data-yt="uz2H_CZI-rU" aria-label="Play Rihanna&#x27;s  Disturbia Tesla S3XY+CT compatible light show">
+                <img loading="lazy" src="https://i.ytimg.com/vi/uz2H_CZI-rU/hqdefault.jpg" alt="Rihanna&#x27;s  Disturbia Tesla S3XY+CT compatible light show" />
+                <span class="play-icon" aria-hidden="true"></span>
+              </div>
+              <h2><a href="https://www.patreon.com/ZeeBeav/posts/rihannas-tesla-114689097" target="_blank" rel="noopener">Rihanna&#x27;s  Disturbia Tesla S3XY+CT compatible light show</a></h2>
+              <p class="meta">Oct 25, 2024</p>
+              <p><a href="https://www.patreon.com/ZeeBeav/posts/rihannas-tesla-114689097" target="_blank" rel="noopener">Patreon</a></p>
+            </article>
+</li>
+<li>
+<article class="card show-card">
+              <span class="num">#5</span>
+              <div class="zoom play-thumb" role="button" tabindex="0" data-yt="_WYXUhJPp4M" aria-label="Play Pedro ~ Tesla light show">
+                <img loading="lazy" src="https://i.ytimg.com/vi/_WYXUhJPp4M/hqdefault.jpg" alt="Pedro ~ Tesla light show" />
+                <span class="play-icon" aria-hidden="true"></span>
+              </div>
+              <h2><a href="https://www.patreon.com/ZeeBeav/posts/pedro-tesla-show-113921579" target="_blank" rel="noopener">Pedro ~ Tesla light show</a></h2>
+              <p class="meta">Oct 13, 2024</p>
+              <p><a href="https://www.patreon.com/ZeeBeav/posts/pedro-tesla-show-113921579" target="_blank" rel="noopener">Patreon</a></p>
+            </article>
+</li>
+<li>
+<article class="card show-card">
+              <span class="num">#6</span>
+              <div class="zoom play-thumb" role="button" tabindex="0" data-yt="4wyBdKXrvUs" aria-label="Play 2025 Sandstorm Remix ~ S3XY Version">
+                <img loading="lazy" src="https://i.ytimg.com/vi/4wyBdKXrvUs/hqdefault.jpg" alt="2025 Sandstorm Remix ~ S3XY Version" />
+                <span class="play-icon" aria-hidden="true"></span>
+              </div>
+              <h2><a href="https://www.patreon.com/ZeeBeav/posts/2025-sandstorm-139904787" target="_blank" rel="noopener">2025 Sandstorm Remix ~ S3XY Version</a></h2>
+              <p class="meta">Sep 28, 2025</p>
+              <p><a href="https://www.patreon.com/ZeeBeav/posts/2025-sandstorm-139904787" target="_blank" rel="noopener">Patreon</a></p>
+            </article>
+</li>
+<li>
+<article class="card show-card">
+              <span class="num">#7</span>
+              <div class="zoom play-thumb" role="button" tabindex="0" data-yt="b7JhljC7NDI" aria-label="Play Martin Garrix ~ Animals Tesla M3 lightshow">
+                <img loading="lazy" src="https://i.ytimg.com/vi/b7JhljC7NDI/hqdefault.jpg" alt="Martin Garrix ~ Animals Tesla M3 lightshow" />
+                <span class="play-icon" aria-hidden="true"></span>
+              </div>
+              <h2><a href="https://www.patreon.com/ZeeBeav/posts/martin-garrix-m3-113922063" target="_blank" rel="noopener">Martin Garrix ~ Animals Tesla M3 lightshow</a></h2>
+              <p class="meta">Oct 13, 2024</p>
+              <p><a href="https://www.patreon.com/ZeeBeav/posts/martin-garrix-m3-113922063" target="_blank" rel="noopener">Patreon</a></p>
+            </article>
+</li>
+<li>
+<article class="card show-card">
+              <span class="num">#8</span>
+              <div class="zoom play-thumb" role="button" tabindex="0" data-yt="_T2WAjiwX80" aria-label="Play Dua Lipa   Levitating Featuring DaBaby Official Tesla S3XY+CT Light Show">
+                <img loading="lazy" src="https://i.ytimg.com/vi/_T2WAjiwX80/hqdefault.jpg" alt="Dua Lipa   Levitating Featuring DaBaby Official Tesla S3XY+CT Light Show" />
+                <span class="play-icon" aria-hidden="true"></span>
+              </div>
+              <h2><a href="https://www.patreon.com/ZeeBeav/posts/dua-lipa-dababy-129956437" target="_blank" rel="noopener">Dua Lipa   Levitating Featuring DaBaby Official Tesla S3XY+CT Light Show</a></h2>
+              <p class="meta">May 26, 2025</p>
+              <p><a href="https://www.patreon.com/ZeeBeav/posts/dua-lipa-dababy-129956437" target="_blank" rel="noopener">Patreon</a></p>
+            </article>
+</li>
+        </ul>
+      </div>
+    </section>
+    <section id="catalog">
       <div class="wrap panel">
-        <h2 style="font-size:1.35rem;margin-bottom:4px">The list</h2>
+        <h2 class="catalog-head">Full catalog · all 91 shows</h2>
         <p class="meta">Fan-made sequences. Not affiliated with Tesla, Inc. or the artists.</p>
         <ol class="show-list">
           <li>
