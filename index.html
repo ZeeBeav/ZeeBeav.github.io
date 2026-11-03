@@ -316,6 +316,14 @@
     .cf-play .play-icon::before { content:""; position:absolute; left:17px; top:8px; border-style:solid; border-width:7px 0 7px 12px; border-color:transparent transparent transparent #fff; }
     .cf-play:hover .play-icon, .cf-play:focus-visible .play-icon { background:#c00; }
     .cf-play:focus-visible { outline:2px solid #F5E6A3; outline-offset:2px; }
+    .usb-how { margin-top:8px; }
+    .usb-how summary { cursor:pointer; color:#F5E6A3; font-weight:600; font-size:.9rem; }
+    .usb-how summary:focus-visible { outline:2px solid #F5E6A3; outline-offset:2px; }
+    .usb-how ul { margin:8px 0 6px; padding-left:18px; font-size:.88rem; }
+    .steps .usb-how li { list-style:disc; padding:0; margin:4px 0; position:static; overflow-wrap:anywhere; }
+    .steps .usb-how li::before { content:none; display:none; counter-increment:none; }
+    .usb-how code { color:#F5E6A3; font-size:.85em; }
+    .usb-how .meta { margin:4px 0 0; font-size:.8rem; }
     /* Cyberfest */
     .cf-count { display:grid; grid-template-columns:repeat(4,minmax(0,96px)); gap:8px; margin:16px 0 4px; }
     .cf-count .cf-unit { text-align:center; border:1px solid #F5E6A3; border-radius:12px; padding:8px 4px; background:rgba(245,230,163,.06); }
@@ -407,7 +415,19 @@
         <h2>First time? Three steps.</h2>
         <ol class="grid steps">
           <li class="card"><strong>Pick a show.</strong> Download a free ZeeBeav show from <a href="https://www.patreon.com/ZeeBeav" target="_blank" rel="noopener">Patreon</a>, <a href="https://www.toybox.lol/zeebeav" target="_blank" rel="noopener">ToyBox</a> or <a href="https://teslalightshare.io/4247/light-shows" target="_blank" rel="noopener">Tesla Light Share</a>.</li>
-          <li class="card">Load it in your Tesla with a USB drive.</li>
+          <li class="card">Load it in your Tesla with a USB drive.
+            <details class="usb-how">
+              <summary>How to set up the USB drive</summary>
+              <ul>
+                <li><strong>Format</strong> it as exFAT, FAT 32 (Windows), MS-DOS FAT (Mac), ext3 or ext4. NTFS isn't supported.</li>
+                <li><strong>Make a folder</strong> named <code>LightShow</code> at the top level of the drive (case sensitive).</li>
+                <li><strong>Add both files</strong> inside it: the show's <code>.fseq</code> and its <code>.mp3</code> or <code>.wav</code> (wav recommended), with matching names, e.g. <code>lightshow.fseq</code> + <code>lightshow.wav</code>. Several shows can share one drive.</li>
+                <li><strong>Use a separate drive from Sentry/Dashcam.</strong> The drive must not have a top-level <code>TeslaCam</code> folder.</li>
+                <li><strong>Play it:</strong> plug into a front or glovebox USB port, wait a few seconds, then go to Toybox &gt; Light Show and tap Schedule Show.</li>
+              </ul>
+              <p class="meta">Source: <a href="https://github.com/teslamotors/light-show" target="_blank" rel="noopener">Tesla's official light-show guide</a></p>
+            </details>
+          </li>
           <li class="card">Park, play, film. Tag @ZeeBeav.</li>
         </ol>
       </div>
