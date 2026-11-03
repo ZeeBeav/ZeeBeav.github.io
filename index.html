@@ -284,41 +284,44 @@
     .cf-debut { margin:0 0 8px; color:#fff; font-weight:700; font-size:.9rem; }
     .cf-debut::before { content:"✦ "; color:#F5E6A3; }
     .cf-thumbs { display:none; }
+    @media (max-width: 900px) {
+      .cf-thumbs { display:grid; grid-template-columns:1fr; gap:12px; margin:12px 0 0; }
+      .cf-mini { display:block; min-width:0; color:#F5E6A3; font-size:.8rem; line-height:1.25; }
+      .cf-mini img { display:block; width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:8px; border:1px solid rgba(245,230,163,.45); }
+      .cf-mini > span { display:block; margin-top:4px; overflow-wrap:anywhere; }
+    }
     @media (min-width: 901px) {
       .cf-thumbs { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:10px 0 0; }
       .cf-mini { display:block; min-width:0; color:#F5E6A3; font-size:.68rem; line-height:1.25; }
       .cf-mini img { display:block; width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:8px; border:1px solid rgba(245,230,163,.45); }
-      .cf-mini span { display:block; margin-top:4px; overflow-wrap:anywhere; }
-      .cf-mini:hover img { border-color:#F5E6A3; }
+      .cf-mini > span { display:block; margin-top:4px; overflow-wrap:anywhere; }
+      .cf-play:hover img { border-color:#F5E6A3; }
     }
     @media (min-width: 901px) {
       .hero-grid { grid-template-columns:1fr; gap:14px; }
       .hero-side { margin-top:0; }
       .hero-side { align-items:stretch; gap:12px; }
       .hero-side .hero-stamp { align-self:flex-start; margin:0 0 30px; }
-      .cf-promo { display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,1.3fr) minmax(0,.9fr); gap:20px; align-items:center; padding:18px 20px; }
+      .cf-promo { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.5fr) minmax(0,.9fr); gap:20px; align-items:center; padding:18px 20px; }
       .cf-promo h2 { font-size:1.35rem; }
       .cf-thumbs { margin:0; gap:12px; }
       .cf-mini { font-size:.78rem; }
       .cf-act .cf-count-sm { margin:0 0 12px !important; }
     }
+    #cyberfest { scroll-margin-top:72px; }
+    .cf-play { position:relative; display:block; width:100%; aspect-ratio:16/9; padding:0; border:0; background:#000; border-radius:8px; overflow:hidden; cursor:pointer; }
+    .cf-play img { margin:0; }
+    .cf-play iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
+    .cf-play .play-icon { position:absolute; left:50%; top:50%; width:44px; height:31px; margin:-15px 0 0 -22px; border-radius:10px; background:rgba(0,0,0,.72); pointer-events:none; }
+    .cf-play .play-icon::before { content:""; position:absolute; left:17px; top:8px; border-style:solid; border-width:7px 0 7px 12px; border-color:transparent transparent transparent #fff; }
+    .cf-play:hover .play-icon, .cf-play:focus-visible .play-icon { background:#c00; }
+    .cf-play:focus-visible { outline:2px solid #F5E6A3; outline-offset:2px; }
     /* Cyberfest */
-    #cyberfest .cf-panel { border-color:#F5E6A3; }
-    #cyberfest .kicker, #cyberfest h2 { color:#F5E6A3; }
-    #cyberfest .cf-facts { margin:6px 0 0; }
     .cf-count { display:grid; grid-template-columns:repeat(4,minmax(0,96px)); gap:8px; margin:16px 0 4px; }
     .cf-count .cf-unit { text-align:center; border:1px solid #F5E6A3; border-radius:12px; padding:8px 4px; background:rgba(245,230,163,.06); }
     .cf-count b { display:block; font-size:1.6rem; line-height:1.1; color:#F5E6A3; font-variant-numeric:tabular-nums; }
     .cf-count small { color:var(--muted); font-size:.72rem; text-transform:uppercase; letter-spacing:.12em; }
     .cf-live { display:inline-block; margin:14px 0 4px; padding:6px 14px; border-radius:999px; background:#F5E6A3; color:#111; font-weight:700; }
-    #cyberfest .play-thumb { position:relative; width:100%; padding:0; border:0; background:#000; cursor:pointer; }
-    #cyberfest .play-thumb iframe { position:absolute; inset:0; width:100%; height:100%; }
-    #cyberfest .play-icon { position:absolute; left:50%; top:50%; width:64px; height:45px; margin:-22px 0 0 -32px; border-radius:14px; background:rgba(0,0,0,.72); pointer-events:none; }
-    #cyberfest .play-icon::before { content:""; position:absolute; left:26px; top:13px; border-style:solid; border-width:10px 0 10px 16px; border-color:transparent transparent transparent #fff; }
-    #cyberfest .play-thumb:hover .play-icon, #cyberfest .play-thumb:focus-visible .play-icon { background:#c00; }
-    #cyberfest .play-thumb:focus-visible { outline:2px solid #F5E6A3; outline-offset:2px; }
-    #cyberfest .card h3 { overflow-wrap:anywhere; }
-    @media (max-width: 720px) { #cyberfest .cards-2 { grid-template-columns:1fr; } }
   </style>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"ZeeBeav","url":"https://zeebeav.com/","logo":"https://zeebeav.com/ZeeBeavHiResLogoWB.png","description":"Free Tesla and Cybertruck light shows, made in Marietta, GA.","sameAs":["https://www.youtube.com/@zeebeav","https://x.com/ZeeBeav","https://www.instagram.com/zeebeav/","https://www.patreon.com/ZeeBeav"]}</script>
 </head>
@@ -372,7 +375,7 @@
         </div>
         <aside class="hero-side" aria-label="Featured">
           <div class="human-stamp hero-stamp" role="img" aria-label="Made by humans, for humans"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10.5" fill="none" stroke="#7AD1FF" stroke-width="1.5"/><path d="M12 7.2c1.4 0 2.4 1 2.4 2.3S13.4 11.9 12 11.9 9.6 10.8 9.6 9.5 10.6 7.2 12 7.2zm-4.2 9.6c.5-2.2 2.2-3.6 4.2-3.6s3.7 1.4 4.2 3.6" fill="none" stroke="#7AD1FF" stroke-width="1.5" stroke-linecap="round"/></svg><span>Made by Humans<small>For Humans</small></span></div>
-          <article class="cf-promo" aria-labelledby="cfPromoHead">
+          <article class="cf-promo" id="cyberfest" aria-labelledby="cfPromoHead">
             <div class="cf-info">
             <p class="cf-flag">★ Featured · CYBERFEST26</p>
             <h2 id="cfPromoHead">One community. Three days. All Cybertruck.</h2>
@@ -380,7 +383,7 @@
             <p class="cf-debut">Debuting ZeeBeav's 20-Cybertruck TOTLA ring</p>
             <p class="cf-stats"><span>100+ Cybertrucks</span><span>155+ Teslas</span><span>3 nights of light shows</span></p>
             </div>
-            <div class="cf-thumbs"><a class="cf-mini" href="#cyberfest" data-play="_csJjLLd3BI" aria-label="Watch TOTLA · 20-Truck Ring"><img src="https://i.ytimg.com/vi/_csJjLLd3BI/hqdefault.jpg" alt="TOTLA · 20-Truck Ring" loading="lazy" /><span>TOTLA · 20-Truck Ring</span></a><a class="cf-mini" href="#cyberfest" data-play="f40vRzJH49o" aria-label="Watch Turn On The Lights Again"><img src="https://i.ytimg.com/vi/f40vRzJH49o/hqdefault.jpg" alt="Turn On The Lights Again" loading="lazy" /><span>Turn On The Lights Again</span></a></div>
+            <div class="cf-thumbs"><div class="cf-mini"><div class="cf-play play-thumb" role="button" tabindex="0" data-yt="_csJjLLd3BI" aria-label="Play TOTLA · 20-Truck Ring"><img src="https://i.ytimg.com/vi/_csJjLLd3BI/hqdefault.jpg" alt="TOTLA · 20-Truck Ring" loading="lazy" /><span class="play-icon"></span></div><span>TOTLA · 20-Truck Ring</span></div><div class="cf-mini"><div class="cf-play play-thumb" role="button" tabindex="0" data-yt="f40vRzJH49o" aria-label="Play Turn On The Lights Again"><img src="https://i.ytimg.com/vi/f40vRzJH49o/hqdefault.jpg" alt="Turn On The Lights Again" loading="lazy" /><span class="play-icon"></span></div><span>Turn On The Lights Again</span></div></div>
             <div class="cf-act">
             <div class="cf-count cf-count-sm" data-start="2026-11-13T00:00:00-05:00" data-end="2026-11-15T18:00:00-05:00">
               <div class="cf-unit"><b data-u="d">--</b><small>Days</small></div>
@@ -389,7 +392,7 @@
               <div class="cf-unit"><b data-u="s">--</b><small>Sec</small></div>
             </div>
             <div class="cf-btns">
-              <a class="btn btn-gold" href="#cyberfest">See the shows</a>
+              <a class="btn btn-gold" href="https://youtu.be/_csJjLLd3BI" target="_blank" rel="noopener">Watch TOTLA ↗</a>
               <a class="btn btn-ghost" href="https://cybertruckfestival.com/" target="_blank" rel="noopener">Festival site ↗</a>
             </div>
             </div>
@@ -440,37 +443,6 @@
       </div>
     </section>
 
-
-    <section id="cyberfest">
-      <div class="wrap panel cf-panel">
-        <p class="kicker">CYBERFEST26 · Cybertruck Festival</p>
-        <h2>Cyberfest</h2>
-        <p class="cf-facts"><strong>One community. Three days. All Cybertruck.</strong> November 13–15, 2026 · Clearwater, Florida. Three nights of light shows that push the possibilities: a record-chasing 155+ Tesla sync Friday, then a sunset grand finale Sunday as 100+ Cybertrucks light up Showtime Speedway. ZeeBeav is debuting a 20-Cybertruck TOTLA ring. As always, every ZeeBeav show is free.</p>
-        <div class="cf-count" id="cfCount" data-start="2026-11-13T00:00:00-05:00" data-end="2026-11-15T18:00:00-05:00" aria-live="off">
-          <div class="cf-unit"><b data-u="d">--</b><small>Days</small></div>
-          <div class="cf-unit"><b data-u="h">--</b><small>Hours</small></div>
-          <div class="cf-unit"><b data-u="m">--</b><small>Min</small></div>
-          <div class="cf-unit"><b data-u="s">--</b><small>Sec</small></div>
-        </div>
-        <div class="grid cards-2">
-          <article class="card">
-            <div class="zoom play-thumb" role="button" tabindex="0" data-yt="_csJjLLd3BI" aria-label="Play TOTLA · 20-Truck Ring">
-              <img loading="lazy" src="https://i.ytimg.com/vi/_csJjLLd3BI/hqdefault.jpg" alt="TOTLA · 20-Truck Ring" /><span class="play-icon"></span>
-            </div>
-            <h3>TOTLA · 20-Truck Ring</h3>
-            <p><a href="https://youtu.be/_csJjLLd3BI" target="_blank" rel="noopener">Watch on YouTube</a></p>
-          </article>
-          <article class="card">
-            <div class="zoom play-thumb" role="button" tabindex="0" data-yt="f40vRzJH49o" aria-label="Play Turn On The Lights Again">
-              <img loading="lazy" src="https://i.ytimg.com/vi/f40vRzJH49o/hqdefault.jpg" alt="Turn On The Lights Again" /><span class="play-icon"></span>
-            </div>
-            <h3>Turn On The Lights Again</h3>
-            <p><a href="https://youtu.be/f40vRzJH49o" target="_blank" rel="noopener">Watch on YouTube</a></p>
-          </article>
-        </div>
-        <div class="btns"><a class="btn btn-gold" href="https://cybertruckfestival.com/" target="_blank" rel="noopener">Cybertruck Festival site</a></div>
-      </div>
-    </section>
 
     <section id="watch">
       <div class="wrap panel">
@@ -737,8 +709,6 @@
       f.src="https://www.youtube-nocookie.com/embed/"+el.dataset.yt+"?autoplay=1&rel=0";
       f.allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
       f.allowFullscreen=true; f.title=el.getAttribute("aria-label"); el.classList.add("playing"); el.appendChild(f); }
-    document.querySelectorAll(".cf-mini").forEach(function(a){ a.addEventListener("click",function(){
-      var t=document.querySelector('#cyberfest .play-thumb[data-yt="'+a.dataset.play+'"]'); if(t) setTimeout(function(){play(t);},400); }); });
     th.forEach(function(el){ el.addEventListener("click",function(){play(el);});
       el.addEventListener("keydown",function(e){ if(e.key==="Enter"||e.key===" "){e.preventDefault();play(el);} }); });
   })();
