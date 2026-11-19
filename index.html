@@ -285,6 +285,26 @@
       .cf-embed { margin-top:0; }
     }
 
+    .lab-promo { width:100%; box-sizing:border-box; margin-top:16px; background:linear-gradient(160deg,rgba(245,230,163,.14),rgba(20,24,30,.92) 55%); border:1.5px solid #F5E6A3; border-radius:18px; padding:16px; box-shadow:0 0 24px rgba(245,230,163,.18); }
+    .lab-promo .lab-stamp { margin:0 0 12px; }
+    .lab-promo h2 { margin:0 0 6px; font-size:1.35rem; line-height:1.25; color:#fff; }
+    .lab-promo .lab-product { margin:0 0 8px; color:#F5E6A3; font-weight:700; font-size:1.05rem; }
+    .lab-promo .lab-product a { color:#F5E6A3; text-decoration:none; }
+    .lab-promo .lab-product a:hover { text-decoration:underline; }
+    .lab-promo .lab-blurb { margin:0 0 14px; padding:0; color:#f4f1ea; max-width:60ch; }
+    .lab-btns { display:flex; flex-wrap:wrap; gap:8px; }
+    .lab-btns .btn { text-align:center; justify-content:center; }
+    .lab-media { margin:0 0 14px; }
+    .lab-media a { display:block; }
+    .lab-media img { width:100%; height:auto; max-width:480px; display:block; border-radius:12px; border:1px solid rgba(245,230,163,.45); background:#000; }
+    #lab-tested { scroll-margin-top:72px; }
+    @media (min-width: 901px) {
+      .lab-promo { display:grid; grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr); gap:22px; align-items:center; padding:20px 22px; }
+      .lab-promo h2 { font-size:1.7rem; }
+      .lab-media { margin:0; }
+      .lab-media img { max-width:none; }
+    }
+
     .usb-how { margin-top:8px; }
     .usb-how summary { cursor:pointer; color:#F5E6A3; font-weight:600; font-size:.9rem; }
     .usb-how summary:focus-visible { outline:2px solid #F5E6A3; outline-offset:2px; }
@@ -360,6 +380,25 @@
             </div>
             <div class="cf-embed">
               <iframe src="https://www.youtube-nocookie.com/embed/YG6Qr613yiE" title="Turn On The Lights Again ~Fred Again 20 Cybertruck light show" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </article>
+          <article class="lab-promo" id="lab-tested" aria-labelledby="labPromoHead">
+            <div class="lab-media">
+              <a href="https://www.tlgenapp.com/shop/p/l2o2rvxkf7rcgpkjc7iyps55nsdf0k" target="_blank" rel="noopener noreferrer">
+                <picture>
+                  <source srcset="tlgen-blackbox-thumb.webp" type="image/webp">
+                  <img src="tlgen-blackbox-thumb.jpg" width="480" height="356" alt="TLGen BlackBox">
+                </picture>
+              </a>
+            </div>
+            <div class="lab-info">
+              <div class="human-stamp lab-stamp" role="img" aria-label="Lab Tested by ZeeBeav"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10.5" fill="none" stroke="#7AD1FF" stroke-width="1.5"/><path d="M7.5 12.5l3 3 6-6.5" fill="none" stroke="#7AD1FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Lab Tested<small>by ZeeBeav</small></span></div>
+              <h2 id="labPromoHead">Lab Tested</h2>
+              <p class="lab-product"><a href="https://www.tlgenapp.com/shop/p/l2o2rvxkf7rcgpkjc7iyps55nsdf0k" target="_blank" rel="noopener noreferrer">TLGen BlackBox</a></p>
+              <p class="lab-blurb">We found one we like. This state-of-the-art, ingenious invention brings the cloud to your vehicle and your vehicle to the cloud. TLGen BlackBox is the sequel to TLGenUSB: a 4K clip transfers in about a second, 13.5&times; faster, and an active cooler keeps it from throttling in harsh heat. Bring your own USB memory. The future is here, right here, right now!</p>
+              <div class="lab-btns">
+                <a class="btn btn-gold" href="https://www.tlgenapp.com/shop/p/l2o2rvxkf7rcgpkjc7iyps55nsdf0k" target="_blank" rel="noopener noreferrer">Check it out</a>
+              </div>
             </div>
           </article>
       </div>
